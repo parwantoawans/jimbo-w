@@ -299,7 +299,7 @@
 
 
 	<!-- signup section -->
-	<section class="signup-section spad">
+	<!-- <section class="signup-section spad">
 		<div class="signup-bg set-bg" data-setbg="<?php echo base_url(); ?>assets/img/signup-bg.jpg"></div>
 		<div class="container-fluid">
 			<div class="row">
@@ -309,7 +309,6 @@
 							<h2>Sign up to became a teacher</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
 						</div>
-						<!-- signup form -->
 						<form class="signup-form">
 							<input type="text" placeholder="Your Name">
 							<input type="text" placeholder="Your E-mail">
@@ -322,7 +321,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<!-- signup section end -->
 
 
@@ -330,11 +329,15 @@
 	<section class="banner-section spad">
 		<div class="container">
 			<div class="section-title mb-0 pb-2">
-				<h2>Join Our Community Now!</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+				<p>Learn More About Our <br>Curriculum and School Activities!</p>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p> -->
 			</div>
 			<div class="text-center pt-5">
-				<a href="#" class="site-btn">Register Now</a>
+				<!-- <a href="#" class="site-btn">Register Now</a> -->
+				<form class="footer-newslatter">
+					<input type="email" placeholder="E-mail address*"><br><br><br><br>
+					<input type="submit" class="site-btn" value="Subscribe">
+				</form>
 			</div>
 		</div>
 	</section>

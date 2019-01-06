@@ -1,0 +1,31 @@
+.banner-section{
+    background-color: #d82a4e;
+}
+.banner-section .section-title p{
+    font-family: 'Helvetica Neue';
+    font-size: 50px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 60px;
+}
+.banner-section .site-btn{
+    background: rgba(248, 222, 16, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 47px;
+    width: 196px !important;
+    margin: 0 !important;
+}
+
+.footer-newslatter{
+    margin: 0 auto
+}
+.footer-newslatter input {
+    width: 359px !important;
+    border-radius: 47px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 390px;
+    margin-bottom: 0 !important;
+    /* background: white !important; */
+}

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url("../../fonts/HelveticaNeue/HelveticaNeue.eot") format("eot");
+    src:
+    url("../../fonts/HelveticaNeue/HelveticaBlklt.woff") format("woff"),
+    url("../../fonts/HelveticaNeue/HelveticaNeue-Black.woff") format("woff"),
+    url("../../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff")
+    url("../../fonts/HelveticaNeue/HelveticaNeue-LightExt.woff") format("woff"),
+    url("../../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"),
+    url("../../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff");
+}
+
+footer{
+    background: rgba(28, 28, 28, 1) !important;
+}
+.footer-top{
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+.footer-bottom{
+    display: none;
+    background: rgba(28, 28, 28, 1) !important;
+}
+.copyright {
+    color: rgba(163, 163, 163, 1);
+}
+.footer-title{
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    line-height: 25px;
+}
+.footer-content{
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(163, 163, 163, 1);
+    text-align: left;
+    line-height: 30px;
+}
+footer .icon{
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+}
+footer .icon a{
+    color: rgba(255, 255, 255, 1) !important;
+    font-size: 20px;
+    padding-right: 20px;
+}
+footer .widget-item a{
+    font-family: 'Helvetica Neue';
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(241, 97, 50, 1);
+    text-align: left;
+    line-height: 24px;
+}
+footer .widget-item{
+    width: inherit;
+}
+footer .widget-item ul{
+    padding: 0;
+}
+.footer-section{
+    border: 0 !important
+}
