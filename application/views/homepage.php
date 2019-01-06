@@ -3,7 +3,7 @@
 	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/bg.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
-				<p class="banner-title">We are a<br><span>Future-Ready</span><br>School</p><br>
+				<p class="banner-title">a<br><span>Future-Ready</span><br>School</p><br>
 				<a href="#" class="site-btn">Contact us</a>
 			</div>
 			<!-- <div class="row">
