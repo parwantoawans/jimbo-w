@@ -1,22 +1,76 @@
+.hero-text{
+    text-align: center;
+    padding-top: 200px;
+    margin-left: 400px;
+    /* margin-bottom: 105px; */
+}
+.hero-section .site-btn{
+    background: #f8de10;
+    color: #ffffff;
+    border-radius: 47px;
+    width: 196px !important;
+    /* margin-left: 25px; */
+}
+
+.banner-title{
+    font-size: 90px;
+    color: #ffffff;
+    line-height: 90px;
+}
+.banner-title span {
+    font-weight: bold;
+}
 .banner-section{
     background-color: #d82a4e;
 }
 .banner-section .section-title p{
-    font-family: 'Helvetica Neue';
     font-size: 50px;
     font-weight: 300;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     text-align: center;
     line-height: 60px;
 }
 .banner-section .site-btn{
-    background: rgba(248, 222, 16, 1);
-    color: rgba(255, 255, 255, 1);
+    background: #f8de10;
+    color: #ffffff;
     border-radius: 47px;
     width: 196px !important;
-    margin: 0 !important;
+    margin-left: 25px;
 }
 
+.section-title{
+    padding: 0;
+}
+.categories-section{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.categories-section .section-title p{
+    font-size: 50px;
+    font-weight: 300;
+    color: #4b4b4b;
+    text-align: left;
+    line-height: 60px;
+}
+.categorie-item{
+    background: none;
+    margin: 0;
+}
+.categorie-item:hover {
+    background: none;
+}
+.categorie-item:hover .ci-text h5 {
+    color: #474747 !important; 
+}
+.categorie-item:hover .ci-text p{
+    color: #878787;
+}
+.categorie-item:hover .ci-text span{
+    color: #d82a4e
+}
+.categorie-item .ci-text{
+    padding: 20px 15px;
+}
 .footer-newslatter{
     margin: 0 auto
 }

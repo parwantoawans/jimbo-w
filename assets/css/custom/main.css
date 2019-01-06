@@ -1,17 +1,34 @@
+body{
+    font-family: 'Helvetica Neue';
+}
 @font-face {
-    font-family: "Helvetica Neue";
-    src: url("../../fonts/HelveticaNeue/HelveticaNeue.eot") format("eot");
-    src:
+    font-family: 'Helvetica Neue';
+    src: url("../../fonts/HelveticaNeue/HelveticaNeue-LightExt.woff");
+    /* src: url("../../fonts/HelveticaNeue/HelveticaNeue.eot") format("eot"); */
+    /* src:
     url("../../fonts/HelveticaNeue/HelveticaBlklt.woff") format("woff"),
     url("../../fonts/HelveticaNeue/HelveticaNeue-Black.woff") format("woff"),
     url("../../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff") format("woff")
     url("../../fonts/HelveticaNeue/HelveticaNeue-LightExt.woff") format("woff"),
     url("../../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"),
-    url("../../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff");
+    url("../../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff"); */
+}
+
+.header-section {
+    padding-top: 30px;
+}
+.main-menu{
+    margin-left:20px;
+}
+.main-menu a{
+    color: ##ffffff;
+}
+.main-menu ul li a:hover{
+    color: #f8de10;
 }
 
 footer{
-    background: rgba(28, 28, 28, 1) !important;
+    background: #1c1c1c !important;
 }
 .footer-top{
     margin: 0 auto;
@@ -19,42 +36,39 @@ footer{
 }
 .footer-bottom{
     display: none;
-    background: rgba(28, 28, 28, 1) !important;
+    background: #222222 !important;
 }
 .copyright {
     color: rgba(163, 163, 163, 1);
 }
 .footer-title{
-    font-family: 'Helvetica Neue';
     font-size: 20px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     text-align: left;
     line-height: 25px;
 }
 .footer-content{
-    font-family: 'Helvetica Neue';
     font-size: 14px;
     font-weight: 300;
-    color: rgba(163, 163, 163, 1);
+    color: #a3a3a3;
     text-align: left;
     line-height: 30px;
 }
 footer .icon{
     margin-right: 20px;
-    color: rgba(255, 255, 255, 1);
+    color: #ffffff;
     font-size: 20px;
 }
 footer .icon a{
-    color: rgba(255, 255, 255, 1) !important;
+    color: #ffffff !important;
     font-size: 20px;
     padding-right: 20px;
 }
 footer .widget-item a{
-    font-family: 'Helvetica Neue';
     font-size: 14px;
     font-weight: 300;
-    color: rgba(241, 97, 50, 1);
+    color: #f16132;
     text-align: left;
     line-height: 24px;
 }

@@ -3,10 +3,10 @@
 	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/bg.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
-				<h2>Get The Best Free Online Courses</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla <br> dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+				<p class="banner-title">We are a<br><span>Future-Ready</span><br>School</p><br>
+				<a href="#" class="site-btn">Contact us</a>
 			</div>
-			<div class="row">
+			<!-- <div class="row">
 				<div class="col-lg-10 offset-lg-1">
 					<form class="intro-newslatter">
 						<input type="text" placeholder="Name">
@@ -14,7 +14,7 @@
 						<button class="site-btn">Sign Up Now</button>
 					</form>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	</section>
 	<!-- Hero section end -->
@@ -24,12 +24,11 @@
 	<section class="categories-section spad">
 		<div class="container">
 			<div class="section-title">
-				<h2>Our Course Categories</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+				<p>We are JimboRee based Primary School<br>focused on excellence. </p>
 			</div>
 			<div class="row">
 				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/1.jpg"></div>
 						<div class="ci-text">
@@ -40,7 +39,7 @@
 					</div>
 				</div>
 				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/2.jpg"></div>
 						<div class="ci-text">
@@ -51,46 +50,13 @@
 					</div>
 				</div>
 				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/3.jpg"></div>
 						<div class="ci-text">
 							<h5>Illustration & Drawing</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur</p>
 							<span>55 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/4.jpg"></div>
-						<div class="ci-text">
-							<h5>Social Media</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>40 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/5.jpg"></div>
-						<div class="ci-text">
-							<h5>Photoshop</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>220 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/6.jpg"></div>
-						<div class="ci-text">
-							<h5>Cryptocurrencies</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>25 Courses</span>
 						</div>
 					</div>
 				</div>
