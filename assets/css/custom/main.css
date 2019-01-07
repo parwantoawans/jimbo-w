@@ -13,7 +13,9 @@ body{
     url("../../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"),
     url("../../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff"); */
 }
-
+.active{
+    color: yellow !important;
+}
 .header-section {
     padding-top: 30px;
 }

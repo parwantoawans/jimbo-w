@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title><?php echo SITE_NAME . " " . ucfirst($this->uri->segment(1)) ?></title>
+	<title><?php echo SITE_NAME . " | " . ucfirst($this->uri->segment(1)) ?></title>
 	<meta charset="UTF-8">
 	<meta name="description" content="WebUni Education Template">
 	<meta name="keywords" content="webuni, education, creative, html">
@@ -47,12 +47,24 @@
 					<!-- <a href="" class="site-btn header-btn">Login</a> -->
 					<nav class="main-menu">
 						<ul>
-							<li><a href="<?php echo base_url(); ?>">Home</a></li>
-							<li><a href="#">About us</a></li>
-							<li><a href="<?php echo base_url(); ?>academic">Academic</a></li>
-							<li><a href="#">Students</a></li>
-							<li><a href="#">Parents</a></li>
-							<li><a href="#">Contact us & Staff only</a></li>
+							<li>
+								<a href="<?php echo base_url(); ?>" class="<?php echo ($this->uri->segment(1) == "") ? "active" : "" ; ?>">Home</a>
+							</li>
+							<li>
+								<a href="<?php echo base_url(); ?>about-us"  class="<?php echo ($this->uri->segment(1) == "about-us") ? "active" : "" ; ?>">About us</a>
+							</li>
+							<li>
+								<a href="<?php echo base_url(); ?>academic"  class="<?php echo ($this->uri->segment(1) == "academic") ? "active" : "" ; ?>">Academic</a>
+							</li>
+							<li>
+								<a href="<?php echo base_url(); ?>students"  class="<?php echo ($this->uri->segment(1) == "students") ? "active" : "" ; ?>">Students</a>
+							</li>
+							<li>
+								<a href="<?php echo base_url(); ?>parents"  class="<?php echo ($this->uri->segment(1) == "") ? "active" : "" ; ?>">Parents</a>
+							</li>
+							<li>
+								<a href="<?php echo base_url(); ?>contact" class="<?php echo ($this->uri->segment(1) == "") ? "active" : "" ; ?>">Contact us & Staff only</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
