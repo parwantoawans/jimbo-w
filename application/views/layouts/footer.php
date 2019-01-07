@@ -75,7 +75,7 @@
 							<ul>
 								<li><span class="footer-content">Mon - Thu </span><span class="footer-content">:</span>
 								<span class="footer-content"> 09.30 - 21.00</span></li>
-								<li><span class="footer-content">Fri</span><span style="margin-left: 48px;">:</span>
+								<li><span class="footer-content">Fri</span><span style="margin-left: 51px;">:</span>
 								<span class="footer-content"> 06.00 - 21.00</span></li>
 								<li><span class="footer-content">Sat</span><span style="margin-left: 46.5px;">:</span>
 								<span class="footer-content"> 10.00 - 15.00</span></li>

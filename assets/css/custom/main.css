@@ -1,5 +1,5 @@
 body{
-    font-family: 'Helvetica Neue';
+    font-family: 'Helvetica';
 }
 @font-face {
     font-family: 'Helvetica Neue';
@@ -18,10 +18,13 @@ body{
     padding-top: 30px;
 }
 .main-menu{
-    margin-left:20px;
+    margin-left:290px;
 }
 .main-menu a{
-    color: ##ffffff;
+    color: #ffffff;
+}
+.main-menu ul li a{
+    margin-left: 20px
 }
 .main-menu ul li a:hover{
     color: #f8de10;
