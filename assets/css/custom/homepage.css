@@ -1,7 +1,7 @@
 .hero-text{
     text-align: center;
     padding-top: 200px;
-    margin-left: 400px;
+    margin-left: 480px;
     /* margin-bottom: 105px; */
 }
 .hero-section .site-btn{
@@ -21,7 +21,7 @@
     font-weight: bold;
 }
 .banner-section{
-    background-color: #d82a4e;
+    background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
 }
 .banner-section .section-title p{
     font-size: 50px;
@@ -42,8 +42,8 @@
     padding: 0;
 }
 .categories-section{
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
 }
 .categories-section .section-title p{
     font-size: 50px;
@@ -55,6 +55,9 @@
 .categorie-item{
     background: none;
     margin: 0;
+}
+.categorie-item .ci-thumb{
+    height: 251px;
 }
 .categorie-item:hover {
     background: none;
@@ -68,11 +71,376 @@
 .categorie-item:hover .ci-text span{
     color: #d82a4e
 }
+.ci-text a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #4b4b4b;
+    text-align: left;
+    line-height: 25px;
+    text-decoration: underline;
+    text-decoration-color: #f8de10;
+}
 .categorie-item .ci-text{
     padding: 20px 15px;
 }
+.search-section{
+    /* background-color: mix(#fa4a3b, #e52f65); */
+    background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
+    color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 100px
+}
+.search-section .icon{
+    font-size: 40px;
+    text-align: center
+}
+.search-title{
+    /* margin-top: 40px; */
+    font-size: 40px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+.search-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+.search-caption2{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -30px
+}
+
+
+/* CLASSES PROGRAM */
+.classes-program-section{
+    padding: 100px 50px;
+}
+.classes-program-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 60px;
+}
+.classes-program-section .categorie-item .ci-thumb {
+    height: 426px;
+}
+
+/* ELEMENT OPACITY */
+.grammar-opacity{
+    background: orange;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 50px 50px;
+}
+.grammar-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.grammar-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.grammar-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+
+.art-opacity{
+    background: violet;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 50px 50px;
+}
+.art-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.art-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.art-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+
+
+.social-opacity{
+    background: lightblue;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 50px 50px;
+}
+.social-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.social-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.social-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+
+
+.afterschool-opacity{
+    background: lightgreen;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 50px 50px;
+}
+.afterschool-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.afterschool-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.afterschool-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+/* ELEMENT OPACITY END*/
+
+/* CLASSES PROGRAM END */
+
+/* GALLERY SECTION */
+.gallery-section{
+    margin-top: 50px;
+}
+.gallery-section .row{
+    margin: 0;
+}
+.gallery-section .col-lg-4{
+    max-width: 25%;
+}
+.gallery-section .col-lg-6{
+    max-width: 50%;
+}
+.gallery-section .col-lg-6 .categorie-item .ci-thumb{
+    height: 746px;
+}
+.gallery-section .col-lg-4, .gallery-section .col-lg-6{
+    padding: 0;
+}
+
+/* GALLERY SECTION END */
+/* TESTIMONI */
+.testimoni{
+    padding: 100px 50px;
+}
+.testimoni .testimoni-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 60px;
+}
+.testimoni .testimoni-subtitle{
+    font-size: 20px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: center;
+    line-height: 24px;
+}
+.testimoni .box-testimoni{
+    background: #f5f5f5;
+    padding: 50px 20px
+}
+.testimoni .testimoni-caption{
+    font-size: 15px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: left;
+    line-height: 30px;
+}
+.testimoni .box-testimoni .yellow-line{
+    position: absolute;
+    background: #f8de10;
+    top: 0;
+    left: 40px;
+    height: 2px;
+    width: 60px;
+}
+.testimoni .ca-pic{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block
+}
+.testimoni-parents-name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #4b4b4b;
+    text-align: left;
+    line-height: 25px;
+}
+.testimoni-parents-subname{
+    font-size: 12px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: left;
+    line-height: 22px;
+}
+/* TESTIMONI END */
+
+
+/* TEACHER */
+.teacher-section{
+    text-align: center;
+    padding: 100px 50px;
+    background: #f5f5f5;
+}
+.teacher-section .ca-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto
+}
+.teacher-section .icon{
+    font-size: 20px;
+    text-align: center;
+}
+.teacher-section .icon a{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.teacher-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #515151;
+    text-align: center;
+}
+.teacher-subtitle{
+    font-size: 18px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: center;
+    margin-top: -20px
+}
+.teacher-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 25px;
+}
+.teacher-job{
+    font-size: 18px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: center;
+    line-height: 22px;
+}
+.latest-news-section{
+    padding: 100px 50px;
+}
+.latest-news-date{
+    font-size: 20px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: left;
+    line-height: 24px;
+}
+.latest-news-section:hover .ci-text p{
+    color: #e66234;
+}
+.latest-news-section:hover .ci-text span{
+    color: #a3a3a3;
+}
+.latest-news-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #515151;
+    text-align: center;
+    line-height: 60px;
+}
+.latest-news-section .categorie-item .ci-text p{
+    font-size: 30px;
+    font-weight: 500;
+    color: #e66234 !important;
+    text-align: left;
+    line-height: 37px;
+}
+.latest-news-section .categorie-item .ci-text span{
+    font-size: 20px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: left;
+    line-height: 30px;
+}
 .footer-newslatter{
     margin: 0 auto
+}
+.footer-newslatter input::placeholder{
+    font-size: 20px;
+    font-weight: bold;
+    color: #a3a3a3;
+    font-style: normal
 }
 .footer-newslatter input {
     width: 359px !important;

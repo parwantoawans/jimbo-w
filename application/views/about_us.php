@@ -1,96 +1,25 @@
 <?php $this->load->view('layouts/header.php') ?>
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/bg.jpg">
+	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/by.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
-				<h2>About Us </h2>
-				<p>on this page ,you can read about all our activity and more.</p>
+			<h2>About us </h2>
+				<p>on this page,you can read about all our activity and more.</p>
 			</div>
-			<!-- <div class="row">
-				<div class="col-lg-10 offset-lg-1">
-					<form class="intro-newslatter">
-						<input type="text" placeholder="">
-						<input type="text" class="last-s" placeholder="E-mail">
-						<button class="site-btn">Sign Up Now</button>
-					</form>
-				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Hero section end -->
-
-
 	<!-- categories section -->
 	<section class="categories-section spad">
-		<div class="container">
-			<div class="section-title">
-				<h2>Our Course Categories</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
-			</div>
-			<div class="row">
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/1.jpg"></div>
-						<div class="ci-text">
-							<h5>IT Development</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>120 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/2.jpg"></div>
-						<div class="ci-text">
-							<h5>Web Design</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>70 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/3.jpg"></div>
-						<div class="ci-text">
-							<h5>Illustration & Drawing</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>55 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/4.jpg"></div>
-						<div class="ci-text">
-							<h5>Social Media</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>40 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/5.jpg"></div>
-						<div class="ci-text">
-							<h5>Photoshop</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>220 Courses</span>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4 col-md-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/categories/6.jpg"></div>
-						<div class="ci-text">
-							<h5>Cryptocurrencies</h5>
-							<p>Lorem ipsum dolor sit amet, consectetur</p>
-							<span>25 Courses</span>
+	<!-- categorie -->
+		<div class="col-lg-4">
+			<div class="categorie-item">
+			<div class="ci-text">
+			<p><h3>We are JimboRee based <br>Primary School focused<br>on excellence.</h3></p>
+				<p>Every child is a gem.in our primary school,we'll polish your gem and turn boy or girl into a real diamond. </p>
+				<p>no matter what scores you child have,we can help him or her to figure out life priorities and denote the path.All children are unique - this is our motto! We have the best teachers with a personal approach to each student.</p>
+				<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/35bYGb8Jsf0M7nZ4xNRUsjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9.jpg"></div>
+				<div class="row">
 						</div>
 					</div>
 				</div>
@@ -98,203 +27,79 @@
 		</div>
 	</section>
 	<!-- categories section end -->
-
-
-	<!-- search section -->
+	
 	<section class="search-section">
 		<div class="container">
-			<div class="search-warp">
-				<div class="section-title text-white">
-					<h2>Search your course</h2>
+		<div class="right-title text-white">
+				<h10>Parents choise us</h10>
+					<h2>Why jimboRee?</h2>
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="icon"><i class="fa fa-bullseye"></i></div>
+					<p class="search-caption">100%</p>
+					<p class="search-caption2">Passing to Universities</p>
 				</div>
+				<div class="col-lg-3">
+					<div class="icon"><i class="fa fa-users"></i></div>
+					<p class="search-caption">126</p>
+					<p class="search-caption2">People Working</p>
+				</div>
+				<div class="col-lg-3">
+					<div class="icon"><i class="fa fa-suitcase"></i></div>
+					<p class="search-caption">1231</p>
+					<p class="search-caption2">Student Enrolled</p>
+				</div>
+				<div class="col-lg-3">
+					<div class="icon"><i class="fa fa-user"></i></div>
+					<p class="search-caption">433</p>
+					<p class="search-caption2">Happy Smiles</p>
+					</div>
 				<div class="row">
 					<div class="col-md-10 offset-md-1">
 						<!-- search form -->
-						<form class="course-search-form">
-							<input type="text" placeholder="Course">
-							<input type="text" class="last-m" placeholder="Category">
-							<button class="site-btn">Search Couse</button>
-						</form>
 					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- search section end -->
-
-
 	<!-- course section -->
 	<section class="course-section spad">
 		<div class="container">
-			<div class="section-title mb-0">
-				<h2>Featured Courses</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+		<div class="col-lg-4">
+			<div class="categorie-item">
+			<div class="right-title mb-0">
+			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/35bYGb8Jsf0M7nZ4xNRUsjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9.jpg"></div>
+			
+				<h2>Our Mission</h2>
+				<p><h4> The primary school is the most important begining point.</h4></p>
+				<p> jimBoree Education exists to provide international education to our young students </p>
+				<p>through a commitment to English language Fluecy,Technological expertise and anquiry</p>
+				<p> basede teaching & amp;learning,we deliver an internationally recognized program that integrates global conceps wit respect for our Indonesian national culture and identity</p>
+				<p> (JimboRee education hadir dalam rangka memberikan pendidikan bersekala Internasional kepada pembelajar Muda ,melaluli komitmen kepada penggunaan Bahasa inggris secara lancar ,keterampilan teknologi ,pembelajaran ,berbasis tanya jawab, kami menyebarkan program yang telah dikenal secara internasional yang menyatukan konsep global yang menghormati budaya serta identitas Indonesia)</p>
 			</div>
 		</div>
-		<div class="course-warp">
-			<ul class="course-filter controls">
-				<li class="control active" data-filter="all">All</li>
-				<li class="control" data-filter=".finance">Finance</li>
-				<li class="control" data-filter=".design">Design</li>
-				<li class="control" data-filter=".web">Web Development</li>
-				<li class="control" data-filter=".photo">Photography</li>
-			</ul>                                       
-			<div class="row course-items-area">
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 finance">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/1.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>Art & Crafts</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/1.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 design">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/2.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>IT Development</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/2.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 web">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/3.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>Graphic Design</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/3.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 photo">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/4.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>IT Development</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/4.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 finance">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/5.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>IT Development</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/5.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 design">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/6.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>Socia Media</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/6.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 web">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/7.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>IT Development</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/7.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- course -->
-				<div class="mix col-lg-3 col-md-4 col-sm-6 photo">
-					<div class="course-item">
-						<div class="course-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/courses/8.jpg">
-							<div class="price">Price: $15</div>
-						</div>
-						<div class="course-info">
-							<div class="course-text">
-								<h5>HTML 5</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur</p>
-								<div class="students">120 Students</div>
-							</div>
-							<div class="course-author">
-								<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/authors/8.jpg"></div>
-								<p>William Parker, <span>Developer</span></p>
-							</div>
-						</div>
-					</div>
-				</div>
+
+		
+		<section class="course-section spad">
+		<div class="container">
+		<div class="col-lg-4">
+			<div class="categorie-item">
+			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/35bYGb8Jsf0M7nZ4xNRUsjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9.jpg"></div>
+			
+		<h2>Our Vision</h2>
+				<p><h4> The primary education is for everyone</h4></p>
+				<p> To be leading international standard educational facility providing. high quality tutoring to</p>
+				<p>young students to excel through t5heir lives in rapidly changing world.</p>		
+				<p>(Menjadi panutan dalam pendidikan bersekala internasional yang memberikan fasilitas pengajaran berkualitas kepada pelajar muda 
+				sehingga mereka dapat memberi pengaruh yang merubah dunia)</p>
 			</div>
 		</div>
-	</section>
+		 
 	<!-- course section end -->
 
 
@@ -325,5 +130,9 @@
 	<!-- signup section end -->
 
 
-
+	<!-- banner section -->
+	
+		</div>
+	</section>
+	<!-- banner section end -->
 <?php $this->load->view('layouts/footer.php') ?>

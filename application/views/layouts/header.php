@@ -34,22 +34,22 @@
 	<header class="header-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3">
+				<div class="col-lg-2">
 					<div class="site-logo">
-						<p>JimboRee</p>
-						<!-- <img src="<?php echo base_url(); ?>assets/img/logo.png" alt=""> -->
+						<!-- <p>JimboRee</p> -->
+						<img src="<?php echo base_url(); ?>assets/img/logo.png" alt="">
 					</div>
 					<div class="nav-switch">
 						<i class="fa fa-bars"></i>
 					</div>
 				</div>
-				<div class="col-lg-9 col-md-9">
+				<div class="col-lg-10">
 					<!-- <a href="" class="site-btn header-btn">Login</a> -->
 					<nav class="main-menu">
 						<ul>
 							<li><a href="<?php echo base_url(); ?>">Home</a></li>
 							<li><a href="#">About us</a></li>
-							<li><a href="#">Acaedmic</a></li>
+							<li><a href="<?php echo base_url(); ?>academic">Academic</a></li>
 							<li><a href="#">Students</a></li>
 							<li><a href="#">Parents</a></li>
 							<li><a href="#">Contact us & Staff only</a></li>
