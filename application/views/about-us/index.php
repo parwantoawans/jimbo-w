@@ -1,6 +1,6 @@
 <?php $this->load->view('layouts/header.php') ?>
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/by.jpg">
+	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/banner/1.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
 			<h2>About us </h2>
@@ -14,12 +14,12 @@
 	<!-- categorie -->
 		<div class="col-lg-4">
 			<div class="categorie-item">
-			<div class="ci-text">
-			<p><h3>We are JimboRee based <br>Primary School focused<br>on excellence.</h3></p>
-				<p>Every child is a gem.in our primary school,we'll polish your gem and turn boy or girl into a real diamond. </p>
-				<p>no matter what scores you child have,we can help him or her to figure out life priorities and denote the path.All children are unique - this is our motto! We have the best teachers with a personal approach to each student.</p>
-				<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/35bYGb8Jsf0M7nZ4xNRUsjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9.jpg"></div>
-				<div class="row">
+				<div class="ci-text">
+					<p><h3>We are JimboRee based <br>Primary School focused<br>on excellence.</h3></p>
+						<p>Every child is a gem.in our primary school,we'll polish your gem and turn boy or girl into a real diamond. </p>
+						<p>no matter what scores you child have,we can help him or her to figure out life priorities and denote the path.All children are unique - this is our motto! We have the best teachers with a personal approach to each student.</p>
+							<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+								<div class="row">
 						</div>
 					</div>
 				</div>
@@ -73,7 +73,7 @@
 		<div class="col-lg-4">
 			<div class="categorie-item">
 			<div class="right-title mb-0">
-			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/35bYGb8Jsf0M7nZ4xNRUsjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9.jpg"></div>
+			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
 			
 				<h2>Our Mission</h2>
 				<p><h4> The primary school is the most important begining point.</h4></p>
@@ -83,13 +83,13 @@
 				<p> (JimboRee education hadir dalam rangka memberikan pendidikan bersekala Internasional kepada pembelajar Muda ,melaluli komitmen kepada penggunaan Bahasa inggris secara lancar ,keterampilan teknologi ,pembelajaran ,berbasis tanya jawab, kami menyebarkan program yang telah dikenal secara internasional yang menyatukan konsep global yang menghormati budaya serta identitas Indonesia)</p>
 			</div>
 		</div>
-
+		</section>
 		
 		<section class="course-section spad">
 		<div class="container">
 		<div class="col-lg-4">
 			<div class="categorie-item">
-			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/35bYGb8Jsf0M7nZ4xNRUsjl72eJkfbmt4t8yenImKBVvK0kTmF0xjctABnaLJIm9.jpg"></div>
+			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
 			
 		<h2>Our Vision</h2>
 				<p><h4> The primary education is for everyone</h4></p>
@@ -99,40 +99,110 @@
 				sehingga mereka dapat memberi pengaruh yang merubah dunia)</p>
 			</div>
 		</div>
-		 
 	<!-- course section end -->
 
-
-	<!-- signup section -->
-	<!-- <section class="signup-section spad">
-		<div class="signup-bg set-bg" data-setbg="<?php echo base_url(); ?>assets/img/signup-bg.jpg"></div>
-		<div class="container-fluid">
+	<!-- categories section -->
+	<section class="categories-section spad">
+		<div class="container">
+			<div class="section-title">
+				<p>News & Announcement. </p>
+			</div>
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="signup-warp">
-						<div class="section-title text-white text-left">
-							<h2>Sign up to became a teacher</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+				<!-- categorie -->
+				<div class="col-lg-4">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/1.png"></div>
+						<div class="ci-text">
+							<p>December 9,2018 </p>
+							<h5>New Schedule</h5>
+							<p>Dear parents,please,consider that our timetable will be changed in several months. </p>
+							
 						</div>
-						<form class="signup-form">
-							<input type="text" placeholder="Your Name">
-							<input type="text" placeholder="Your E-mail">
-							<input type="text" placeholder="Your Phone">
-							<label for="v-upload" class="file-up-btn">Upload Course</label>
-							<input type="file" id="v-upload">
-							<button class="site-btn">Search Couse</button>
-						</form>
+					</div>
+				</div>
+				<!-- categorie -->
+				<div class="col-lg-4">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/2.jpg"></div>
+						<div class="ci-text">
+						<p>December 9,2018</p>
+							<h5>Top Students This Month</h5>
+							<p> We would like to introduce the students who showed amazing progress for the last 30 days.</p>
+							
+						</div>
+					</div>
+				</div>
+				<!-- categorie -->
+				<div class="col-lg-4">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/3.jpg"></div>
+						<div class="ci-text">
+							<p>December 9,2018</p>
+							<h5>Gap Analysis</h5>
+							<p>Are you sure your child do everything well? Read this article to find this out.</p>
+							
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section> -->
-	<!-- signup section end -->
+	</section>
+	<!-- categories section end -->
 
+<!-- gallery section -->
+<section class="foto-section">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="categorie-item">
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/1.jpg"></div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="categorie-item">
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/2.jpg"></div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="categorie-item">
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/3.jpg"></div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="categorie-item">
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/4.png"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="categorie-item">
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/5.jpg"></div>
+						</div>
+							</div>
+				<div class="col-lg-4">
+					<div class="categorie-item">
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/6.jpg"></div>
+				</div>
+			</div>
+	</section>
+	<!-- gallery section end -->
 
-	<!-- banner section -->
-	
+	<!-- categorie -->
+	<!-- gallery section -->
+	<div class="col-lg-4">
+					<div class="categorie-item">
+						
+							<h5>School & Improvment</h5>
+							<p>Lorem ipsum dolor sit amet,ex falli congue postea pri,id per rebum congue iudico,regione mentitum adipiscing up pri.Luptatum corrumpit disputando 
+							sit et.Quit ut meis nihil legere.Eu vix cibo tritani,dicant patrioque interesset te vim.Ne ludus vitae electram per,vim cu option veritus blandit. Ex delectus deseruisse nam,his ex erat debitis omittantur.Ne erros dissentiet qui. </p>
+							<p>his partiendo deseruisse instructior et.Commune principes ullamcorper sea in,ea detraco consulatu </p>
+							<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/3.jpg"></div>
+						<div class="ci-text">
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
-	<!-- banner section end -->
+	<!-- gallery section end -->
 <?php $this->load->view('layouts/footer.php') ?>
