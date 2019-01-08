@@ -1,3 +1,19 @@
+.header-section {
+    padding-top: 30px;
+}
+.main-menu{
+    margin-left:290px;
+}
+.main-menu a{
+    color: #ffffff;
+}
+.main-menu ul li a{
+    margin-left: 20px
+}
+.main-menu ul li a:hover{
+    color: #f8de10;
+}
+
 .hero-text{
     text-align: center;
     padding-top: 200px;
@@ -97,7 +113,7 @@
 .search-title{
     /* margin-top: 40px; */
     font-size: 40px;
-    font-weight: lighter;
+    font-weight: 300;
     color: #ffffff;
     text-align: center;
     line-height: 60px;
@@ -265,7 +281,6 @@
     width: 150px
 }
 /* ELEMENT OPACITY END*/
-
 /* CLASSES PROGRAM END */
 
 /* GALLERY SECTION */

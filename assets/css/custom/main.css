@@ -1,9 +1,21 @@
 body{
-    font-family: 'Helvetica';
+    font-family: 'Helvetica Neue';
 }
 @font-face {
     font-family: 'Helvetica Neue';
     src: url("../../fonts/HelveticaNeue/HelveticaNeue-LightExt.woff");
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../../fonts/HelveticaNeue/HelveticaNeue-Medium.woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../../fonts/HelveticaNeue/HelveticaNeue-Heavy.woff");
+    font-weight: bold;
+}
     /* src: url("../../fonts/HelveticaNeue/HelveticaNeue.eot") format("eot"); */
     /* src:
     url("../../fonts/HelveticaNeue/HelveticaBlklt.woff") format("woff"),
@@ -12,26 +24,20 @@ body{
     url("../../fonts/HelveticaNeue/HelveticaNeue-LightExt.woff") format("woff"),
     url("../../fonts/HelveticaNeue/HelveticaNeue-Medium.woff") format("woff"),
     url("../../fonts/HelveticaNeue/HelveticaNeue-Thin.woff") format("woff"); */
-}
+
 .active{
     color: yellow !important;
 }
-.header-section {
-    padding-top: 30px;
+.categorie-item{
+    background: none;
+    margin: 0;
 }
-.main-menu{
-    margin-left:290px;
+.categorie-item .ci-thumb{
+    height: 251px;
 }
-.main-menu a{
-    color: #ffffff;
+.categorie-item:hover {
+    background: none;
 }
-.main-menu ul li a{
-    margin-left: 20px
-}
-.main-menu ul li a:hover{
-    color: #f8de10;
-}
-
 footer{
     background: #1c1c1c !important;
 }

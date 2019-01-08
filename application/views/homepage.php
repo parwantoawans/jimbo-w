@@ -1,6 +1,6 @@
 <?php $this->load->view('layouts/header.php') ?>
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/banner/1.jpg">
+	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/banner/1.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
 				<p class="banner-title">We are a<br><span>Future-Ready</span><br>School</p><br>
@@ -30,7 +30,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 						<div class="ci-text">
 							<h5>Community</h5>
 							<p>Each student will certainly find several best friends in his group. </p>
@@ -41,7 +41,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/2.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/2.jpg"></div>
 						<div class="ci-text">
 							<h5>Parents</h5>
 							<p>Though your child is in good hands, you can still watch his or her activity online.</p>
@@ -52,7 +52,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/3.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/3.jpg"></div>
 						<div class="ci-text">
 							<h5>Students</h5>
 							<p>Our education strategy is aimed at growing the generation of healthy and cultured young people.</p>
@@ -106,7 +106,7 @@
 						<p class="grammar-opacity-caption">We will turn your child into the real polyglot and grammar expert in different languages.</p>
 						<a href="" class="btn btn-info">Learn more</a>
 					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -116,7 +116,7 @@
 						<p class="art-opacity-caption">Creativity is a must-have element of any child’s upbringing. We offer miscellaneous courses.</p>
 						<a href="" class="btn btn-info">Learn more</a>
 					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 				</div>
 			</div>
 		</div>
@@ -129,7 +129,7 @@
 						<p class="social-opacity-caption">We have special programs for the children who have no access to primary education.</p>
 						<a href="" class="btn btn-info">Learn more</a>
 					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -139,7 +139,7 @@
 						<p class="afterschool-opacity-caption">Our students have active outdoors life thanks to the developed physical education program.</p>
 						<a href="" class="btn btn-info">Learn more</a>
 					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 				</div>
 			</div>
 		</div>
@@ -151,56 +151,56 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/1.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/1.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/2.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/2.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/3.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/3.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/4.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/4.jpg"></div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/5.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/5.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/6.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/6.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/7.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/7.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/8.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/8.jpg"></div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/9.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/9.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/gallery/10.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/10.jpg"></div>
 				</div>
 			</div>
 		</div>
@@ -219,7 +219,7 @@
 							<p class="testimoni-caption">I feel safe for my little Ben every time I take him to his class. The teaching staff is professional and friendly.</p>
 							<div class="row">
 								<div class="col-lg-2">
-									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/testimoni/1.jpg"></div>
+									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/testimoni/1.jpg"></div>
 								</div>
 								<div class="col-lg">
 									<div class="testimoni-parents-name">Joyce Mendoza</div>
@@ -234,7 +234,7 @@
 							<p class="testimoni-caption">This is school is the best place in the whole world for any child. Positive atmosphere and much more.</p>
 							<div class="row">
 								<div class="col-lg-2">
-									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/testimoni/2.jpg"></div>
+									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/testimoni/2.jpg"></div>
 								</div>
 								<div class="col-lg">
 									<div class="testimoni-parents-name">Samantha Adams</div>
@@ -249,7 +249,7 @@
 							<p class="testimoni-caption">The perfect establisment for primary education in the city. I have a lot of friends with the same opinion.</p>
 							<div class="row">
 								<div class="col-lg-2">
-									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/testimoni/3.jpg"></div>
+									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/testimoni/3.jpg"></div>
 								</div>
 								<div class="col-lg">
 									<div class="testimoni-parents-name">Grace Grant</div>
@@ -270,7 +270,7 @@
 			<p class="teacher-subtitle">Your child will be as safe the JamboRee school.</p><br>
 			<div class="row">
 				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/teachers/1.jpeg">
+					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/1.jpeg">
 					</div><br>
 					<p class="teacher-name">Ingra North<br><span class="teacher-job">English Language</span></p>
 					<div class="icon">
@@ -280,7 +280,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/teachers/2.jpg">
+					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/2.jpg">
 					</div><br>
 					<p class="teacher-name">Marlyn Adams<br><span class="teacher-job">Mathematics</span></p>
 					<div class="icon">
@@ -290,7 +290,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/teachers/3.jpg">
+					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/3.jpg">
 					</div><br>
 					<p class="teacher-name">Linda Guzman<br><span class="teacher-job">Foreign Languages</span></p>
 					<div class="icon">
@@ -300,7 +300,7 @@
 					</div>
 				</div>
 				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/teachers/4.jpg">
+					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/4.jpg">
 					</div><br>
 					<p class="teacher-name">Janet Moris<br><span class="teacher-job">Art & Music</span></p>
 					<div class="icon">
@@ -321,7 +321,7 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/latest-news/1.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/1.jpg"></div>
 						<div class="ci-text">
 							<span class="latest-news-date">December 9, 2018 </span>
 							<p class="latest-news-title-caption">News Schedule</p>
@@ -331,7 +331,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/latest-news/2.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/2.jpg"></div>
 						<div class="ci-text">
 							<span class="latest-news-date">December 9, 2018 </span>
 							<p class="latest-news-title-caption">Top Students This Month</p>
@@ -341,7 +341,7 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/latest-news/3.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/3.jpg"></div>
 						<div class="ci-text">
 							<span class="latest-news-date">December 9, 2018 </span>
 							<p class="latest-news-title-caption">Gap Analysis</p>
