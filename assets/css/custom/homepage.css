@@ -152,13 +152,13 @@
 
 /* ELEMENT OPACITY */
 .grammar-opacity{
-    background: orange;
+    background: #ffa133;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .grammar-opacity-title{
     font-size: 30px;
@@ -184,13 +184,13 @@
 }
 
 .art-opacity{
-    background: violet;
+    background: #ff3967;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .art-opacity-title{
     font-size: 30px;
@@ -217,13 +217,13 @@
 
 
 .social-opacity{
-    background: lightblue;
+    background: #00baff;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .social-opacity-title{
     font-size: 30px;
@@ -250,13 +250,13 @@
 
 
 .afterschool-opacity{
-    background: lightgreen;
+    background: #4acc05;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .afterschool-opacity-title{
     font-size: 30px;
