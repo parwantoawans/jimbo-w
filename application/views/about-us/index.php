@@ -1,6 +1,6 @@
 <?php $this->load->view('layouts/header.php') ?>
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/banner/1.jpg">
+	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/banner/1.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
 			<h2>About us </h2>
@@ -18,7 +18,7 @@
 					<p><h3>We are JimboRee based <br>Primary School focused<br>on excellence.</h3></p>
 						<p>Every child is a gem.in our primary school,we'll polish your gem and turn boy or girl into a real diamond. </p>
 						<p>no matter what scores you child have,we can help him or her to figure out life priorities and denote the path.All children are unique - this is our motto! We have the best teachers with a personal approach to each student.</p>
-							<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+							<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 								<div class="row">
 						</div>
 					</div>
@@ -73,7 +73,7 @@
 		<div class="col-lg-4">
 			<div class="categorie-item">
 			<div class="right-title mb-0">
-			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 			
 				<h2>Our Mission</h2>
 				<p><h4> The primary school is the most important begining point.</h4></p>
@@ -89,7 +89,7 @@
 		<div class="container">
 		<div class="col-lg-4">
 			<div class="categorie-item">
-			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/section2/1.jpg"></div>
+			<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
 			
 		<h2>Our Vision</h2>
 				<p><h4> The primary education is for everyone</h4></p>
@@ -111,7 +111,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/1.png"></div>
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/announcements/1.png"></div>
 						<div class="ci-text">
 							<p>December 9,2018 </p>
 							<h5>New Schedule</h5>
@@ -123,7 +123,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/2.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/announcements/2.jpg"></div>
 						<div class="ci-text">
 						<p>December 9,2018</p>
 							<h5>Top Students This Month</h5>
@@ -135,7 +135,7 @@
 				<!-- categorie -->
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/3.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/announcements/3.jpg"></div>
 						<div class="ci-text">
 							<p>December 9,2018</p>
 							<h5>Gap Analysis</h5>
@@ -154,34 +154,34 @@
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/1.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/foto/1.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/2.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/foto/2.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/3.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/foto/3.jpg"></div>
 				</div>
 			</div>
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/4.png"></div>
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/foto/4.png"></div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/5.jpg"></div>
+					<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/foto/5.jpg"></div>
 						</div>
 							</div>
 				<div class="col-lg-4">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/foto/6.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/foto/6.jpg"></div>
 				</div>
 			</div>
 	</section>
@@ -196,7 +196,7 @@
 							<p>Lorem ipsum dolor sit amet,ex falli congue postea pri,id per rebum congue iudico,regione mentitum adipiscing up pri.Luptatum corrumpit disputando 
 							sit et.Quit ut meis nihil legere.Eu vix cibo tritani,dicant patrioque interesset te vim.Ne ludus vitae electram per,vim cu option veritus blandit. Ex delectus deseruisse nam,his ex erat debitis omittantur.Ne erros dissentiet qui. </p>
 							<p>his partiendo deseruisse instructior et.Commune principes ullamcorper sea in,ea detraco consulatu </p>
-							<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/announcements/3.jpg"></div>
+							<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-web/assets/img/about-us/announcements/3.jpg"></div>
 						<div class="ci-text">
 						</div>
 					</div>
