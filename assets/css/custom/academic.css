@@ -1,0 +1,445 @@
+/* MENU */
+.header-section{
+    background: #882229;
+    padding: 30px 0;
+}
+.main-menu{
+    margin-left:290px;
+}
+.main-menu ul li a{
+    margin-left: 20px
+}
+.main-menu ul li a:hover{
+    color: #f8de10;
+}
+/* MENU END */
+
+
+/* BANNER */
+.hero-section{
+    height: 434px;
+    margin-top: 80px;
+}
+.hero-text{
+    text-align: center;
+    padding-top: 200px;
+    margin-left: 580px;
+    /* margin-bottom: 105px; */
+}
+.banner-title{
+    font-size: 90px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 90px;
+}
+.banner-subtitle{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 24px;
+}
+/* BANNER END */
+
+
+/* CLASSES PROGRAM */
+.classes-program-section{
+   padding: 100px 0;
+}
+.classes-program-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 60px;
+}
+.classes-program-section .categorie-item .ci-thumb {
+    height: 426px;
+}
+
+/* ELEMENT OPACITY */
+.grammar-opacity{
+    background: #ffa133;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 30px 30px;
+}
+.grammar-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.grammar-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.grammar-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+
+.art-opacity{
+    background: #ff3967;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 30px 30px;
+}
+.art-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.art-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.art-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+
+
+.social-opacity{
+    background: #00baff;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 30px 30px;
+}
+.social-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.social-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.social-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+
+
+.afterschool-opacity{
+    background: #4acc05;
+    opacity: 0.8;
+    width: 48%;
+    height: 100%;
+    right: 15px;
+    position: absolute;
+    padding: 30px 30px;
+}
+.afterschool-opacity-title{
+    font-size: 30px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 40px;
+}
+.afterschool-opacity-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 26px;
+}
+.afterschool-opacity .btn-info{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid white;
+    border-radius: 47px;
+    color: white !important;
+    width: 150px
+}
+/* ELEMENT OPACITY END*/
+/* CLASSES PROGRAM END */
+
+
+/* OTHER SERVICE */
+.search-section{
+    /* background-color: mix(#fa4a3b, #e52f65); */
+    color: #ffffff;
+    background-image: url("http://localhost/jimboree-web/assets/img/academic/other-service/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 705px;
+}
+
+.other-service-opacity{
+    background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
+    opacity: 0.8;
+    width: 100%;
+    height: 705px;
+    position: absolute;
+    padding: 0 100px;
+}
+.search-section .container{
+    padding: 0;
+}
+.search-section .icon{
+    font-size: 40px;
+    text-align: center
+}
+.search-title{
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    position: relative;
+}
+.search-caption{
+    font-size: 28px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 42px;
+}
+.search-caption2{
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 30px;
+}
+.search-section a {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: left;
+    line-height: 25px;
+}
+/* OTHER SERVICE END */
+
+
+/* SCHEDULE SECTION */
+.schedule{
+    padding: 100px 50px;
+}
+.schedule-title{
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 60px;
+    margin-bottom:100px;
+    /* position: relative; */
+}
+.schedule-class{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    color: #4b4b4b;
+}
+.schedule-date{
+    font-size: 13px;
+    font-weight: lighter;
+    text-align: left;
+    color: #a3a3a3;
+}
+.schedule-teacher{
+    color: #a3a3a3;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: left;
+}
+.schedule-teacher-name{
+    color: #fa4a3b
+}
+.box-monday{
+    background: #f9b64c;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    /* width: 160px; */
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.box-tuesday{
+    background: #e76136;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    /* width: 160px; */
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.box-wednesday{
+    background: #89c8ff;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    /* width: 160px; */
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.box-thursday{
+    background: #a94442;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    /* width: 160px; */
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.box-friday{
+    background: #91dd4d;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    /* width: 160px; */
+    display: grid;
+    align-items: center;
+    height: 100%;
+}
+.box1-schedule{
+    background: #e8e8e8;
+    border: 1px solid #707070;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.box2-schedule{
+    background: #f5f5f5;
+    border: 1px solid #707070;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.box3-schedule{
+    background: #ffffff;
+    border: 1px solid #707070;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+/* SCHEDULE SECTION END */
+
+/* CALENDAR */
+.calendar{
+    background: #f5f5f5;
+    padding: 100px 100px 100px 150px;
+}
+.calendar-title{
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4b4b4b;
+}
+.calendar-currentmonth{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4b4b;
+}
+.calendar-redline{
+    width: 244px;
+    height: 6px;
+    background-color: #e76136;
+}
+.calendar-yellowline{
+    width: 99px;
+    height: 3px;
+    background-color: #f9b950;
+    margin-left: 50px
+}
+.calendar-nextmonthyear{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4b4b;
+    margin-top: 0;
+    float: left
+}
+.calendar-date{
+    font-size: 30px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4b4b;
+}
+.calendar-event{
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+}
+.calendar a:hover{
+    color: #4b4b4b;
+}
+/* CALENDAR END */

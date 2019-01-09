@@ -1,3 +1,19 @@
+.header-section {
+    padding-top: 30px;
+}
+.main-menu{
+    margin-left:290px;
+}
+.main-menu a{
+    color: #ffffff;
+}
+.main-menu ul li a{
+    margin-left: 20px
+}
+.main-menu ul li a:hover{
+    color: #f8de10;
+}
+
 .hero-text{
     text-align: center;
     padding-top: 200px;
@@ -97,7 +113,7 @@
 .search-title{
     /* margin-top: 40px; */
     font-size: 40px;
-    font-weight: lighter;
+    font-weight: 300;
     color: #ffffff;
     text-align: center;
     line-height: 60px;
@@ -136,13 +152,13 @@
 
 /* ELEMENT OPACITY */
 .grammar-opacity{
-    background: orange;
+    background: #ffa133;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .grammar-opacity-title{
     font-size: 30px;
@@ -168,13 +184,13 @@
 }
 
 .art-opacity{
-    background: violet;
+    background: #ff3967;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .art-opacity-title{
     font-size: 30px;
@@ -201,13 +217,13 @@
 
 
 .social-opacity{
-    background: lightblue;
+    background: #00baff;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .social-opacity-title{
     font-size: 30px;
@@ -234,13 +250,13 @@
 
 
 .afterschool-opacity{
-    background: lightgreen;
+    background: #4acc05;
     opacity: 0.8;
     width: 48%;
     height: 100%;
     right: 15px;
     position: absolute;
-    padding: 50px 50px;
+    padding: 30px 30px;
 }
 .afterschool-opacity-title{
     font-size: 30px;
@@ -265,7 +281,6 @@
     width: 150px
 }
 /* ELEMENT OPACITY END*/
-
 /* CLASSES PROGRAM END */
 
 /* GALLERY SECTION */
