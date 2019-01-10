@@ -99,6 +99,8 @@
 .categorie-item .ci-text{
     padding: 20px 15px;
 }
+
+/* MORE THAN 70 YEARS */
 .search-section{
     /* background-color: mix(#fa4a3b, #e52f65); */
     background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
@@ -133,7 +135,7 @@
     line-height: 25px;
     margin-top: -30px
 }
-
+/* MORE THAN 70 YEARS */
 
 /* CLASSES PROGRAM */
 .classes-program-section{
@@ -411,6 +413,9 @@
     text-align: center;
     line-height: 22px;
 }
+/* TEACHER END */
+
+/* LATEST NEWS */
 .latest-news-section{
     padding: 100px 50px;
 }
@@ -448,6 +453,9 @@
     text-align: left;
     line-height: 30px;
 }
+/* LATEST NEWS END */
+
+
 .footer-newslatter{
     margin: 0 auto
 }

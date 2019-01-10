@@ -5,8 +5,8 @@
 			<div class="footer-warp">
 				<div class="row">
 					<div class="col-lg-3">
-						<div class="widget-item">
-							<p class="footer-title">JimboRee</p>
+						<div class="widget-item" style="margin-top: -55px">
+							<p class="footer-title"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt=""></p>
 							<p class="footer-content"> Education is the most important thing that a parent may provide to his child. That is why choosing a perfect elementary school is so critical! </p>
 						</div>
 					</div>
@@ -75,9 +75,9 @@
 							<ul>
 								<li><span class="footer-content">Mon - Thu </span><span class="footer-content">:</span>
 								<span class="footer-content"> 09.30 - 21.00</span></li>
-								<li><span class="footer-content">Fri</span><span style="margin-left: 51px;">:</span>
+								<li><span class="footer-content">Fri</span><span style="margin-left: 60px;">:</span>
 								<span class="footer-content"> 06.00 - 21.00</span></li>
-								<li><span class="footer-content">Sat</span><span style="margin-left: 46.5px;">:</span>
+								<li><span class="footer-content">Sat</span><span style="margin-left: 53.5px;">:</span>
 								<span class="footer-content"> 10.00 - 15.00</span></li>
 							</ul>
 						</div>

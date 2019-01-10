@@ -16,25 +16,13 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/owl.carousel.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom/main.css">
-<<<<<<< HEAD
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom/homepage.css">
-	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom/aboutus.css">
-=======
-	<link rel="stylesheet" href="<?php echo ($this->uri->segment(1) == "" ? base_url() . "assets/css/custom/homepage.css" : ($this->uri->segment(1) == "about-us" ? base_url() . "assets/css/custom/aboutus.css" : ($this->uri->segment(1) == "academic" ? base_url() . "assets/css/custom/academic.css" : ($this->uri->segment(1) == "students" ? base_url() . "assets/css/custom/students.css" : ($this->uri->segment(1) == "about-us" ? base_url() . "assets/css/custom/parents.css" : ($this->uri->segment(1) == "about-us" ? base_url() . "assets/css/custom/contact-us.css" : '' )))))); ?>">
-
->>>>>>> 2397b218e7d512bd728b2acef021d0cf2b2758bd
-	<!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+	<link rel="stylesheet" href="<?php echo ($this->uri->segment(1) == "" ? base_url() . "assets/css/custom/homepage.css" : ($this->uri->segment(1) == "about-us" ? base_url() . "assets/css/custom/aboutus.css" : ($this->uri->segment(1) == "academic" ? base_url() . "assets/css/custom/academic.css" : ($this->uri->segment(1) == "students" ? base_url() . "assets/css/custom/students.css" : ($this->uri->segment(1) == "parents" ? base_url() . "assets/css/custom/parents.css" : ($this->uri->segment(1) == "contact-us" ? base_url() . "assets/css/custom/contact-us.css" : '' )))))); ?>">
 </head>
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
 	</div>
-
 	<!-- Header section -->
 	<header class="header-section">
 		<div class="container">
@@ -67,7 +55,7 @@
 								<a href="<?php echo base_url(); ?>parents"  class="<?php echo ($this->uri->segment(1) == "parents") ? "active" : "" ; ?>">Parents</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url(); ?>contact" class="<?php echo ($this->uri->segment(1) == "contact-us") ? "active" : "" ; ?>">Contact us & Staff only</a>
+								<a href="<?php echo base_url(); ?>contact-us" class="<?php echo ($this->uri->segment(1) == "contact-us") ? "active" : "" ; ?>">Contact us & Staff only</a>
 							</li>
 						</ul>
 					</nav>

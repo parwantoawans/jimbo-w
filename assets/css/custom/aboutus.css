@@ -1,0 +1,258 @@
+/* MENU */
+.header-section{
+    background: #13322b;
+    padding: 30px 0;
+}
+.main-menu{
+    margin-left:290px;
+}
+.main-menu ul li a{
+    margin-left: 20px
+}
+.main-menu ul li a:hover{
+    color: #f8de10;
+}
+/* MENU END */
+
+/* BANNER */
+.hero-section{
+    height: 434px;
+    margin-top: 80px;
+}
+.hero-text{
+    text-align: center;
+    padding-top: 140px;
+    margin-left: 580px;
+    /* margin-bottom: 105px; */
+}
+.banner-title{
+    font-size: 90px;
+    color: #ffffff;
+    text-align: left;
+    line-height: 90px;
+}
+.banner-subtitle{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: left;
+    line-height: 24px;
+}
+/* BANNER END */
+
+
+/* SECTION2 */
+.section2{
+    padding: 100px;
+}
+.section2-title{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4b4b
+}
+.section2-caption{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+}
+.section2 .categorie-item .ci-thumb{
+    height: 350px
+}
+/* SECTION2 */
+
+
+/* WHY JIMBOREE */
+.whyjimboree{
+    /* background-color: mix(#fa4a3b, #e52f65); */
+    background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
+    color: #ffffff;
+    padding: 100px;
+}
+.whyjimboree .container{
+    padding: 0
+}
+.whyjimboree .icon{
+    font-size: 40px;
+    text-align: center
+}
+.whyjimboree .title{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.whyjimboree-subtitle{
+    font-size: 40px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal; 
+    text-align: left;
+    color: #ffffff;
+}
+.search-title{
+    /* margin-top: 40px; */
+    font-size: 40px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+.search-caption{
+    font-size: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+.search-caption2{
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    line-height: 25px;
+    margin-top: -30px
+}
+/* WHY JIMBOREE */
+
+
+/* MISSIONVISSION */
+.missionvission{
+    padding: 100px;
+}
+.missionvission-title{
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4b4b;
+}
+.missionvission-subtitle{
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4b4b;
+}
+.missionvission-caption{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+}
+/* MISSIONVISSION END */
+
+
+/* LATEST NEWS */
+.newsandannouncement-section{
+    padding: 100px 50px;
+}
+.newsandannouncement-date{
+    font-size: 14px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: left;
+    line-height: 24px;
+}
+.newsandannouncement-section:hover .ci-text p{
+    color: #e66234;
+}
+.newsandannouncement-section:hover .ci-text span{
+    color: #a3a3a3;
+}
+.newsandannouncement-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #515151;
+    text-align: center;
+    line-height: 60px;
+}
+.newsandannouncement-section .categorie-item .ci-text p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #e66234 !important;
+    text-align: left;
+    line-height: 37px;
+}
+.newsandannouncement-section .categorie-item .ci-text span{
+    font-size: 15px;
+    font-weight: 300;
+    color: #a3a3a3;
+    text-align: left;
+    line-height: 30px;
+}
+/* NEWSANDANNOUNCMENT */
+
+
+/* FOTO SECTION */
+.foto-section{
+    /* margin-top: 50px; */
+}
+.foto-section .row{
+    margin: 0;
+}
+.foto-section .col-lg-3{
+    max-width: 25%;
+}
+.foto-section .col-lg-6{
+    max-width: 50%;
+}
+.foto-section .col-lg-6 .categorie-item .ci-thumb{
+    height: 746px;
+}
+.foto-section .col-lg-3, .foto-section .col-lg-6{
+    padding: 0;
+}
+/* FOTO END */
+
+
+/* SCHOOLIMPROVEMENT */
+.schoolimprovement{
+    padding: 100px;
+}
+.schoolimprovement-title{
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4b4b4b;
+}
+.schoolimprovement-caption{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+}
+/* SCHOOLIMPROVEMENT END */
