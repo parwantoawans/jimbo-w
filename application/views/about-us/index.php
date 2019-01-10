@@ -35,7 +35,7 @@
 			<div class="row">
 				<div class="col-lg-4">
 					<br><span class="whyjimboree-title">Parents choise us</span><br>
-					<p class="whyjimboree-subtitle">Why jimboRee?</p>
+					<p class="whyjimboree-subtitle">Why JimboRee?</p>
 				</div>
 				<div class="col-lg-8">
 					<div class="row">
