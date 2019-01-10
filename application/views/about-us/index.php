@@ -228,7 +228,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6">
-				<img src="<?php echo base_url('assets/img/about-us/school/1.png'); ?>" alt="">
+				<img src="<?php echo base_url('assets/img/about-us/school/1.PNG'); ?>" alt="">
 			</div>
 		</div>
 	</section>
