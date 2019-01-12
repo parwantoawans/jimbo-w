@@ -9,7 +9,8 @@
 		</div>
 	</section>
 	<body>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6398691574464!2d101.41372441410526!3d0.5419040637909304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab9721474cdd%3A0xe0e1f307148bd748!2sJimboRee+Kinderland!5e0!3m2!1sid!2sid!4v1547022279500" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6398691574464!2d101.41372441410526!3d0.5419040637909304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ab9721474cdd%3A0xe0e1f307148bd748!2sJimboRee+Kinderland!5e0!3m2!1sid!2sid!4v1547022279500" position=" absolute" width="1433" height="543" frameborder="1" style="border:1" allowfullscreen></iframe>
 	</body>
 	
 	
