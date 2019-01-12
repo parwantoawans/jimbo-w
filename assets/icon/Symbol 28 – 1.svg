@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 63.953">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_28_1" data-name="Symbol 28 – 1" transform="translate(-8654 -3242)">
+    <g id="Rectangle_80" data-name="Rectangle 80" class="cls-1" transform="translate(8654 3242)">
+      <rect class="cls-2" width="35" height="53" rx="17.5"/>
+      <rect class="cls-3" x="1.5" y="1.5" width="32" height="50" rx="16"/>
+    </g>
+    <path id="Path_108" data-name="Path 108" class="cls-1" d="M8666.858,3293.866v11.818h11.471" transform="translate(0 -1.231)"/>
+    <path id="Path_109" data-name="Path 109" class="cls-1" d="M8666.858,3293.866v11.818" transform="translate(10 -1.231)"/>
+    <path id="Path_110" data-name="Path 110" class="cls-1" d="M8654,3259.626h10.755" transform="translate(1)"/>
+    <path id="Path_114" data-name="Path 114" class="cls-1" d="M8654,3259.626h10.755" transform="translate(23)"/>
+    <path id="Path_111" data-name="Path 111" class="cls-1" d="M8654,3259.626h10.755" transform="translate(1 6)"/>
+    <path id="Path_115" data-name="Path 115" class="cls-1" d="M8654,3259.626h10.755" transform="translate(23 6)"/>
+    <path id="Path_112" data-name="Path 112" class="cls-1" d="M8654,3259.626h10.755" transform="translate(1 12)"/>
+    <path id="Path_116" data-name="Path 116" class="cls-1" d="M8654,3259.626h10.755" transform="translate(23 12)"/>
+    <path id="Path_113" data-name="Path 113" class="cls-1" d="M8654,3259.626h10.755" transform="translate(1 18)"/>
+    <path id="Path_117" data-name="Path 117" class="cls-1" d="M8654,3259.626h10.755" transform="translate(23 18)"/>
+    <path id="Path_118" data-name="Path 118" class="cls-1" d="M8671.5,3244.85v11.94"/>
+    <path id="Path_119" data-name="Path 119" class="cls-1" d="M8671.5,3244.85v30.51" transform="translate(0 17.99)"/>
+  </g>
+</svg>

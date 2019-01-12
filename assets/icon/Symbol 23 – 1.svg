@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.758 98.25">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-1 {
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_23_1" data-name="Symbol 23 – 1" transform="translate(-8092.38 -3319.085)">
+    <path id="Path_63" data-name="Path 63" class="cls-1" d="M8094.88,3378l26.71,8.62,26.971-8.62v36.366l-26.971,10.768-26.71-10.768Z" transform="translate(-1 -9.415)"/>
+    <path id="Path_64" data-name="Path 64" class="cls-1" d="M8125.844,3397.793l6.506-5.473v14.329" transform="translate(2.2 -7.935)"/>
+    <path id="Path_73" data-name="Path 73" class="cls-1" d="M8125.844,3395.919l4.278-3.6v9.423" transform="translate(-28.8 -70.012)"/>
+    <g id="Ellipse_13" data-name="Ellipse 13" class="cls-2" transform="translate(8132.629 3393.962)">
+      <circle class="cls-3" cx="3.862" cy="3.862" r="3.862"/>
+      <circle class="cls-4" cx="3.862" cy="3.862" r="3.362"/>
+    </g>
+    <g id="Ellipse_14" data-name="Ellipse 14" class="cls-2" transform="translate(8100.06 3328.606)">
+      <ellipse class="cls-3" cx="2.54" cy="2.54" rx="2.54" ry="2.54"/>
+      <ellipse class="cls-4" cx="2.54" cy="2.54" rx="2.04" ry="2.04"/>
+    </g>
+    <g id="Ellipse_16" data-name="Ellipse 16" class="cls-2" transform="translate(8140.06 3342.606)">
+      <ellipse class="cls-3" cx="2.54" cy="2.54" rx="2.54" ry="2.54"/>
+      <ellipse class="cls-4" cx="2.54" cy="2.54" rx="2.04" ry="2.04"/>
+    </g>
+    <g id="Ellipse_17" data-name="Ellipse 17" class="cls-2" transform="translate(8148.06 3341.606)">
+      <ellipse class="cls-3" cx="2.54" cy="2.54" rx="2.54" ry="2.54"/>
+      <ellipse class="cls-4" cx="2.54" cy="2.54" rx="2.04" ry="2.04"/>
+    </g>
+    <path id="Path_65" data-name="Path 65" class="cls-1" d="M8119.207,3423.814v-33.046" transform="translate(1.514 -8.095)"/>
+    <g id="Rectangle_78" data-name="Rectangle 78" class="cls-1" transform="translate(8104 3324)">
+      <rect class="cls-3" width="34" height="45" rx="17"/>
+      <rect class="cls-4" x="1.5" y="1.5" width="31" height="42" rx="15.5"/>
+    </g>
+    <g id="Rectangle_79" data-name="Rectangle 79" class="cls-1" transform="translate(8114 3350)">
+      <rect class="cls-3" width="14" height="19" rx="7"/>
+      <rect class="cls-4" x="1.5" y="1.5" width="11" height="16" rx="5.5"/>
+    </g>
+    <path id="Path_66" data-name="Path 66" class="cls-1" d="M8110.732,3342h6.512" transform="translate(0 2)"/>
+    <path id="Path_67" data-name="Path 67" class="cls-1" d="M8110.732,3342h6.512" transform="translate(14 2)"/>
+    <path id="Path_68" data-name="Path 68" class="cls-1" d="M8110.732,3330.159s3.556,12.021,25.6,7.6"/>
+    <path id="Path_69" data-name="Path 69" class="cls-1" d="M8109.25,3362.479c-3.434.985-10.155-1.88-15.645,5.06"/>
+    <path id="Path_70" data-name="Path 70" class="cls-1" d="M8093.605,3362.479c3.433.985,10.152-1.88,15.64,5.06" transform="translate(38.645)"/>
+    <path id="Path_71" data-name="Path 71" class="cls-1" d="M8122.494,3372.93l22.983-6.91" transform="translate(0 -1)"/>
+    <path id="Path_72" data-name="Path 72" class="cls-1" d="M8097.139,3365.109l21.133,6.7"/>
+    <path id="Path_75" data-name="Path 75" class="cls-1" d="M8147.06,3347.84v-9.1l9.223-2.473" transform="translate(-5 -2)"/>
+    <path id="Path_76" data-name="Path 76" class="cls-1" d="M8147.06,3336.748v11.092" transform="translate(3 -3)"/>
+  </g>
+</svg>

@@ -274,9 +274,9 @@
 					</div><br>
 					<p class="teacher-name">Ingra North<br><span class="teacher-job">English Language</span></p>
 					<div class="icon">
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -284,9 +284,9 @@
 					</div><br>
 					<p class="teacher-name">Marlyn Adams<br><span class="teacher-job">Mathematics</span></p>
 					<div class="icon">
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -294,9 +294,9 @@
 					</div><br>
 					<p class="teacher-name">Linda Guzman<br><span class="teacher-job">Foreign Languages</span></p>
 					<div class="icon">
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-3">
@@ -304,9 +304,9 @@
 					</div><br>
 					<p class="teacher-name">Janet Moris<br><span class="teacher-job">Art & Music</span></p>
 					<div class="icon">
-						<a href=""><i class="fa fa-facebook"></i></a>
-						<a href=""><i class="fa fa-twitter"></i></a>
-						<a href=""><i class="fa fa-instagram"></i></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
+						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
 					</div>
 				</div>
 			</div>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 55">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_3_1" data-name="Symbol 3 – 1" transform="translate(-1036 -2120)">
+    <g id="Rectangle_9" data-name="Rectangle 9" class="cls-1" transform="translate(1036 2132)">
+      <rect class="cls-2" width="64" height="43" rx="7"/>
+      <rect class="cls-3" x="1.5" y="1.5" width="61" height="40" rx="5.5"/>
+    </g>
+    <g id="Rectangle_10" data-name="Rectangle 10" class="cls-1" transform="translate(1054 2120)">
+      <rect class="cls-2" width="28" height="15" rx="6"/>
+      <rect class="cls-3" x="1.5" y="1.5" width="25" height="12" rx="4.5"/>
+    </g>
+    <path id="Path_12" data-name="Path 12" class="cls-1" d="M1045.555,2139.5l31.438,14.432,28.829-14.432" transform="translate(-8 9)"/>
+    <g id="Ellipse_7" data-name="Ellipse 7" class="cls-1" transform="translate(1064 2155)">
+      <circle class="cls-2" cx="4.5" cy="4.5" r="4.5"/>
+      <circle class="cls-3" cx="4.5" cy="4.5" r="3"/>
+    </g>
+  </g>
+</svg>

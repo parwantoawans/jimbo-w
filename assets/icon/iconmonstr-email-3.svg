@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="iconmonstr-email-3" class="cls-1" d="M10,11.094.013,3H19.987L10,11.094Zm0,2.145L0,5.135V18H20V5.135Z" transform="translate(0 -3)"/>
+</svg>

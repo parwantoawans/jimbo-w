@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_22_1" data-name="Symbol 22 – 1" transform="translate(-8065 -3349)">
+    <g id="Ellipse_12" data-name="Ellipse 12" class="cls-1" transform="translate(8065 3349)">
+      <circle class="cls-2" cx="36" cy="36" r="36"/>
+      <circle class="cls-3" cx="36" cy="36" r="34.5"/>
+    </g>
+    <path id="Path_52" data-name="Path 52" class="cls-1" d="M8085.951,3381.568l15.129-11.2,15.484,11.2-6.062,18.016h-18.559Z"/>
+    <path id="Path_53" data-name="Path 53" class="cls-1" d="M8101,3370.368v-11.376l-12.009-5.776"/>
+    <path id="Path_54" data-name="Path 54" class="cls-1" d="M8100.961,3359.08l12.954-5.672"/>
+    <path id="Path_55" data-name="Path 55" class="cls-1" d="M8075.035,3362.411l.96,14.548-9.049,10.672"/>
+    <path id="Path_56" data-name="Path 56" class="cls-1" d="M8076,3377.263l10.329,4.5"/>
+    <path id="Path_57" data-name="Path 57" class="cls-1" d="M8116.564,3381.759l9.458-4.768"/>
+    <path id="Path_58" data-name="Path 58" class="cls-1" d="M8127.142,3362.768l-1.156,14.176,9.014,10.544"/>
+    <path id="Path_59" data-name="Path 59" class="cls-1" d="M8110.146,3399.583l6.258,7.024,14.4-3.424"/>
+    <path id="Path_60" data-name="Path 60" class="cls-1" d="M8116.564,3406.608l-7.591,12.272"/>
+    <path id="Path_61" data-name="Path 61" class="cls-1" d="M8091.533,3399.583l-5.724,6.64-14.329-3.023"/>
+    <path id="Path_62" data-name="Path 62" class="cls-1" d="M8086.324,3406.223l8.053,13.184"/>
+  </g>
+</svg>

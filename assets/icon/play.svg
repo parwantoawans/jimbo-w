@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 228 228">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+        stroke-width: 10px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        filter: url(#Ellipse_8);
+      }
+
+      .cls-6 {
+        filter: url(#Path_13);
+      }
+    </style>
+    <filter id="Path_13" x="77.261" y="63.429" width="94.855" height="100.649" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_8" x="0" y="0" width="228" height="228" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Symbol_9_1" data-name="Symbol 9 – 1" transform="translate(-330 -4924)">
+    <g class="cls-6" transform="matrix(1, 0, 0, 1, 330, 4924)">
+      <path id="Path_13-2" data-name="Path 13" class="cls-1" d="M2460.334,4907.753l76.855,39.229-76.855,43.42Z" transform="translate(-2374.07 -4838.32)"/>
+    </g>
+    <g class="cls-5" transform="matrix(1, 0, 0, 1, 330, 4924)">
+      <g id="Ellipse_8-2" data-name="Ellipse 8" class="cls-2" transform="translate(9 6)">
+        <circle class="cls-3" cx="105" cy="105" r="105"/>
+        <circle class="cls-4" cx="105" cy="105" r="100"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 83.237 60.192">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_5_1" data-name="Symbol 5 – 1" transform="translate(-737.028 -2116)">
+    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-1" transform="translate(764 2116)">
+      <circle class="cls-2" cx="14" cy="14" r="14"/>
+      <circle class="cls-3" cx="14" cy="14" r="12.5"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" class="cls-1" transform="translate(738.299 2124.837)">
+      <circle class="cls-2" cx="11.892" cy="11.892" r="11.892"/>
+      <circle class="cls-3" cx="11.892" cy="11.892" r="10.392"/>
+    </g>
+    <g id="Ellipse_6" data-name="Ellipse 6" class="cls-1" transform="translate(794.299 2124.837)">
+      <circle class="cls-2" cx="11.892" cy="11.892" r="11.892"/>
+      <circle class="cls-3" cx="11.892" cy="11.892" r="10.392"/>
+    </g>
+    <path id="Path_6" data-name="Path 6" class="cls-1" d="M654.576,2131.479s3.271,2.64,10.659,2.479,10.446-2.479,10.446-2.479l3.865,28-28.07.2Z" transform="translate(113 15)"/>
+    <path id="Path_8" data-name="Path 8" class="cls-1" d="M654.109,2131.479s2.779,2.242,9.054,2.106,8.873-2.106,8.873-2.106l3.283,23.782-23.843.171Z" transform="translate(87.227 19.247)"/>
+    <path id="Path_10" data-name="Path 10" class="cls-1" d="M654.109,2131.479s2.779,2.242,9.054,2.106,8.873-2.106,8.873-2.106l3.283,23.782-23.843.171Z" transform="translate(143.227 19.247)"/>
+    <path id="Path_7" data-name="Path 7" class="cls-1" d="M661.922,2133.84l-3.211,17.639h11.166l-3.867-17.639" transform="translate(114.336 15)"/>
+    <path id="Path_9" data-name="Path 9" class="cls-1" d="M661.438,2133.84l-2.727,14.982H668.2l-3.285-14.982" transform="translate(87.273 18.891)"/>
+    <path id="Path_11" data-name="Path 11" class="cls-1" d="M661.438,2133.84l-2.727,14.982H668.2l-3.285-14.982" transform="translate(143.273 18.891)"/>
+  </g>
+</svg>

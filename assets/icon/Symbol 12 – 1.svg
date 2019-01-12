@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.013 71.641">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Symbol_12_1" data-name="Symbol 12 – 1" transform="translate(-6077.442 -2191.474)">
+    <g id="Ellipse_9" data-name="Ellipse 9" class="cls-1" transform="translate(6078 2192.438)">
+      <circle class="cls-2" cx="24.981" cy="24.981" r="24.981"/>
+      <circle class="cls-3" cx="24.981" cy="24.981" r="23.481"/>
+    </g>
+    <path id="Path_26" data-name="Path 26" class="cls-1" d="M6637.494,2108.93l17.743,17.458" transform="translate(-557.051 104.991)"/>
+    <path id="Path_27" data-name="Path 27" class="cls-1" d="M6660.5,2130.51l5.11,5.682" transform="translate(-557.519 104.552)"/>
+    <path id="Path_28" data-name="Path 28" class="cls-1" d="M6644.85,2094.909l30.195,30.664" transform="translate(-557.201 105.276)"/>
+    <path id="Path_29" data-name="Path 29" class="cls-1" d="M6683.827,2115.609l-17.111-17.379" transform="translate(-557.646 105.209)"/>
+    <path id="Path_30" data-name="Path 30" class="cls-1" d="M6661.613,2093.693l-4.941-5.6" transform="translate(-557.441 105.415)"/>
+    <path id="Path_31" data-name="Path 31" class="cls-1" d="M6673.2,2092.388s-11.015-1.509-22.423,9.032-8.6,26.117-8.6,26.117" transform="translate(-557.14 105.329)"/>
+    <path id="Path_32" data-name="Path 32" class="cls-1" d="M6679.962,2099.71s3.571,11.071-8.229,22.492-23.751,9.737-23.751,9.737" transform="translate(-557.264 105.179)"/>
+    <path id="Path_33" data-name="Path 33" class="cls-1" d="M6684.972,2087l-3.457,4.124s15.326,12.617,6.857,32.6-28,18.573-37.161,16.5-11.8-8.346-11.8-8.346l-3.9,3.918" transform="translate(-557.01 105.438)"/>
+    <path id="Path_34" data-name="Path 34" class="cls-1" d="M6661.716,2142.486v9.584" transform="translate(-557.544 104.308)"/>
+    <path id="Path_35" data-name="Path 35" class="cls-1" d="M6661.421,2147.378s-5.53.346-9.448,3.3-4.745,5.093-4.745,5.093a115.211,115.211,0,0,0,14.193,1.623c5.885.135,14.27-1.623,14.27-1.623a30.474,30.474,0,0,0-5.647-5.093A17.844,17.844,0,0,0,6661.421,2147.378Z" transform="translate(-557.249 104.208)"/>
+  </g>
+</svg>

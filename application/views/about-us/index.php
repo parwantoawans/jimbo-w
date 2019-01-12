@@ -106,7 +106,7 @@
 					<p class="missionvission-title">Our Vission</p>
 					<p class="missionvission-subtitle">Primary education is for everyone.</p>
 					<p class="missionvission-caption">
-						To be leading international standard educational facility providing high quality tutoring to young students to excel throughout their lives in rapidly changing world.<br>
+						To be leading international standard educational facility providing high quality tutoring to young students to excel throughout their lives in rapidly changing world.<br><br>
 						(Menjadi panutan dalam pendidikan bersekala internasional yang memberikan fasilitas pengajaran berkualitas kepada pelajar muda sehingga mereka dapat memberi pengaruh yangmerubah dunia ).
 					</p>
 				</div>

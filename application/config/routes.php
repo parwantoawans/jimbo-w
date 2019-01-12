@@ -57,3 +57,4 @@ $route['academic'] = 'academic';
 $route['about-us'] = 'aboutus';
 $route['contact-us'] = 'contactus';
 $route['students'] = 'students';
+$route['parents'] = 'parents';
