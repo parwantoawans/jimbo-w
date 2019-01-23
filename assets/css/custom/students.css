@@ -60,6 +60,14 @@
     text-align: center;
     line-height: 60px;
 }
+}
+.Student-Links-title{
+    font-size: 50px;
+    font-weight: 300;
+    color: #4b4b4b;
+    text-align: center;
+    line-height: 60px;
+}
 .Student-Links-section .categorie-item .ci-thumb {
     height: 426px;
 }

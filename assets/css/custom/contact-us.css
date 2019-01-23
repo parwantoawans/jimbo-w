@@ -13,8 +13,6 @@
     color: #f8de10;
 }
 /* MENU END */
-
-
 /* BANNER */
 .hero-section{
     height: 434px;
@@ -41,22 +39,44 @@
 }
 /* BANNER END */
 
+/* peta */
 
 
-/* contact info */
-.Contact-Info-section{
-   padding: 100px 0;
+
+/* peta end */
+font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+
+
+/* contactinfo */
+
+.contactinfo{
+    padding: 100px;
 }
-.contact-info-title{
+.contactinfo-title{
     font-size: 50px;
     font-weight: 300;
-    color: #4b4b4b;
-    text-align: left;
+    font-style: normal;
+    font-stretch: normal;
     line-height: 60px;
+    letter-spacing: normal;
+    text-align: Center;
+    color: #4b4b4b;
 }
-.contact-info-section
-.categorie-item .ci-thumb {
-    height: 426px;
+.contactinfo-caption{
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
 }
-
+/* contactinfo END */
 
