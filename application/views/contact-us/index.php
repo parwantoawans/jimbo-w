@@ -71,11 +71,12 @@
 					</div>
 
 					<div class="col-lg-2">
-					<span class="icon"><i class="fa fa-book"></i></span>
+					
+					<span class="icon"><i class="fa fa-clock-o"></i></span>
 					<p class="contactinfo-subtitle">Opening Hours<br></p>
 					</div>
 					<div class="col-lg-10">
-					<p class="contactinfo-caption">Monday - Friday 08.00 AM - 05.00 PM</p>
+					<p class="contactinfo-caption">Monday - Friday</p>
 					<p class="contactinfo-caption2">08.00 AM - 05.00 PM</p>
 					</div>
 					</div>
@@ -105,6 +106,9 @@
 					</div>
 					<button type="submit" class="btn btn-primary">Send Message</button>
 					</form>
+					<head>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+</head>
 					</div>
 				</div>
 			</div>
