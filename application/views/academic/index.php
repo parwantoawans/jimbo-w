@@ -131,7 +131,7 @@
 				<div class="col-lg-4">
 					<div class="row">
 						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
+							<div class="icon"><i class="fa fa-bell-o"></i></div>	
 						</div>
 						<div class="col-lg-10">
 							<p class="search-caption">Special Olympics</p>

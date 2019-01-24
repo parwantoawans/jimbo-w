@@ -50,7 +50,7 @@
 							<p class="search-caption2">People Working</p>
 						</div>
 						<div class="col-lg-3">
-							<div class="icon"><i class="fa fa-suitcase"></i></div>
+							<div class="icon"><i class="fa fa-briefcase"></i></div>
 							<p class="search-caption">1231</p>
 							<p class="search-caption2">Student Enrolled</p>
 						</div>
@@ -72,14 +72,9 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<p class="missionvission-title">Our Mission</p>
-					<p class="missionvission-subtitle">The primary school is the most important begining point.</p>
+					<p class="missionvission-subtitle">The primary school is the most important <br>begining point.</p>
 
-					<p class="missionvission-caption">
-						JimboRee Education exists to provide international standard education to our young students<br>
-						through a commitment to English language Fluency, Technological expertise and inquiry<br>
-						based teaching learning, we deliver an internationally recognized program that integrates<br>
-						global concepts with respect for our Indonesian national culture and identity
-					</p>
+					<p class="missionvission-caption">JimboRee Education exists to provide international standard education to our young students <br>through a commitment to English language Fluency, Technological expertise and inquiry<br> based teaching &amp; learning, we deliver an internationally recognized program that integrates <br>global concepts with respect for our Indonesian national culture and identity</p>
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
@@ -87,9 +82,7 @@
 					</div>
 				</div>
 			</div>
-			<p class="missionvission-caption">
-				(JimboRee education hadir dalam rangka memberikan pendidikan bersekala Internasional kepada pembelajar Muda ,melaluli komitmen kepada penggunaan Bahasa inggris secara lancar ,keterampilan teknologi ,pembelajaran ,berbasis tanya jawab, kami menyebarkan program yang telah dikenal secara internasional yang menyatukan konsep global yang menghormati budaya serta identitas Indonesia)
-			</p>
+			<p class="missionvission-caption">(JimboRee education hadir dalam rangka memberikan pendidikan bersekala internasional kepada para pelajar muda, melalui komitmen terhadap penggunaan Bahasa inggris secara lancar, keterampilan teknologi, pembelajaran, berbasis tanya jawab, kami menyebarkan program yang telah dikenal secara internasional yang menyatukan konsep global yang menghormati budaya serta identitas Indonesia).</p>
 		</div>
 	</section>
 	<!-- missionvission end -->
@@ -105,10 +98,7 @@
 				<div class="col-lg-6">
 					<p class="missionvission-title">Our Vission</p>
 					<p class="missionvission-subtitle">Primary education is for everyone.</p>
-					<p class="missionvission-caption">
-						To be leading international standard educational facility providing high quality tutoring to young students to excel throughout their lives in rapidly changing world.<br><br>
-						(Menjadi panutan dalam pendidikan bersekala internasional yang memberikan fasilitas pengajaran berkualitas kepada pelajar muda sehingga mereka dapat memberi pengaruh yangmerubah dunia ).
-					</p>
+					<p class="missionvission-caption">To be leading international standard educational facility providing high quality tutoring to <br>young students to excel throughout their lives in rapidly changing world.<br><br> (Menjadi panutan dalam pendidikan bersekala internasional yang memberikan fasilitas<br> pengajaran berkualitas kepada pelajar muda sehingga mereka dapat memberi pengaruh yangmerubah dunia ).</p>
 				</div>
 			</div>
 		</div>
@@ -203,13 +193,16 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/9.jpg"></div>
+				<video width="700" height="570" controls>
+  				<source src="1.mp4" type="vidio/mp4">
+						</video>
 				</div>
 			</div>
 			<div class="col-lg-6">
 				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/10.jpg"></div>
-				</div>
+				<video width="655" height="570" controls>
+  				<source src="2.mp4" type="vidio/mp4">
+						</video>
 			</div>
 		</div>
 	</section>
@@ -217,7 +210,7 @@
 
 	<!-- schoolimprovement -->
 	<section class="schoolimprovement">
-		<p class="schoolimprovement-title">School and Improvement</p><br>
+		<p class="schoolimprovement-title">School & Improvement</p><br>
 		<div class="row">
 			<div class="col-lg-6">
 				<p class="schoolimprovement-caption">

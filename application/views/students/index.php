@@ -33,9 +33,7 @@
 						<div class="col-lg-2">
 							<div class="icon"><i class="fa fa-youtube"></i></div>	
 						</div>
-					<p class="students-links-studentstitle"><head>
-  <link rel="stylesheet" type="text/css" href="theme.css">
-</head>JimboRee School</p>
+					<p class="students-links-studentstitle">JimboRee School</p>
 					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
 					<p class="students-links-caption2"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
 					<div>
@@ -140,7 +138,7 @@
 				<div class="col-lg-4">
 					<div class="row">
 						<div class="col-lg-2">
-							<div class="icon"><i class="fal fa-futbol"></i></div>	
+							<div class="icon"><i class="fa fa-futbol-o"></i></div>	
 						</div>
 						<div class="col-lg-10">
 							<p class="search-caption">Football Club</p>
@@ -164,7 +162,7 @@
 				<div class="col-lg-4">
 					<div class="row">
 						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
+							<div class="icon"><i class="fa fa-pencil-square-o"></i></div>	
 						</div>
 						<div class="col-lg-10">
 							<p class="search-caption">Homework Club</p>
