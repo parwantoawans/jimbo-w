@@ -25,10 +25,10 @@
     /* margin-bottom: 105px; */
 }
 .banner-title{
-    font-size: 90px;
+    font-size: 50px;
     color: #ffffff;
     text-align: left;
-    line-height: 90px;
+    line-height: 50px;
 }
 .banner-subtitle{
     font-size: 20px;
@@ -40,10 +40,6 @@
 /* BANNER END */
 
 /* peta */
-
-
-
-/* peta end */
 font-size: 50px;
     font-weight: 300;
     font-style: normal;
@@ -51,6 +47,10 @@ font-size: 50px;
     line-height: 1.2;
     letter-spacing: normal;
     text-align: center;
+
+
+/* peta end */
+
 
 
 /* contactinfo */
@@ -68,12 +68,37 @@ font-size: 50px;
     text-align: Center;
     color: #4b4b4b;
 }
+.contactinfo-section .icon{
+    font-size: 40px;
+    text-align: center
+}
+.contactinfo-subtitle{
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: left;
+	color: #4b4b4b;
+  }
+
 .contactinfo-caption{
     font-size: 15px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
     line-height: 60px;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+}
+.contactinfo-caption2{
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
     letter-spacing: normal;
     text-align: left;
     color: #a3a3a3;

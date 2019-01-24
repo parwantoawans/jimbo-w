@@ -1,6 +1,6 @@
 <?php $this->load->view('layouts/header.php') ?>
 	<!-- Hero section -->
-	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/banner/1.jpg">
+	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/banner/1.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
 				<p class="banner-title">Contact us &<br><span>Staff Only</span><br>School</p><br>
@@ -33,72 +33,84 @@
 	<!-- peta section end -->
 
 	<!-- contactinfo -->	
-		
-		<div class="col-lg-12">
-			<div class="widget-item">
-				<p class="contact-info-title">Contact Info</p>
+	<section class="contactinfo">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<p class="contactinfo-title">Contact Info</p>
 					<div class="row">
-						<div class="col-lg-12">
-								<span class="icon"><i class="fa fa-map-marker"></i></span>
-									<p class="Address-opacity-title">Address<br></p>
-							        <p class="Address-opacity-caption">Jalan Pemuda, Pemuda City Walk, Block B (Education), No. 11, 12, 15, Tampan, Payung Sekaki, Tampan, Payung Sekaki, Pekanbaru City, Riau 28292</p>
-								</div>	
-						     </div>
-						</div>
-					
-						
-							<span class="icon"><i class="fa fa-phone"></i></span>	
-								<p class="Phone-title">Phone<br></p>
-							 	<p class="Phone-caption">0821-6976-4578</p>
-							</div>	
-						 </div>
+					<div class="col-lg-2">
 					</div>
-					
-						<span class="icon"><i class="fa fa-envelope-o"></i></span>
-							<p class="Email-title">Email<br></p>	
-							<p class="Email-caption">jimboree_@gmail.com</p>
-						</div>
+					<span class="icon"><i class="fa fa-map-marker"></i></span>
+					<p class="contactinfo-subtitle">Address</p>
+                    </div>
+					<div class="col-lg-10">
+					<p class="contactinfo-caption">Jalan Pemuda, Pemuda City Walk, Block B (Education), No. 11, 12, 15, Tampan, Payung Sekaki, Tampan, Payung Sekaki, Pekanbaru City, Riau 28292</p>
+					</div>	
 					</div>
-                                    
-					
-						<span class="icon"><i class="fa fa-book"></i></span>
-						<p class="opening-title">Opening Hours<br></p>
-						<p class="opening-caption">Monday - Friday 08.00 AM - 05.00 PM</p>
 					</div>
-				</div>
-					
-						<div class="col-lg-6">
-						<div class="categorie-item">
-							<p class="we-title">We would Love To Hear From You!<br></p>
-							<p class="we-caption"> If you have any questions,please call us or fill in the form below and we will get back to you very soon</p>
-						</div>
+
+					<div class="col-lg-2">
+					<span class="icon"><i class="fa fa-phone"></i></span>	
+					<p class="contactinfo-subtitle">Phone</p>
 					</div>
-							<form>
-							<div class="form-group">
-   							 <label for="emailAdress"></label>
-   								 <input type="text" class="form-control" id="emailAdress" placeholder="Your Name*">
- 								 </div>
- 							 <div class="form-group">
- 							   <label for="exampleInputPassword1"></label>
- 							   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="E-mail*">
- 								 </div>
-								  <div class="form-group">
- 								   <label for="exampleInputPassword1"></label>
- 								   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Subject">
- 									 </div>
- 									 <div class="form-group">
- 								   <label for="exampleInputPassword1"></label>
- 									   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Message">
- 											 </div>
-  
-  										<button type="submit" class="btn btn-primary">Send Message</button>
-													</form>
-							
+					<div class="col-lg-10">
+					<p class="contactinfo-caption">0821-6976-4578</p>
+					</div>	
+					</div>
+					</div>
+
+					<div class="col-lg-2">
+					<span class="icon"><i class="fa fa-envelope-o"></i></span>
+					<p class="contactinfo-subtitle">Email</p>
+					</div>
+					<div class="col-lg-10">	
+					<p class="contactinfo-caption">jimboree_@gmail.com</p>
+					</div>
+					</div>
+					</div>
+
+					<div class="col-lg-2">
+					<span class="icon"><i class="fa fa-book"></i></span>
+					<p class="contactinfo-subtitle">Opening Hours<br></p>
+					</div>
+					<div class="col-lg-10">
+					<p class="contactinfo-caption">Monday - Friday 08.00 AM - 05.00 PM</p>
+					<p class="contactinfo-caption2">08.00 AM - 05.00 PM</p>
+					</div>
+					</div>
+					</div>
+					<div class="row">
+					<div class="col-lg-6">
+					<p class="contactinfo-title">We would Love To Hear From You!</p>
+					<p class="contactinfo-subtitle">If you have any questions,please call us or fill in the form below and we will get back to you very soon</p>
+					</div>
+					</div>
+					<form>
+					<div class="form-group">
+   					<label for="emailAdress"></label>
+   					<input type="text" class="form-control" id="emailAdress" placeholder="Your Name*">
+ 					</div>
+ 					<div class="form-group">
+ 					<label for="exampleInputPassword1"></label>
+ 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="E-mail*">
+ 				 	</div>
+					<div class="form-group">
+ 					<label for="exampleInputPassword1"></label>
+ 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Subject*">
+ 					</div>
+ 					<div class="form-group">
+ 					<label for="exampleInputPassword1"></label>
+ 					<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Message*">
+					</div>
+					<button type="submit" class="btn btn-primary">Send Message</button>
+					</form>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- contactinfo end -->
 	</section>
-	</section>
+<!-- contactinfo end -->
+	
+	
 <?php $this->load->view('layouts/footer.php') ?>

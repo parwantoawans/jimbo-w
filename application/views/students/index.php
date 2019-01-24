@@ -20,54 +20,66 @@
 	<!-- Hero section end -->
 	
 	<!-- Students Links section -->
-	<section class="studentslinks-section spad">
-		<div class="container">
-			<div class="studentsLinks-section-title">Student Links</p><br>
-            </div>
-            <div class="row">
-				<!-- categorie -->
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/students/4.png"></div>
-						<div class="ci-text">
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id. </p>
+
+	<section class="students-links">
+	<div class="container">
+		<p class="students-links-title">Students Links</p><br><br>
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="students">
+					<br>
+					<img src="<?php echo base_url('assets/img/students/4.png'); ?>" alt="">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="icon"><i class="fab fa-youtube-square"></i></div>	
 						</div>
-					</div>
-                </div>
-                <!-- categorie -->
-				
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/2.jpg"></div>
-						<div class="ci-text">
-						<a href="https://www.facebook.com/Eka.wahyuni.130998" target="tampil">jimboree School</a>
-                            
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit.</p>
-						
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/2.jpg"></div>
-						<div class="ci-text">
-							<h5>@jimboreeschool_ina</h5>
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit.</p>
-						
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/2.jpg"></div>
-						<div class="ci-text">
-							<h5>@jimboreeschool_ina</h5>
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit.</p>
-						</div>
+					<p class="students-links-studentstitle">JimboRee School</p>
+					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
+					<p class="students-links-caption2"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
+					<div>
 					</div>
 				</div>
+                <div class="col-lg-4">
+				<p class="students-links-recent-students"></p>
+				<div class="recent-news">
+					<img src="<?php echo base_url('assets/img/homepage/section2/2.jpg'); ?>" alt="">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="icon"><i class="fa fa-facebook"></i></div>	
+						</div>
+						<p class="students-links-studentstitle">JimboRee School</p>
+					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
+				</div><br>
+				<div class="recent-news">
+					<img src="<?php echo base_url('assets/img/homepage/section2/3.jpg'); ?>" alt="">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="icon"><i class="fa fa-twitter"></i></div>	
+						</div>
+						<p class="students-links-studentstitle">@jimboreeschool</p>
+					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
+				</div>
+				<div class="recent-news">
+					<img src="<?php echo base_url('assets/img/homepage/section2/3.jpg'); ?>" alt="">
+					<div class="row">
+						<div class="col-lg-2">
+							<div class="icon"><i class="fa fa-instagram"></i></div>	
+						</div>
+						<p class="students-links-studentstitle">@jimboreeschool_ina</p>
+					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
+				</div>
+
+				
 
 				</section>
 				<!-- Students Links end -->
 
 
 	<!-- Food Menu -->
+	<section class="Food-menu">
 		<section class="food-menu-section">
 		<div class="container">
-		<p class="food-menu-title"><h3>Food Menu</h3></p><br>
+		<p class="food-menu-title">Food Menu</p><br>
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="categorie-item">
@@ -118,15 +130,15 @@
 	<!-- Food menu end -->
 
 
-    <!-- Extra curicullar -->
+    <!-- Extra curricular -->
 	<section class="search-section">
-		<div class="Extra-Curricular-opacity">
+		<div class="Extra-curricular-opacity">
 			<p class="search-title">Extra Curricular</p><br><br>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="row">
 						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
+							<div class="icon"><i class="fal fa-futbol"></i></div>	
 						</div>
 						<div class="col-lg-10">
 							<p class="search-caption">Football Club</p>
@@ -205,22 +217,22 @@
 	<!-- Field Trip section -->
 	<section class="categories-section spad">
 		<div class="container">
-			<div class="section-title"><p><h3>Field Trip</h3></p>
+			<div class="fieldtrip-title"><p>Field Trip</p>
             	</div>
             		<div class="row">
-				<!-- categorie -->
-				<div class="col-lg-6">
+				
+				<div class="col-lg-7">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/1.png"></div>
 						<div class="ci-text">
-						<p class="categorie-title">December 9, 2018</p>
-						<span class="categorie-title-caption">Lorem Ipsum</span>
+						<p class="field-trip-date">Desember 9, 2018</p>
+						<span class="field-trip-title">Lorem Ipsum</span>
 							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
 						</div>
 					</div>
                 </div>
                 <!-- categorie -->
-				<div class="col-lg-6">
+				<div class="col-lg-5">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/2.jpg"></div>
 						<div class="ci-text">
