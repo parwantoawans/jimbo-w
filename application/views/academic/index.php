@@ -31,7 +31,7 @@
 							<p class="grammar-opacity-caption">We will turn your child into the real polyglot and grammar expert in different languages.</p>
 							<a href="" class="btn btn-info">Learn more</a>
 						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/2.jpg"></div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -41,7 +41,7 @@
 							<p class="art-opacity-caption">Creativity is a must-have element of any child’s upbringing. We offer miscellaneous courses.</p>
 							<a href="" class="btn btn-info">Learn more</a>
 						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/1.jpg"></div>
 					</div>
 				</div>
 			</div>
@@ -54,7 +54,7 @@
 							<p class="social-opacity-caption">We have special programs for the children who have no access to primary education.</p>
 							<a href="" class="btn btn-info">Learn more</a>
 						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/3.jpg"></div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -64,7 +64,7 @@
 							<p class="afterschool-opacity-caption">Our students have active outdoors life thanks to the developed physical education program.</p>
 							<a href="" class="btn btn-info">Learn more</a>
 						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/4.jpg"></div>
 					</div>
 				</div>
 			</div>

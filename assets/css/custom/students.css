@@ -136,17 +136,17 @@
     padding: 30px 30px;
 }
 .Autumn-opacity-title{
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 25px;
+    font-weight: 100;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     line-height: 40px;
 }
 .Autumn-opacity-caption{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     line-height: 26px;
 }
 .Autumn-opacity .btn-info{
@@ -154,6 +154,7 @@
     padding: 10px;
     border: 3px solid white;
     border-radius: 47px;
+    text-align: center;
     color: white !important;
     width: 150px
 }
@@ -261,7 +262,6 @@
 
 
 /* Extra curricular */
-
 .search-section{
     /* background-color: mix(#fa4a3b, #e52f65); */
     color: #ffffff;
@@ -323,7 +323,18 @@
 .field-trip{
     padding: 100px;
 }
+
 .fieldtrip-title{
+    font-size: 50px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 60px;
+    letter-spacing: normal;
+    text-align: Center;
+    color: #363434;
+}
+.field-trip-title{
     font-size: 50px;
     font-weight: 300;
     font-style: normal;
@@ -331,7 +342,7 @@
     line-height: 60px;
     letter-spacing: normal;
     text-align: Center;
-    color: #4b4b4b;
+    color: #363434;
 }
 .field-trip-date{
     font-style: normal;

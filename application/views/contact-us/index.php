@@ -37,11 +37,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
-				<p class="contactinfo-title">Contact Info</p>
+				<p class="contactinfo-title">
+					Contact Info</p>
 					<div class="row">
 					<div class="col-lg-2">
 					</div>
-					<span class="icon"><i class="fa fa-map-marker"></i></span>
+					<div class="icon">
+						<a href=""><img src="<?php echo base_url('assets/img/contact/info/iconmonstr-location-orange.svg'); ?>" width="30" height="30" alt=""></a>
+					</div>
 					<p class="contactinfo-subtitle">Address</p>
                     </div>
 					<div class="col-lg-10">
@@ -49,9 +52,13 @@
 					</div>	
 					</div>
 					</div>
-
+						
 					<div class="col-lg-2">
-					<span class="icon"><i class="fa fa-phone"></i></span>	
+					<div class="row">
+					<div class="icon">
+						<a href=""><img src="<?php echo base_url('assets/img/contact/info/iconmonstr-phone-orange.svg'); ?>" width="30" height="30" alt=""></a>
+					</div>
+					
 					<p class="contactinfo-subtitle">Phone</p>
 					</div>
 					<div class="col-lg-10">
@@ -61,7 +68,10 @@
 					</div>
 
 					<div class="col-lg-2">
-					<span class="icon"><i class="fa fa-envelope-o"></i></span>
+					<div class="row">
+					<div class="icon">
+						<a href=""><img src="<?php echo base_url('assets/img/contact/info/iconmonstr-email-orange.svg'); ?>" width="30" height="30" alt=""></a>
+					</div>
 					<p class="contactinfo-subtitle">Email</p>
 					</div>
 					<div class="col-lg-10">	
@@ -71,8 +81,11 @@
 					</div>
 
 					<div class="col-lg-2">
+					<div class="row">
+					<div class="icon">
+						<a href=""><img src="<?php echo base_url('assets/img/contact/info/Clock.svg'); ?>" width="30" height="30" alt=""></a>
+					</div>
 					
-					<span class="icon"><i class="fa fa-clock-o"></i></span>
 					<p class="contactinfo-subtitle">Opening Hours<br></p>
 					</div>
 					<div class="col-lg-10">
@@ -81,6 +94,7 @@
 					</div>
 					</div>
 					</div>
+
 					<div class="row">
 					<div class="col-lg-6">
 					<p class="contactinfo-title">We would Love To Hear From You!</p>

@@ -25,12 +25,13 @@
 	<div class="container">
 		<p class="students-links-title">Students Links</p><br><br>
 		<div class="row">
-			<div class="col-lg-8">
+			<div class="col-lg-7">
+				
 				<div class="students">
 					<br>
 					<img src="<?php echo base_url('assets/img/students/4.png'); ?>" alt="">
 					<div class="row">
-						<div class="col-lg-2">
+					<div class="ci-text">
 							<div class="icon"><i class="fa fa-youtube"></i></div>	
 						</div>
 					<p class="students-links-studentstitle">JimboRee School</p>
@@ -38,8 +39,8 @@
 					<p class="students-links-caption2"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
 					<div>
 					</div>
-				</div>
-                <div class="col-lg-4">
+				
+                <div class="col-lg-5">
 				<p class="students-links-recent-students"></p>
 				<div class="recent-news">
 					<img src="<?php echo base_url('assets/img/homepage/section2/2.jpg'); ?>" alt="">
@@ -68,11 +69,8 @@
 						<p class="students-links-studentstitle">@jimboreeschool_ina</p>
 					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
 				</div>
-
-				
-
 				</section>
-				<!-- Students Links end -->
+	<!-- Students Links end -->
 
 
 	<!-- Food Menu -->
@@ -132,7 +130,7 @@
 
     <!-- Extra curricular -->
 	<section class="search-section">
-		<div class="Extra-curricular-opacity">
+		<div class="Extra-Curricular-opacity">
 			<p class="search-title">Extra Curricular</p><br><br>
 			<div class="row">
 				<div class="col-lg-4">
@@ -217,17 +215,18 @@
 	<!-- Field Trip section -->
 	<section class="categories-section spad">
 		<div class="container">
-			<div class="fieldtrip-title"><p>Field Trip</p>
-            	</div>
+			<p class="fieldtrip-title"><center><p><h3>Field Trip</h3></center></p>
+			
             		<div class="row">
 				<!-- categorie -->
 				<div class="col-lg-7">
+				<div class="ci-text">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/1.png"></div>
-						<div class="ci-text">
+						
 						<p class="field-trip-date">Desember 9, 2018</p>
 						<span class="field-trip-title">Lorem Ipsum</span>
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
+							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. <br><br> pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
 						</div>
 					</div>
                 </div>
@@ -235,12 +234,11 @@
 				<div class="col-lg-5">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/2.jpg"></div>
-						<div class="ci-text">
+						
 							<p> Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
 						
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/3.jpg"></div>
-						<div class="ci-text">
 							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
 						</div>
 					</div>

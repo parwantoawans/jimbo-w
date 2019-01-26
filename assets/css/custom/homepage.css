@@ -34,7 +34,7 @@
     line-height: 90px;
 }
 .banner-title span {
-    font-weight: bold;
+    font-weight: normal;
 }
 .banner-section{
     background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
