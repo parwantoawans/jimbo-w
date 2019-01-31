@@ -221,7 +221,9 @@
     max-width: 50%;
 }
 .foto-section .col-lg-6 .categorie-item .ci-thumb{
-    height: 746px;
+    height: 100%;
+    width: 100%;
+    padding: 0;
 }
 .foto-section .col-lg-3, .foto-section .col-lg-6{
     padding: 0;
