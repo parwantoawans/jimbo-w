@@ -374,5 +374,9 @@
     color: #4b4b4b;
 }
 
+img, .embed-responsive {
+    margin-bottom: 30px;
+    }
+
 
 /* field trip end */

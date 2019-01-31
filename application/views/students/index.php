@@ -22,54 +22,87 @@
 	<!-- Students Links section -->
 
 	<section class="students-links">
-	<div class="container">
-		<p class="students-links-title">Students Links</p><br><br>
-		<div class="row">
-			<div class="col-lg-7">
-				
-				<div class="students">
-					<br>
-					<img src="<?php echo base_url('assets/img/students/4.png'); ?>" alt="">
-					<div class="row">
-					<div class="ci-text">
-							<div class="icon"><i class="fa fa-youtube"></i></div>	
-						</div>
-					<p class="students-links-studentstitle">JimboRee School</p>
-					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
-					<p class="students-links-caption2"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. In pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
-					<div>
+
+		<div class="container">
+
+			<p class="students-links-title">Students Links</p>
+
+			<div class="row">
+				<div class="col-sm-12">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/KpllAjxOIUU"></iframe>
 					</div>
-				
-                <div class="col-lg-5">
-				<p class="students-links-recent-students"></p>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/homepage/section2/2.jpg'); ?>" alt="">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-facebook-square"></i></div>	
-						</div>
-						<p class="students-links-studentstitle">JimboRee School</p>
-					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
-				</div><br>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/homepage/section2/3.jpg'); ?>" alt="">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-twitter-square"></i></div>	
-						</div>
-						<p class="students-links-studentstitle">@jimboreeschool</p>
-					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
 				</div>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/homepage/section2/3.jpg'); ?>" alt="">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-instagram"></i></div>	
-						</div>
-						<p class="students-links-studentstitle">@jimboreeschool_ina</p>
-					<p class="students-links-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit. </p>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<video width="100%" height="100%" controls>
+  						<source src="assets/videos/1.mp4" type="video/mp4">
+					</video>
 				</div>
-				</section>
+				<div class="col-sm-4">
+					<img src="<?php echo base_url(); ?>assets/img/homepage/gallery/7.jpg" class="img-responsive">
+				</div>
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+				<div class="col-sm-4">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/KpllAjxOIUU"></iframe>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+				<div class="col-sm-4">
+					<video width="100%" height="100%" controls>
+  						<source src="assets/videos/2.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/KpllAjxOIUU"></iframe>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+				<div class="col-sm-4">
+					<img src="//placehold.it/1170x658" class="img-responsive">
+				</div>
+				<div class="col-sm-4">
+					<img src="<?php echo base_url(); ?>assets/img/about-us/foto/1.jpg" class="img-responsive">
+				</div>
+			</div>
+			
+		</div>
+	</section>
 	<!-- Students Links end -->
 
 
