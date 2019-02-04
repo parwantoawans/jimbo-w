@@ -37,7 +37,7 @@
 								<div class="ci-text">
 									<h5>' . $a->articles_type .'</h5>
 									<p>' . $a->desc . '</p>
-									<a href="' . base_url('master-data/articles/articles-by-type/') . $a->id .'">Learn more</a>
+									<!--<a href="' . base_url('master-data/articles/articles-by-type/') . $a->id .'">Learn more</a>-->
 								</div>
 							</div>
 						</div>';
