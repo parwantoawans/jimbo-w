@@ -152,7 +152,8 @@ $model = array(
 	'ArticlesModel',
 	'AboutUsModel',
 	'ExperienceModel',
-	'NewsModel'
+	'NewsModel',
+	'SchoolImprovementModel'
 );
 		
 $autoload['model'] = $model;

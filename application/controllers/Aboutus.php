@@ -35,6 +35,10 @@ class Aboutus extends CI_Controller
 		$data['visi_image'] = $school[0]['visi_image'];
 
 		$data['news'] = $this->NewsModel->get();
+
+		$data['sImprovementDesc'] = str_replace(array('<p>', '</p>', '<br>'), array('', '', ''), $this->SchoolImprovementModel->get()[0]['desc']);
+		$data['sImprovementDesc2'] = str_replace(array('<p>', '</p>', '<br>'), array('', '', ''), $this->SchoolImprovementModel->get()[0]['desc2']);
+		$data['sImprovementImg'] = "http://localhost/jimboree-cms/" . explode("jimboree-cms/", $this->SchoolImprovementModel->get()[0]['image'])[1];
 		
 		$this->load->view('about-us/index', $data);
 	}

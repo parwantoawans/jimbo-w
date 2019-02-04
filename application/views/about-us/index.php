@@ -205,14 +205,14 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<p class="schoolimprovement-caption">
-					Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et. Qui ut meis nihil legere. Eu vix cibo tritani, dicant patrioque interesset te vim. Ne ludus vitae electram per, vim cu option veritus blandit. Ex delectus deseruisse nam, his ex erat debitis omittantur. Ne eros dissentiet qui.
+					<?php echo $sImprovementDesc; ?>
 				</p>
 				<p class="schoolimprovement-caption">
-					His partiendo deseruisse instructior et. Commune principes ullamcorper sea in, ea detracto consulatu comprehensam mei, ei pro diam legimus complectitur. Mel ne paulo commune molestie, sint iudico accusamus at pri, ferri detracto tincidunt nec ei. Dolorem offendit his in, eum putent insolens corrumpit id, erat facer elitr eum ad. Eum ex paulo doctus, vim in sonet libris.
+					<?php echo $sImprovementDesc2; ?>
 				</p>
 			</div>
 			<div class="col-lg-6">
-				<img src="<?php echo base_url('assets/img/about-us/school/1.PNG'); ?>" alt="">
+				<img src="<?php echo $sImprovementImg; ?>" alt="">
 			</div>
 		</div>
 	</section>
