@@ -14,12 +14,12 @@
 						<div class="widget-item">
 							<p class="footer-title">Navigation</p>
 							<ul>
-								<li><a href="">About Us</a></li>
-								<li><a href="">Programs</a></li>
-								<li><a href="">Teachers</a></li>
-								<li><a href="">Schedule</a></li>
-								<li><a href="">Gallery</a></li>
-								<li><a href="">Contact</a></li>
+								<li><a href="about-us">About Us</a></li>
+								<li><a href="#">Programs</a></li>
+								<li><a href="#">Teachers</a></li>
+								<li><a href="#">Schedule</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="contact-us">Contact</a></li>
 							</ul>
 						</div>
 					</div>
