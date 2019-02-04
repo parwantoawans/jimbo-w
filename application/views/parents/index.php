@@ -190,7 +190,7 @@
 					</div>
 				</div>
 				<div class="news">
-					<br>>
+					<br>
 					<p class="news-letter-date">Desember 9, 2018</p>
 					<p class="news-letter-newstitle">Methods of the recruitment</p>
 					<img src="<?php echo base_url('assets/img/parents/news-letter/1.png'); ?>" alt="">
