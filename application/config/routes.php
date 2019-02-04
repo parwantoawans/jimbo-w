@@ -56,5 +56,10 @@ $route['translate_uri_dashes'] = FALSE;
 $route['academic'] = 'academic';
 $route['about-us'] = 'aboutus';
 $route['contact-us'] = 'contactus';
+$route['contact-us/send-email']['post'] = 'contactus/sendEmail';
 $route['students'] = 'students';
 $route['parents'] = 'parents';
+
+$route['phpinfo'] = function(){
+	return phpinfo();
+};

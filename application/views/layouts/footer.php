@@ -7,7 +7,7 @@
 					<div class="col-lg-3">
 						<div class="widget-item" style="margin-top: -55px">
 							<p class="footer-title"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt=""></p>
-							<p class="footer-content"> Education is the most important thing that a parent may provide to his child. That is why choosing a perfect elementary school is so critical! </p>
+							<p class="footer-content"><?php echo $this->SchoolModel->get()[0]['motto']; ?></p>
 						</div>
 					</div>
 					<div class="col-lg-3">
@@ -33,7 +33,10 @@
 											<span class="icon"><i class="fa fa-map-marker"></i></span>
 										</div>
 										<div class="col-lg-10">
-											<p class="footer-content">Jalan Pemuda, Pemuda City Walk, Block B (Education), No. 11, 12, 15, Tampan, Payung Sekaki, Tampan, Payung Sekaki, Pekanbaru City, Riau 28292</p>
+											<!-- <p class="footer-content">Jalan Pemuda, Pemuda City Walk, Block B (Education), No. 11, 12, 15, Tampan, Payung Sekaki, Tampan, Payung Sekaki, Pekanbaru City, Riau 28292</p> -->
+											<p class="footer-content">
+												<?php echo $this->ContactsModel->get()[0]['alamat']; ?>
+											</p>
 										</div>
 									</div>
 								</li>
@@ -43,7 +46,8 @@
 											<span class="icon"><i class="fa fa-phone"></i></span>	
 										</div>
 										<div class="col-lg-10">
-											<p class="footer-contet">0821-6976-4578</p>
+											<!-- <p class="footer-contet">0821-6976-4578</p> -->
+											<p class="footer-content"><?php echo $this->ContactsModel->get()[0]['telephone']; ?></p>
 										</div>
 									</div>
 								</li>
@@ -53,7 +57,8 @@
 											<span class="icon"><i class="fa fa-envelope-o"></i></span>
 										</div>
 										<div class="col-lg-10">
-											<p class="footer-content">jimboree_@gmail.com</p>
+											<!-- <p class="footer-content">jimboree_@gmail.com</p> -->
+											<p class="footer-content"><?php echo $this->ContactsModel->get()[0]['email']; ?></p>
 										</div>
 									</div>
 								</li>
@@ -114,4 +119,7 @@
 	<script src="<?php echo base_url(); ?>assets/js/circle-progress.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
+	<script>
+		$('.textarea').wysihtml5({useLineBreaks: true});
+	</script>
 </html>

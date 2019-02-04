@@ -27,39 +27,22 @@
 				<p>We are JimboRee based Primary School<br>focused on excellence. </p>
 			</div>
 			<div class="row">
-				<!-- categorie -->
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
-						<div class="ci-text">
-							<h5>Community</h5>
-							<p>Each student will certainly find several best friends in his group. </p>
-							<a href="">Learn more</a>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/2.jpg"></div>
-						<div class="ci-text">
-							<h5>Parents</h5>
-							<p>Though your child is in good hands, you can still watch his or her activity online.</p>
-							<a href="">Learn more</a>
-						</div>
-					</div>
-				</div>
-				<!-- categorie -->
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/3.jpg"></div>
-						<div class="ci-text">
-							<h5>Students</h5>
-							<p>Our education strategy is aimed at growing the generation of healthy and cultured young people.</p>
-							<a href="">Learn more</a>
-						</div>
-					</div>
-				</div>
+				<?php 
+					$articlesType = $this->ArticlesTypeModel->get();
+					foreach ($articlesType as $a) {
+						echo
+						'<div class="col-lg-4">
+							<div class="categorie-item">
+								<div class="ci-thumb set-bg" data-setbg="' . base_url() . 'assets/img/homepage/section2/1.jpg"></div>
+								<div class="ci-text">
+									<h5>' . $a->articles_type .'</h5>
+									<p>' . $a->desc . '</p>
+									<a href="' . base_url('master-data/articles/articles-by-type/') . $a->id .'">Learn more</a>
+								</div>
+							</div>
+						</div>';
+					}
+				?>
 			</div>
 		</div>
 	</section>

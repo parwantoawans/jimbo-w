@@ -51,9 +51,8 @@
 						<p class="contactinfo-subtitle">&nbsp;&nbsp;Address</p>
 					</div>
 					<div class="col-lg-10">
-						<p class="contactinfo-caption2">Jalan Pemuda, Pemuda City Walk, Block B (Education), No. 11, 12, 15, Tampan, Payung Sekaki, Tampan, Payung Sekaki, Pekanbaru City, Riau 28292</p>
+						<p class="contactinfo-caption2"><?php echo $this->ContactsModel->get()[0]['alamat']; ?></p>
 					</div>
-
 					
 					<div class="row">
 						<div class="icon">
@@ -62,7 +61,7 @@
 						<p class="contactinfo-subtitle">&nbsp;&nbsp;Phone</p>
 					</div>
 					<div class="col-lg-10">
-						<p class="contactinfo-caption2">0821-6976-4578</p>
+						<p class="contactinfo-caption2"><?php echo $this->ContactsModel->get()[0]['telephone']; ?></p>
 					</div>	
 					
 					<div class="row">
@@ -72,7 +71,7 @@
 						<p class="contactinfo-subtitle">&nbsp;&nbsp;Email</p>
 					</div>		
 					<div class="col-lg-10">	
-						<p class="contactinfo-caption2">jimboree_@gmail.com</p>
+						<p class="contactinfo-caption2"><?php echo $this->ContactsModel->get()[0]['email']; ?></p>
 					</div>
 
 					<div class="row">
@@ -91,22 +90,31 @@
 				<div class="col-lg-6">
 					<p class="contactinfo-title">We would Love To Hear From You!</p>
 					<p class="contactinfo-caption">If you have any questions,please call us or fill in the form below and we will get back to you very soon</p>
-					<form>
+					<?php 
+						if ($this->session->flashdata('success')) {
+						echo "<div class='alert alert-info'>".$this->session->flashdata('success')."</div>";
+						}
+
+						if ($this->session->flashdata('error')) {
+						echo "<div class='alert alert-danger'>".$this->session->flashdata('error')."</div>";
+						}
+					?>
+					<form action="<?php echo base_url('contact-us/send-email'); ?>" method="post">
 						<div>
 							<label for="name"></label>
-							<input type="text" class="rectangle" id="name" placeholder="Your Name*">
+							<input type="text" class="rectangle" id="name" name="name" placeholder="Your Name*">
 						</div>
 						<div>
 							<label for="emailAdress"></label>
-							<input type="text" class="rectangle" id="emailAddress" placeholder="E-mail*">
+							<input type="text" class="rectangle" id="emailAddress" name="emailAddress" placeholder="E-mail*">
 						</div>
 						<div>
 							<label for="text"></label>
-							<input type="text" class="rectangle" id="subject" placeholder="Subject*">
+							<input type="text" class="rectangle" id="subject" name="subject" placeholder="Subject*">
 						</div>
 						<div>
 							<label for="text"></label>
-							<input type="textarea" class="rectangle" id="message" placeholder="Message*">
+							<input type="textarea" class="rectangle" id="message" name="message" placeholder="Message*">
 						</div>
 						<button type="submit" class="button-rectangle">Send Message</button>
 					</form>

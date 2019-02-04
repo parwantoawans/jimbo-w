@@ -14,14 +14,14 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<p class="section2-title">
-						We are JimboRee based <br>Primary School focused<br>on excellence.
+						<?php echo $title; ?> <br><?php echo $title2; ?><br><?php echo $title3; ?>
 					</p>
-					<p class="section2-caption">Every child is a gem. In our primary school, we’ll polish your gem and turn a little boy or girl into a real diamond.</p>
-					<p class="section2-caption">No matter what scores your child have, we can help him or her to figure out life priorities and denote the path. All children are unique - this is our motto! We have the best teachers with a personal approach to each student.</p>
+					<p class="section2-caption"><?php echo $desc; ?></p>
+					<p class="section2-caption"><?php echo $desc2; ?></p>
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/11.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url() . explode("jimboree-web/", $image)[1]; ?>"></div>
 					</div>
 				</div>
 			</div>
@@ -41,22 +41,22 @@
 					<div class="row">
 						<div class="col-lg-3">
 							<div class="icon"><i class="fa fa-bullseye"></i></div>
-							<p class="search-caption">100%</p>
+							<p class="search-caption"><?php echo $passing_universities . "%"; ?></p>
 							<p class="search-caption2">Passing to Universities</p>
 						</div>
 						<div class="col-lg-3">
 							<div class="icon"><i class="fa fa-users"></i></div>
-							<p class="search-caption">126</p>
+							<p class="search-caption"><?php echo $people_working; ?></p>
 							<p class="search-caption2">People Working</p>
 						</div>
 						<div class="col-lg-3">
 							<div class="icon"><i class="fa fa-briefcase"></i></div>
-							<p class="search-caption">1231</p>
+							<p class="search-caption"><?php echo $student_enrolled; ?></p>
 							<p class="search-caption2">Student Enrolled</p>
 						</div>
 						<div class="col-lg-3">
 							<div class="icon"><i class="fa fa-user"></i></div>
-							<p class="search-caption">433</p>
+							<p class="search-caption"><?php echo $happy_smiles; ?></p>
 							<p class="search-caption2">Happy Smiles</p>
 						</div>
 					</div>
@@ -104,42 +104,27 @@
 		</div>
 	</section>
 	<!-- missionvission end -->
-
 	<!-- newsandannouncement section -->
 	<section class="newsandannouncement-section">
 		<div class="container">
 			<p class="newsandannouncement-title">News & Announcement</p><br><br>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/1.jpg"></div>
-						<div class="ci-text">
-							<span class="newsandannouncement-date">December 9, 2018 </span>
-							<p class="newsandannouncement-title-caption">News Schedule</p>
-							<span class="newsandannouncement-caption">Dear parents, please, consider that our timetable will be changed in several months.</span>
+				<?php
+					foreach ($news as $n) {
+						echo "
+						<div class='col-lg-4'>
+							<div class='categorie-item'>
+								<div class='ci-thumb set-bg' data-setbg='". "http://localhost/jimboree-cms/" . explode('jimboree-cms/', $n->image)[1] ."'></div>
+								<div class='ci-text'>
+									<span class='newsandannouncement-date'>". date('F d, Y', strtotime($n->created_at)) ." </span>
+									<p class='newsandannouncement-title-caption'>". $n->title ."</p>
+									<span class='newsandannouncement-caption'>". str_replace(array('<p>', '</p>', '<br>'), array('', '', ''), $n->desc) ."</span>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/2.jpg"></div>
-						<div class="ci-text">
-							<span class="newsandannouncement-date">December 9, 2018 </span>
-							<p class="newsandannouncement-title-caption">Top Students This Month</p>
-							<span class="newsandannouncement-caption">We would like to introduce the students who showed amazing progress for the last 30 days.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/3.jpg"></div>
-						<div class="ci-text">
-							<span class="newsandannouncement-date">December 9, 2018 </span>
-							<p class="newsandannouncement-title-caption">Gap Analysis</p>
-							<span class="newsandannouncement-caption">Are you sure your child do everything well? Read this article to find this out.</span>
-						</div>
-					</div>
-				</div>
+						";
+					}
+				?>
 			</div>
 		</div>
 	</section>
