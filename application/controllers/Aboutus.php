@@ -6,6 +6,9 @@ class Aboutus extends CI_Controller
 {
     public function index()
 	{
+		// echo $_SERVER['SERVER_ADDR'] ."<br>";
+		// echo $this->input->ip_address() . "<br>";
+		// echo current_url();die();
 		$aboutUs = $this->AboutUsModel->get();
 		$data['title'] = $aboutUs[0]['title'];
 		$data['title2'] = $aboutUs[0]['title2'];

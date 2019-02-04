@@ -110,11 +110,16 @@
 			<p class="newsandannouncement-title">News & Announcement</p><br><br>
 			<div class="row">
 				<?php
+					if ($this->input->ip_address() == "::1") {
+						$ip = "http://localhost";
+					} else {
+						$ip = $this->input->ip_address();
+					}
 					foreach ($news as $n) {
 						echo "
 						<div class='col-lg-4'>
 							<div class='categorie-item'>
-								<div class='ci-thumb set-bg' data-setbg='". "http://localhost/jimboree-cms/" . explode('jimboree-cms/', $n->image)[1] ."'></div>
+								<div class='ci-thumb set-bg' data-setbg='". $ip . "/jimboree-cms/" . explode('jimboree-cms/', $n->image)[1] ."'></div>
 								<div class='ci-text'>
 									<span class='newsandannouncement-date'>". date('F d, Y', strtotime($n->created_at)) ." </span>
 									<p class='newsandannouncement-title-caption'>". $n->title ."</p>
