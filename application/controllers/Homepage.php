@@ -32,7 +32,12 @@ class Homepage extends CI_Controller
 		// die();
 
 		// print_r($result['articlesType']['0']['desc']);die();
-		$this->load->view('homepage');
+		$experience = $this->ExperienceModel->get();
+		$data['passing_universities'] = $experience[0]['passing_universities'];
+		$data['people_working'] = $experience[0]['people_working'];
+		$data['student_enrolled'] = $experience[0]['student_enrolled'];
+		$data['happy_smiles'] = $experience[0]['happy_smiles'];
+		$this->load->view('homepage', $data);
 	}
 }
 ?>
