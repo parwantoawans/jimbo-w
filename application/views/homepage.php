@@ -4,7 +4,7 @@
 		<div class="container">
 			<div class="hero-text text-white">
 				<p class="banner-title">We are a<br><span>Future-Ready</span><br>School</p><br>
-				<a href="#" class="site-btn">Contact us</a>
+				<a href="contact-us" class="site-btn">Contact us</a>
 			</div>
 			<!-- <div class="row">
 				<div class="col-lg-10 offset-lg-1">
