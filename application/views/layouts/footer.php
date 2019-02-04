@@ -64,11 +64,11 @@
 								</li>
 								<li>
 									<span class="icon">
-										<a href=""><i class="fa fa-facebook"></i></a>
-										<a href=""><i class="fa fa-google-plus"></i></a>
-										<a href=""><i class="fa fa-twitter"></i></a>
-										<a href=""><i class="fa fa-instagram"></i></a>
-										<a href=""><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.facebook.com/gymboreeindonesia"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="https://twitter.com/gymboree_ind?lang=en"><i class="fa fa-twitter"></i></a>
+										<a href="https://www.instagram.com/gymboree_encino/"><i class="fa fa-instagram"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
 									</span>
 								</li>
 							</ul>
