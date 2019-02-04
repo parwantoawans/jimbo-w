@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title><?php echo SITE_NAME . ucfirst(" | " . $this->uri->segment(1)) ?></title>
+	<title><?php echo SITE_NAME . ($this->uri->segment(1) != null ? ucfirst(" | " . $this->uri->segment(1)) : "")  ?></title>
 	<meta charset="UTF-8">
 	<meta name="description" content="WebUni Education Template">
 	<meta name="keywords" content="webuni, education, creative, html">

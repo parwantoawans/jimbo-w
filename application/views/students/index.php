@@ -117,7 +117,7 @@
 						<div class="Autumn-opacity">
 							<p class="Autumn-opacity-title"><br>Autumn Term Lunch Menu</p>
 							<p class="Autumn-opacity-caption">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/1.jpg"></div>
 					</div>
@@ -127,7 +127,7 @@
 						<div class="Summer-opacity">
 							<p class="Summer-opacity-title"><br>Summer Term Lunch Menu</p>
 							<p class="Summer-opacity-caption">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico..</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/2.jpg"></div>
 					</div>
@@ -140,7 +140,7 @@
 						<div class="Healthy-opacity">
 							<p class="Healthy-opacity-title"><br>Healthy Packed Lunch</p>
 							<p class="Healthy-opacity-caption"> Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/3.jpg"></div>
 					</div>
@@ -150,7 +150,7 @@
 						<div class="Revised-opacity">
 							<p class="Revised-opacity-title"><br>Revised Lunch Menu</p>
 							<p class="Revised-opacity-caption">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/4.jpg"></div>
 					</div>

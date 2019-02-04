@@ -29,7 +29,7 @@
 						<div class="grammar-opacity">
 							<p class="grammar-opacity-title">Grammar<br>Programs</p>
 							<p class="grammar-opacity-caption">We will turn your child into the real polyglot and grammar expert in different languages.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/2.jpg"></div>
 					</div>
@@ -39,7 +39,7 @@
 						<div class="art-opacity">
 							<p class="art-opacity-title">Art<br>Programs</p>
 							<p class="art-opacity-caption">Creativity is a must-have element of any child’s upbringing. We offer miscellaneous courses.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/1.jpg"></div>
 					</div>
@@ -52,7 +52,7 @@
 						<div class="social-opacity">
 							<p class="social-opacity-title">Social<br>Programs</p>
 							<p class="social-opacity-caption">We have special programs for the children who have no access to primary education.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/3.jpg"></div>
 					</div>
@@ -62,7 +62,7 @@
 						<div class="afterschool-opacity">
 							<p class="afterschool-opacity-title">After School<br>Programs</p>
 							<p class="afterschool-opacity-caption">Our students have active outdoors life thanks to the developed physical education program.</p>
-							<a href="" class="btn btn-info">Learn more</a>
+							<!--<a href="" class="btn btn-info">Learn more</a>-->
 						</div>
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/4.jpg"></div>
 					</div>
@@ -85,7 +85,7 @@
 						<div class="col-lg-10">
 							<p class="search-caption">After-School Caregiving</p>
 							<p class="search-caption2">Tough day at work? We can give you a few extra hours and take care of your child.</p>
-							<a href="">Read More</a>
+							<!--<a href="">Read More</a>-->
 						</div>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 						<div class="col-lg-10">
 							<p class="search-caption">Overnight Caregiving</p>
 							<p class="search-caption2">Leave your child for one night and he or she won’t have a desire to go back home.</p>
-							<a href="">Read More</a>
+							<!--<a href="">Read More</a>-->
 						</div>
 					</div>
 				</div>
@@ -109,7 +109,7 @@
 						<div class="col-lg-10">
 							<p class="search-caption">Mothers Helpers</p>
 							<p class="search-caption2">We can look after your child even for a couple of days and host him or her in a comfortable dorm.</p>
-							<a href="">Read More</a>
+							<!--<a href="">Read More</a>-->
 						</div>
 					</div>
 				</div>
@@ -124,7 +124,7 @@
 						<div class="col-lg-10">
 							<p class="search-caption">Summer Childcare</p>
 							<p class="search-caption2">You are welcome to visit our summer camp that will guarantee your child the best education environment.</p>
-							<a href="">Read More</a>
+							<!--<a href="">Read More</a>-->
 						</div>
 					</div>
 				</div>
@@ -136,7 +136,7 @@
 						<div class="col-lg-10">
 							<p class="search-caption">Special Olympics</p>
 							<p class="search-caption2">Every year we sum up the results with special competition to encourage our babies.</p>
-							<a href="">Read More</a>
+							<!--<a href="">Read More</a>-->
 						</div>
 					</div>
 				</div>
@@ -148,7 +148,7 @@
 						<div class="col-lg-10">
 							<p class="search-caption">Educational Events</p>
 							<p class="search-caption2">We have a lot of ways to make the education process for your child more entertaining.</p>
-							<a href="">Read More</a>
+							<!--<a href="">Read More</a>-->
 						</div>
 					</div>
 				</div>

@@ -14,12 +14,12 @@
 						<div class="widget-item">
 							<p class="footer-title">Navigation</p>
 							<ul>
-								<li><a href="">About Us</a></li>
-								<li><a href="">Programs</a></li>
-								<li><a href="">Teachers</a></li>
-								<li><a href="">Schedule</a></li>
-								<li><a href="">Gallery</a></li>
-								<li><a href="">Contact</a></li>
+								<li><a href="about-us">About Us</a></li>
+								<li><a href="#">Programs</a></li>
+								<li><a href="#">Teachers</a></li>
+								<li><a href="#">Schedule</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="contact-us">Contact</a></li>
 							</ul>
 						</div>
 					</div>
@@ -64,11 +64,11 @@
 								</li>
 								<li>
 									<span class="icon">
-										<a href=""><i class="fa fa-facebook"></i></a>
-										<a href=""><i class="fa fa-google-plus"></i></a>
-										<a href=""><i class="fa fa-twitter"></i></a>
-										<a href=""><i class="fa fa-instagram"></i></a>
-										<a href=""><i class="fa fa-linkedin"></i></a>
+										<a href="https://www.facebook.com/gymboreeindonesia"><i class="fa fa-facebook"></i></a>
+										<a href="#"><i class="fa fa-google-plus"></i></a>
+										<a href="https://twitter.com/gymboree_ind?lang=en"><i class="fa fa-twitter"></i></a>
+										<a href="https://www.instagram.com/gymboree_encino/"><i class="fa fa-instagram"></i></a>
+										<a href="#"><i class="fa fa-linkedin"></i></a>
 									</span>
 								</li>
 							</ul>
