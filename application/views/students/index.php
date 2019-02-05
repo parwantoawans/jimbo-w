@@ -41,7 +41,7 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-4">
-					<video width="100%" height="100%" controls>
+					<video width="100%" height="100%" controls="controls" preload="metadata">
   						<source src="assets/videos/1.mp4" type="video/mp4">
 					</video>
 				</div>
@@ -73,7 +73,7 @@
 					<img src="//placehold.it/1170x658" class="img-responsive">
 				</div>
 				<div class="col-sm-4">
-					<video width="100%" height="100%" controls>
+					<video width="100%" height="100%" controls="controls" preload="metadata">
   						<source src="assets/videos/2.mp4" type="video/mp4">
 					</video>
 				</div>
