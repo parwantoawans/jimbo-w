@@ -33,7 +33,7 @@
 						echo
 						'<div class="col-lg-4">
 							<div class="categorie-item">
-								<div class="ci-thumb set-bg" data-setbg="' . base_url() . 'assets/img/homepage/section2/1.jpg"></div>
+								<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $a->image)[1].'"></div>
 								<div class="ci-text">
 									<h5>' . $a->articles_type .'</h5>
 									<p>' . $a->desc . '</p>
@@ -196,51 +196,33 @@
 				<p class="testimoni-title">Parents Testimonials</p>
 				<p class="testimoni-subtitle">Student and Parents Club</p><br>
 				<div class="row">
-					<div class="col-lg-4">
-						<div class="box-testimoni">
-							<div class="yellow-line"></div>
-							<p class="testimoni-caption">I feel safe for my little Ben every time I take him to his class. The teaching staff is professional and friendly.</p>
-							<div class="row">
-								<div class="col-lg-2">
-									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/testimoni/1.jpg"></div>
+					<?php 
+						foreach ($testimoni as $t) {
+							if ($t->role_parents==1) {
+								$roleParents = "Father";
+							} else{
+								$roleParents = "Mother";
+							}
+
+							echo '
+								<div class="col-lg-4">
+									<div class="box-testimoni">
+										<div class="yellow-line"></div>
+										<p class="testimoni-caption">'.$t->testimoni.'</p>
+										<div class="row">
+											<div class="col-lg-2">
+												<div class="ca-pic set-bg" data-setbg="http://localhost/jimboree-cms/'. explode("jimboree-cms/", $t->image)[1].'"></div>
+											</div>
+											<div class="col-lg">
+												<div class="testimoni-parents-name">'.$t->nama.'</div>
+												<div class="testimoni-parents-subname">'.$roleParents.'</div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-lg">
-									<div class="testimoni-parents-name">Joyce Mendoza</div>
-									<div class="testimoni-parents-subname">Mother</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="box-testimoni">
-							<div class="yellow-line"></div>
-							<p class="testimoni-caption">This is school is the best place in the whole world for any child. Positive atmosphere and much more.</p>
-							<div class="row">
-								<div class="col-lg-2">
-									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/testimoni/2.jpg"></div>
-								</div>
-								<div class="col-lg">
-									<div class="testimoni-parents-name">Samantha Adams</div>
-									<div class="testimoni-parents-subname">Mother</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="box-testimoni">
-							<div class="yellow-line"></div>
-							<p class="testimoni-caption">The perfect establisment for primary education in the city. I have a lot of friends with the same opinion.</p>
-							<div class="row">
-								<div class="col-lg-2">
-									<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/testimoni/3.jpg"></div>
-								</div>
-								<div class="col-lg">
-									<div class="testimoni-parents-name">Grace Grant</div>
-									<div class="testimoni-parents-subname">Mother</div>
-								</div>
-							</div>
-						</div>
-					</div>
+							';	
+						}
+					?>
 				</div>
 			</div>
 		</section>
@@ -252,17 +234,24 @@
 			<p class="teacher-title">Meet Our Qualified Teachers</p>
 			<p class="teacher-subtitle">Your child will be as safe the JamboRee school.</p><br>
 			<div class="row">
-				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/1.jpeg">
-					</div><br>
-					<p class="teacher-name">Ingra North<br><span class="teacher-job">English Language</span></p>
-					<div class="icon">
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
-					</div>
-				</div>
-				<div class="col-lg-3">
+				<?php 
+					foreach ($teachers as $t) {
+						echo "
+							<div class='col-lg-3'>
+								<div class='ca-pic set-bg' data-setbg='http://localhost/jimboree-cms/" . explode("jimboree-cms/", $t->image)[1] ."'>
+								</div><br>
+								<p class='teacher-name'>".$t->nama_depan." ".$t->nama_tengah." ".$t->nama_belakang."<br><span class='teacher-job'>". $t->jabatan ."</span></p>
+								<div class='icon'>
+									<a href='".$t->facebook."' target='_blank'><img src='". base_url('assets/img/homepage/socmed/Facebook.svg') ."' width='15' height='20' alt=''></a>
+									<a href='".$t->twitter."' target='_blank'><img src='". base_url('assets/img/homepage/socmed/Twitter.svg') . "' width='25' height='20' alt=''></a>
+									<a href='".$t->instagram."' target='_blank'><img src='". base_url('assets/img/homepage/socmed/Instagram.svg') . "' width='25' height='20' alt=''></a>
+								</div>
+							</div>
+						";
+					}
+				?>
+				
+				<!-- <div class="col-lg-3">
 					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/2.jpg">
 					</div><br>
 					<p class="teacher-name">Marlyn Adams<br><span class="teacher-job">Mathematics</span></p>
@@ -291,7 +280,7 @@
 						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
 						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

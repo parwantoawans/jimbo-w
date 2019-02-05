@@ -21,7 +21,6 @@ class ParentsModel extends CI_Model
     }
 
     public function store($data){
-        // $this->nama = $data['nama'];
         return $this->db->insert('tm_parents', $data);
     }
 
