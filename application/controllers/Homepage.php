@@ -14,8 +14,9 @@ class Homepage extends CI_Controller
 		$data['happy_smiles'] = $experience[0]['happy_smiles'];
 		
 		$data['teachers'] = $this->TeachersModel->get();
-
 		$data['testimoni'] = $this->TestimoniModel->get();
+		$data['classesprogram'] = $this->ClassesProgramModel->getFirstRow();
+		$data['classesprogram2'] = $this->ClassesProgramModel->getSecondRow();
 
 		$this->load->view('homepage', $data);
 	}
