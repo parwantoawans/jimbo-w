@@ -119,7 +119,4 @@
 	<script src="<?php echo base_url(); ?>assets/js/circle-progress.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
-	<script>
-		$('.textarea').wysihtml5({useLineBreaks: true});
-	</script>
 </html>
