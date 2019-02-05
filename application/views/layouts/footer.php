@@ -120,6 +120,55 @@
 	<script src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 	<script>
+
+		var defaultPreloaderImage = "https://www.digitalcitizen.life/sites/default/files/styles/lst_small/public/featured/2016-08/photo_gallery.jpg";
+		$.fn.preload = function (fn) {
+			var len = this.length, i = 0;
+			return this.each(function () {
+				var tmp = new Image, self = this;
+				if (fn) tmp.onload = function () {
+					fn.call(self, 100 * ++i / len, i === len);
+				};
+				// check if any error image
+				if(fn)tmp.onerror = function(){
+					console.log("error load image : " + this);
+					tmp.src = defaultPreloaderImage;
+				}
+				// give placeholder if failed to load image
+				if((typeof this.naturalWidth != "undefined" &&
+					this.naturalWidth == 0 ) 
+					|| this.readyState == 'uninitialized' ) {
+					$(this).attr('src', defaultPreloaderImage);
+				}
+				tmp.src = this.src;
+			});
+		};
+
+		$('img').preload(function(perc, done) {
+			//console.log(this, perc, done);
+		});
+		
+		// handling div with unknown image
+		$('div .set-bg').each(function() {
+			var backgroundImage = $(this).css("background-image");
+			var url = backgroundImage.match(/\((.*?)\)/)[1].replace(/('|")/g,'');
+			var img = new Image();
+			img.onload = function() {
+				//console.log(img+" loaded");
+			}
+			img.src = url;
+			if (img.complete){
+				img.onload();
+			}else{
+				var target = this;
+				img.addEventListener('error', function() {
+					console.log(url + " failed to load");
+					$(target).css("background-image", 'url("'+defaultPreloaderImage+'")');
+				})
+			}
+		});
+		
 		$('.textarea').wysihtml5({useLineBreaks: true});
+		
 	</script>
 </html>
