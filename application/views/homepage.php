@@ -33,7 +33,7 @@
 						echo
 						'<div class="col-lg-4">
 							<div class="categorie-item">
-								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['SERVER_NAME'].'/jimboree-cms/'.explode("jimboree-cms/", $a->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'.explode("jimboree-cms/", $a->image)[1].'"></div>
 								<div class="ci-text">
 									<h5>' . $a->articles_type .'</h5>
 									<p>' . $a->desc . '</p>
