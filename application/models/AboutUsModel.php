@@ -7,7 +7,7 @@ class AboutUsModel extends CI_Model
     }
 
     public function get(){
-        $this->db->order_by('id', 'desc');
+        $this->db->where('is_active', 'ACTIVE')->order_by('id', 'desc');
         return $this->db->get('tm_about_us')->result_array();
     }
 

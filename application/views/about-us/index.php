@@ -21,7 +21,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url() . explode("jimboree-web/", $image)[1]; ?>"></div>
+						<div class="ci-thumb set-bg" data-setbg="http://<?php echo $_SERVER['HTTP_HOST'] ."/jimboree-cms/".explode("jimboree-cms/", $image)[1]; ?>"></div>
 					</div>
 				</div>
 			</div>
@@ -72,17 +72,17 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<p class="missionvission-title">Our Mission</p>
-					<p class="missionvission-subtitle">The primary school is the most important <br>begining point.</p>
+					<p class="missionvission-subtitle"><?php echo $misi_subtitle; ?></p>
 
-					<p class="missionvission-caption">JimboRee Education exists to provide international standard education to our young students <br>through a commitment to English language Fluency, Technological expertise and inquiry<br> based teaching &amp; learning, we deliver an internationally recognized program that integrates <br>global concepts with respect for our Indonesian national culture and identity</p>
+					<p class="missionvission-caption"><?php echo $misi; ?></p>
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/9a.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg='http://<?php echo $_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $misi_image)[1]; ?>'></div>
 					</div>
 				</div>
 			</div>
-			<p class="missionvission-caption">(JimboRee education hadir dalam rangka memberikan pendidikan bersekala internasional kepada para pelajar muda, melalui komitmen terhadap penggunaan Bahasa inggris secara lancar, keterampilan teknologi, pembelajaran, berbasis tanya jawab, kami menyebarkan program yang telah dikenal secara internasional yang menyatukan konsep global yang menghormati budaya serta identitas Indonesia).</p>
+			<p class="missionvission-caption"><?php echo $misi_2; ?></p>
 		</div>
 	</section>
 	<!-- missionvission end -->
@@ -92,13 +92,13 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/5.jpg"></div>
+						<div class="ci-thumb set-bg" data-setbg='http://<?php echo $_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $visi_image)[1]; ?>'></div>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<p class="missionvission-title">Our Vission</p>
-					<p class="missionvission-subtitle">Primary education is for everyone.</p>
-					<p class="missionvission-caption">To be leading international standard educational facility providing high quality tutoring to <br>young students to excel throughout their lives in rapidly changing world.<br><br> (Menjadi panutan dalam pendidikan bersekala internasional yang memberikan fasilitas<br> pengajaran berkualitas kepada pelajar muda sehingga mereka dapat memberi pengaruh yangmerubah dunia ).</p>
+					<p class="missionvission-subtitle"><?php echo $visi_subtitle; ?></p>
+					<p class="missionvission-caption"><?php echo $visi; ?><br><br> <?php echo $visi_2; ?></p>
 				</div>
 			</div>
 		</div>
@@ -114,7 +114,7 @@
 						echo "
 						<div class='col-lg-4'>
 							<div class='categorie-item'>
-								<div class='ci-thumb set-bg' data-setbg='http://localhost/jimboree-cms/" . explode('jimboree-cms/', $n->image)[1] ."'></div>
+								<div class='ci-thumb set-bg' data-setbg='http://".$_SERVER['HTTP_HOST']."/jimboree-cms/". explode('jimboree-cms/', $n->image)[1] ."'></div>
 								<div class='ci-text'>
 									<span class='newsandannouncement-date'>". date('F d, Y', strtotime($n->created_at)) ." </span>
 									<p class='newsandannouncement-title-caption'>". $n->title ."</p>
