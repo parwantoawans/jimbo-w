@@ -100,7 +100,7 @@
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
 									<p class="grammar-opacity-caption">'.$c->desc.'</p>
 								</div>
-								<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
 							</div>
 						</div>
 					';
@@ -127,7 +127,7 @@
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
 									<p class="grammar-opacity-caption">'.$c->desc.'</p>
 								</div>
-								<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
 							</div>
 						</div>
 					';
@@ -264,7 +264,7 @@
 										<p class="testimoni-caption">'.$t->testimoni.'</p>
 										<div class="row">
 											<div class="col-lg-2">
-												<div class="ca-pic set-bg" data-setbg="http://localhost/jimboree-cms/'. explode("jimboree-cms/", $t->image)[1].'"></div>
+												<div class="ca-pic set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'. explode("jimboree-cms/", $t->image)[1].'"></div>
 											</div>
 											<div class="col-lg">
 												<div class="testimoni-parents-name">'.$t->nama.'</div>
@@ -291,7 +291,7 @@
 					foreach ($teachers as $t) {
 						echo "
 							<div class='col-lg-3'>
-								<div class='ca-pic set-bg' data-setbg='http://localhost/jimboree-cms/" . explode("jimboree-cms/", $t->image)[1] ."'>
+								<div class='ca-pic set-bg' data-setbg='http://".$_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $t->image)[1]."'>
 								</div><br>
 								<p class='teacher-name'>".$t->nama_depan." ".$t->nama_tengah." ".$t->nama_belakang."<br><span class='teacher-job'>". $t->jabatan ."</span></p>
 								<div class='icon'>
