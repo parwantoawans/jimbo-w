@@ -24,49 +24,57 @@
 		<div class="container">
 			<p class="classes-program-title">Classes Program</p><br>
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="grammar-opacity">
-							<p class="grammar-opacity-title">Grammar<br>Programs</p>
-							<p class="grammar-opacity-caption">We will turn your child into the real polyglot and grammar expert in different languages.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/2.jpg"></div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="art-opacity">
-							<p class="art-opacity-title">Art<br>Programs</p>
-							<p class="art-opacity-caption">Creativity is a must-have element of any child’s upbringing. We offer miscellaneous courses.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/1.jpg"></div>
-					</div>
-				</div>
+				<?php 
+					foreach ($classesprogram as $c) {
+						if ($c->program == "Grammar Programs") {
+							$class = "grammar-opacity";
+						} elseif ($c->program == "Art Programs"){
+							$class = "art-opacity";
+						} elseif ($c->program == "Social Programs"){
+							$class = "social-opacity";
+						} else {
+							$class = "afterschool-opacity";
+						}
+						echo '
+							<div class="col-lg-6">
+								<div class="categorie-item">
+									<div class="'.$class.'">
+										<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
+										<p class="grammar-opacity-caption">'.$c->desc.'</p>
+									</div>
+									<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+								</div>
+							</div>
+						';
+					}
+				?>
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="social-opacity">
-							<p class="social-opacity-title">Social<br>Programs</p>
-							<p class="social-opacity-caption">We have special programs for the children who have no access to primary education.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/3.jpg"></div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="afterschool-opacity">
-							<p class="afterschool-opacity-title">After School<br>Programs</p>
-							<p class="afterschool-opacity-caption">Our students have active outdoors life thanks to the developed physical education program.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/academic/other-service/4.jpg"></div>
-					</div>
-				</div>
+				<?php 
+					foreach ($classesprogram2 as $c) {
+						if ($c->program == "Grammar Programs") {
+							$class = "grammar-opacity";
+						} elseif ($c->program == "Art Programs"){
+							$class = "art-opacity";
+						} elseif ($c->program == "Social Programs"){
+							$class = "social-opacity";
+						} else {
+							$class = "afterschool-opacity";
+						}
+						echo '
+							<div class="col-lg-6">
+								<div class="categorie-item">
+									<div class="'.$class.'">
+										<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
+										<p class="grammar-opacity-caption">'.$c->desc.'</p>
+									</div>
+									<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+								</div>
+							</div>
+						';
+					}
+				?>
 			</div>
 		</div>
 	</section>

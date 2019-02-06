@@ -46,12 +46,12 @@ class Contactus extends CI_Controller
 		if($this->email->send())
 		{
 			$this->session->set_flashdata('success', 'Success sending message! Thank you for your attention !');
-        	redirect('contact-us');
+        	redirect(base_url('contact-us'));
 		}
 		else
 		{
 			$this->session->set_flashdata('failed', 'Error sending message!' . show_error($this->email->print_debugger()));
-        	redirect('contact-us');
+        	redirect(base_url('contact-us'));
 		}
 
 		

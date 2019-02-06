@@ -33,7 +33,7 @@
 						echo
 						'<div class="col-lg-4">
 							<div class="categorie-item">
-								<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $a->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['SERVER_NAME'].'/jimboree-cms/'.explode("jimboree-cms/", $a->image)[1].'"></div>
 								<div class="ci-text">
 									<h5>' . $a->articles_type .'</h5>
 									<p>' . $a->desc . '</p>
@@ -303,37 +303,6 @@
 						";
 					}
 				?>
-				
-				<!-- <div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/2.jpg">
-					</div><br>
-					<p class="teacher-name">Marlyn Adams<br><span class="teacher-job">Mathematics</span></p>
-					<div class="icon">
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/3.jpg">
-					</div><br>
-					<p class="teacher-name">Linda Guzman<br><span class="teacher-job">Foreign Languages</span></p>
-					<div class="icon">
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="ca-pic set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/teachers/4.jpg">
-					</div><br>
-					<p class="teacher-name">Janet Moris<br><span class="teacher-job">Art & Music</span></p>
-					<div class="icon">
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Facebook.svg'); ?>" width="15" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Twitter.svg'); ?>" width="25" height="20" alt=""></a>
-						<a href=""><img src="<?php echo base_url('assets/img/homepage/socmed/Instagram.svg'); ?>" width="25" height="20" alt=""></a>
-					</div>
-				</div> -->
 			</div>
 		</div>
 	</section>
@@ -388,8 +357,8 @@
 			</div>
 			<div class="text-center pt-5">
 				<!-- <a href="#" class="site-btn">Register Now</a> -->
-				<form class="footer-newslatter" action="">
-					<input type="email" placeholder="E-mail address*"><br><br><br><br>
+				<form class="footer-newslatter" action="<?php echo base_url('email-subscribe'); ?>" method="post">
+					<input type="email" placeholder="E-mail address*" name="email"><br><br><br><br>
 					<input type="submit" class="site-btn" value="Subscribe">
 				</form>
 			</div>

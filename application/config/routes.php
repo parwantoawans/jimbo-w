@@ -60,6 +60,8 @@ $route['contact-us/send-email']['post'] = 'contactus/sendEmail';
 $route['students'] = 'students';
 $route['parents'] = 'parents';
 
+$route['email-subscribe']['post'] = 'emailsubscribe';
+
 $route['phpinfo'] = function(){
 	return phpinfo();
 };

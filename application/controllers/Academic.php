@@ -6,7 +6,9 @@ class Academic extends CI_Controller
 {
     public function index()
     {
-        $this->load->view('academic/index');
+        $data['classesprogram'] = $this->ClassesProgramModel->getFirstRow();
+		$data['classesprogram2'] = $this->ClassesProgramModel->getSecondRow();
+        $this->load->view('academic/index', $data);
     }
 }
 ?>
