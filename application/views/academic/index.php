@@ -273,7 +273,7 @@
 					}
 				?>
 			</div>
-			<!-- <div class="row">
+			<div class="row">
 				<div class="col-lg-3">
 					<div class="box-thursday">Thursday</div>
 				</div>
@@ -316,8 +316,8 @@
 						}
 					}
 				?>
-			</div> -->
-			<!-- <div class="row">
+			</div>
+			<div class="row">
 				<div class="col-lg-3">
 					<div class="box-friday">Friday</div>
 				</div>
@@ -360,7 +360,7 @@
 						}
 					}
 				?>
-			</div> -->
+			</div>
 		</div>
 	</section>
 	<!-- Bell Schedule End -->
