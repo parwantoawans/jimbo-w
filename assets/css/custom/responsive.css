@@ -125,3 +125,30 @@
 		margin-right: 0;
 	} */
 }
+
+@media screen and (max-width: 380px){
+	.hero-text {
+		margin-left: 130px;
+	}
+}
+
+@media screen and (max-width: 376px){
+	.grammar-opacity-title{
+		font-size: 18px;
+	}
+	.grammar-opacity-caption{
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 365px){
+	.site-logo{
+		width: 290px;
+	}
+}
+
+@media screen and (max-width: 365px){
+	.site-logo{
+		width: 280px;
+	}
+}
