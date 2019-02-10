@@ -411,7 +411,7 @@
 						$('#parentRegistrationModal').modal('hide');
 						$('#exampleModalCenter').modal('show');
 					}else{
-						alert('Failed to register');
+						alert('Failed to register, '+json.data);
 					}
 				})
 			.fail(function(err){

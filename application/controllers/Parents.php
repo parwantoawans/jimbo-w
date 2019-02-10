@@ -26,6 +26,16 @@ class Parents extends CI_Controller
 					)
 				);
 		}else{
+			$cekExistUsername = $this->ParentsModel->checkUserName($this->input->post('username'));
+			if(is_array($cekExistUsername) && count($cekExistUsername) > 0){
+				echo json_encode(
+					array(
+						'status' => false,
+						'data' => 'username already exists'
+					)
+				);
+				return;
+			}
 			if($this->ParentsModel->register($this->input->post('username'), $this->input->post('password'), 
 				$this->input->post('email'), $this->input->post('phone'), $this->input->post('password'))){
 				echo json_encode(

@@ -37,7 +37,7 @@ class ParentsModel extends CI_Model
     }
 
     function register($username, $fullname, $email, $phoneNum, $password){
-        
+
         $data = array(
             'nama' => $fullname,
             'alamat' => '',
@@ -51,6 +51,12 @@ class ParentsModel extends CI_Model
         if(!$this->db->insert('tm_users', array('username' => $username, 'password' => md5($password), 'role_id' => '1')))
             return false;
         return true;
+    }
+
+    function checkUserName($username){
+        return $this->db->select("*")
+            ->from('tm_users')
+            ->where('username', $username)->get()->result_array();
     }
 }
 
