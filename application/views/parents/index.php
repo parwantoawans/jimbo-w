@@ -288,6 +288,24 @@
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLongTitle">Registration Success</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				Your data is saved as parent, and the email will be sent, please verify
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+			</div>
+		</div>
+	</div>
 	<script>
 
 		document.getElementById("user-name").addEventListener("keypress", userNameValidator);
@@ -387,10 +405,17 @@
 			)
 			.done(
 				function(data){
-
+					var json = $.parseJSON(data);
+					console.log(json.status);
+					if(json.status){
+						$('#parentRegistrationModal').modal('hide');
+						$('#exampleModalCenter').modal('show');
+					}else{
+						alert('Failed to register');
+					}
 				})
 			.fail(function(err){
-				alert(err);
+				alert(err.statusText);
 			}); 
 		}
 		
