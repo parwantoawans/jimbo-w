@@ -286,7 +286,7 @@
 									<div class="col-lg-3">
 										<div class="box1-schedule">
 											<span class="schedule-class">'.$sh->subject.'</span><br>
-											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) ." - " .strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
 											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
 										</div>
 									</div>
