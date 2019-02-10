@@ -283,16 +283,17 @@
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary">Register</button>
+					<button id="register-button" type="button" class="btn btn-primary">Register</button>
 				</div>
 			</div>
 		</div>
 	</div>
 	<script>
+
 		document.getElementById("user-name").addEventListener("keypress", userNameValidator);
 		function userNameValidator() {
 			$('#user-name').keyup(function() {
-				$('#user-name').val(this.value.toLowerCase().replace(/\s/g, ''));
+				$('#user-name').val($('#user-name').val().toLowerCase().replace(/\s/g, ''));
 			});
 		}
 		document.getElementById("user-email").addEventListener("keypress", userMailValidator);
@@ -317,7 +318,6 @@
 		function numberValidator(){
 			$('#user-phone').keyup(function() {
 				$('#user-phone').val(this.value.replace(/[^0-9.]/g, ''));
-				console.log($('#user-phone').val().length);
 				
 			});
 		}
@@ -335,6 +335,63 @@
 				alert('Minimum Password length is 6!');
 				$('#user-password').focus();
 			}
+		}
+
+		document.getElementById("register-button").addEventListener("click", parentRegister);
+		function parentRegister(){
+			
+			var userName 		= $('#user-name').val();
+			var userFullName 	= $('#user-fullname').val();
+			var userEmail 		= $('#user-email').val();
+			var userPhone 		= $('#user-phone').val();
+			var userPassword 	= $('#user-password').val();
+
+			if(userName.length < 8){
+				alert("please insert username with minimum lenght 8");
+				$('#user-name').focus();
+				return;
+			}
+
+			if(userFullName.length == 0 ){
+				alert("please insert your Fullname");
+				$('#user-fullname').focus();
+				return;
+			}
+
+			if(userEmail.length == 0 ){
+				alert("please insert your email");
+				$('#user-email').focus();
+				return;
+			}
+
+			if(userPhone.length == 0 ){
+				alert("please insert your phone number");
+				$('#user-phone').focus();
+				return;
+			}
+
+			if(userPassword.length < 6 ){
+				alert("Minimum Password length is 6!");
+				$('#user-password').focus();
+				return;
+			}
+
+			$.post("<?php echo base_url(); ?>parents/register", 
+				{
+					username:userName,
+					fullname:userFullName,
+					email:userEmail,
+					phone:userPhone,
+					password:userPassword
+				}
+			)
+			.done(
+				function(data){
+
+				})
+			.fail(function(err){
+				alert(err);
+			}); 
 		}
 		
 	</script>

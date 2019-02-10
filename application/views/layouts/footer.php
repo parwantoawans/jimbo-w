@@ -1,3 +1,4 @@
+<div class="bodymodal"></div>
 </body>
 	<!-- footer section -->
 	<footer class="footer-section spad pb-0">
@@ -120,6 +121,18 @@
 	<script src="<?php echo base_url(); ?>assets/js/owl.carousel.min.js"></script>
 	<script src="<?php echo base_url(); ?>assets/js/main.js"></script>
 	<script>
+
+		$body = $("body");
+
+		$(document).ajaxSend(function(event, request, settings) {
+			$('#loading-indicator').show();
+			$body.addClass("loading"); 
+		});
+
+		$(document).ajaxComplete(function(event, request, settings) {
+			$('#loading-indicator').hide();
+			$body.removeClass("loading");
+		});
 
 		var defaultPreloaderImage = "https://www.digitalcitizen.life/sites/default/files/styles/lst_small/public/featured/2016-08/photo_gallery.jpg";
 		$.fn.preload = function (fn) {
