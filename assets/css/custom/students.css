@@ -265,7 +265,7 @@
 .search-section{
     /* background-color: mix(#fa4a3b, #e52f65); */
     color: #ffffff;
-    background-image: url("http://localhost/jimboree-web/assets/img/extra/1.jpg");
+    background-image: url("assets/img/extra/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 705px;
