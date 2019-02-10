@@ -467,7 +467,7 @@
 }
 .footer-newslatter input {
     /*width: 359px !important;*/
-    min-width: 300px;
+    min-width: 200px;
     border-radius: 47px;
     margin: 0 auto;
     text-align: center;
