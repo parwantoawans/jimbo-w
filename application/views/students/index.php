@@ -160,12 +160,41 @@
 	</section>
 	<!-- Food menu end -->
 
-
-    <!-- Extra curricular -->
+	<!-- Extra curricular -->
+	<script src="<?php echo base_url(); ?>assets/js/jquery-3.2.1.min.js"></script>
+	<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 	<section class="search-section">
 		<div class="Extra-Curricular-opacity">
-			<p class="search-title">Extra Curricular</p><br><br>
-			<div class="row">
+			<p class="search-title">Extra Curricular</p><br>
+			<?php 
+				$extraHead = '<div class="row">';
+				$extraFoot = '</div><br/>';
+				$count = 0;
+				$buff = '';
+				foreach($extraData as $key => $values){
+
+					if($count == 0 || $count == 3)
+						$buff .= $extraHead;
+
+					$buff .= '<div class="col-lg-4">
+								<div class="row">
+									<div class="col-lg-2">
+										<div class="icon"><img width="50px" height="50px" src="'.$values->icon.'"/></div>	
+									</div>
+									<div class="col-lg-10">
+										<p class="search-caption">'.$values->jenis_extracuricullar.'</p>
+										<p class="search-caption2"> '.substr($values->description, 0,100).'...</p>
+										<a href="#'.$values->jenis_extracuricullar.'" data-toggle="modal" data-target="#extraModal" data-title="'.$values->jenis_extracuricullar.'" data-desc="'.$values->description.'"  data-icon="'.$values->icon.'">Read More</a>
+									</div>
+								</div>
+							</div>';
+					if($count == 2 || $count == 5)
+						$buff .= $extraFoot;
+					$count++;
+				}
+				echo $buff;
+			?>
+			<!--<div class="row">
 				<div class="col-lg-4">
 					<div class="row">
 						<div class="col-lg-2">
@@ -202,8 +231,8 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<br>
+			</div>-->
+			<!--<br>
 			<div class="row">
 				<div class="col-lg-4">
 					<div class="row">
@@ -241,8 +270,42 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</section>
+		<div class="modal fade" id="extraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="extraModalLabel">New message</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+						<center><img id="extraImage"></center>
+						<label for="recipient-name" class="col-form-label">Recipient:</label>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('#extraModal').on('show.bs.modal', function (event) {
+				var href = $(event.relatedTarget) // Button that triggered the modal
+				var title = href.data('title') // Extract info from data-* attributes
+				var desc = href.data('desc')
+				var icon = href.data('icon')
+				console.log(title);
+				// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+				// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+				var modal = $(this)
+				modal.find('.modal-title').text(title)
+				modal.find('.col-form-label').text(desc)
+				modal.find('#extraImage').attr('src', icon);
+			})
+		</script>
     <!-- Extra curicullar end -->
 
 	<!-- Field Trip section -->
