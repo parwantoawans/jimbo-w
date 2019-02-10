@@ -194,84 +194,8 @@
 				}
 				echo $buff;
 			?>
-			<!--<div class="row">
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-futbol-o"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Football Club</p>
-							<p class="search-caption2"> Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Craft Club</p>
-							<p class="search-caption2"> Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-pencil-square-o"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Homework Club</p>
-							<p class="search-caption2">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>-->
-			<!--<br>
-			<div class="row">
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Choir</p>
-							<p class="search-caption2">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Reading Club</p>
-							<p class="search-caption2">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Recorders</p>
-							<p class="search-caption2"> Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>-->
-		</section>
+		</div>
+	</section>
 		<div class="modal fade" id="extraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
@@ -282,7 +206,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-						<center><img id="extraImage"></center>
+						<center><img width="50%" id="extraImage"></center>
 						<label for="recipient-name" class="col-form-label">Recipient:</label>
 				</div>
 				<div class="modal-footer">
