@@ -35,6 +35,29 @@ class ParentsModel extends CI_Model
     public function destroy($id){
         return $this->db->delete('tm_parents', array('id_parents' => $id));
     }
+
+    function register($username, $fullname, $email, $phoneNum, $password){
+
+        $data = array(
+            'nama' => $fullname,
+            'alamat' => '',
+            'id_agama' => '1'
+        );
+
+        if( $this->store($data) == false ){
+            return false;
+        }
+
+        if(!$this->db->insert('tm_users', array('username' => $username, 'password' => md5($password), 'role_id' => '1')))
+            return false;
+        return true;
+    }
+
+    function checkUserName($username){
+        return $this->db->select("*")
+            ->from('tm_users')
+            ->where('username', $username)->get()->result_array();
+    }
 }
 
 
