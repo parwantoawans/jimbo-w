@@ -16,7 +16,7 @@
 			<p class="registration-title">Registration</p>
 			<p class="registration-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
 			<i class="fa fa-sign-in" style="font-size: 120px; color: white;"></i><br><br>
-			<button class="btn btn-info">Register</button><br><br>
+			<button class="btn btn-info" data-toggle="modal" data-target="#parentRegistrationModal" >Register</button><br><br>
 			<p class="registration-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
 		</div>
 	</section>
@@ -248,5 +248,95 @@
 			</div>
 		</div>
 	</section>
+	<div class="modal fade" id="parentRegistrationModal" tabindex="-1" role="dialog" aria-labelledby="parentRegistrationModalLabel" aria-hidden="true">
+		<div class="modal-dialog  modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="parentRegisterModalLabel">Parent Registration</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+					<div class="form-group">
+						<label for="user-name" class="col-form-label">Username:</label>
+						<input type="text" class="form-control" id="user-name" placeholder="Input Username here..."/>
+					</div>
+					<div class="form-group">
+						<label for="user-fullname" class="col-form-label">Fullname:</label>
+						<input type="text" class="form-control" id="user-fullname" placeholder="Input Fullname here...">
+					</div>
+					<div class="form-group">
+						<label for="user-email" class="col-form-label">Email:</label>
+						<input type="text" class="form-control" id="user-email" placeholder="Input Email here...">
+					</div>
+					<div class="form-group">
+						<label for="user-phone" class="col-form-label">Phone Number:</label>
+						<input type="text" class="form-control" id="user-phone" placeholder="Input Phone Number here...">
+					</div>
+					<div class="form-group">
+						<label for="user-password" class="col-form-label">Password:</label>
+						<input type="password" class="form-control" id="user-password" placeholder="Input Password here...">
+					</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Register</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.getElementById("user-name").addEventListener("keypress", userNameValidator);
+		function userNameValidator() {
+			$('#user-name').keyup(function() {
+				$('#user-name').val(this.value.toLowerCase().replace(/\s/g, ''));
+			});
+		}
+		document.getElementById("user-email").addEventListener("keypress", userMailValidator);
+		function userMailValidator() {
+			$('#user-email').keyup(function() {
+				$('#user-email').val(this.value.toLowerCase().replace(/\s/g, ''));
+			});
+		}
+		document.getElementById("user-email").addEventListener("focusout", mailValidator);
+		function mailValidator() {
+			$('#user-email').focusout(function() {
+				$('#user-email').val(this.value.toLowerCase().replace(/\s/g, ''));
+				var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+  				var validate = emailReg.test( $('#user-email').val() );
+				if( !validate) { 
+					$('#user-email').focus();
+				 }
+			});
+		}
+		document.getElementById("user-phone").maxLength = "12";
+		document.getElementById("user-phone").addEventListener("keypress", numberValidator);
+		function numberValidator(){
+			$('#user-phone').keyup(function() {
+				$('#user-phone').val(this.value.replace(/[^0-9.]/g, ''));
+				console.log($('#user-phone').val().length);
+				
+			});
+		}
+		document.getElementById("user-phone").addEventListener("focusout", phoneNumberLenghtValidator);
+		function phoneNumberLenghtValidator(){
+			if($('#user-phone').val().length < 10){
+				alert('Input valid number length!');
+				$('#user-phone').focus();
+			}
+		}
+		document.getElementById("user-password").maxLength = "15";
+		document.getElementById("user-password").addEventListener("focusout", passwordLenghtValidator);
+		function passwordLenghtValidator(){
+			if($('#user-password').val().length < 6){
+				alert('Minimum Password length is 6!');
+				$('#user-password').focus();
+			}
+		}
+		
+	</script>
 	<!-- news-letter -->
 <?php $this->load->view('layouts/footer.php') ?>
