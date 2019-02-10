@@ -466,11 +466,13 @@
     font-style: normal
 }
 .footer-newslatter input {
-    width: 359px !important;
+    /*width: 359px !important;*/
+    min-width: 300px;
     border-radius: 47px;
     margin: 0 auto;
     text-align: center;
-    margin-left: 390px;
+    /*margin-left: 390px;*/
+    align-content: center;
     margin-bottom: 0 !important;
     /* background: white !important; */
 }

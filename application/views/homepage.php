@@ -357,10 +357,12 @@
 			</div>
 			<div class="text-center pt-5">
 				<!-- <a href="#" class="site-btn">Register Now</a> -->
+				<center>
 				<form class="footer-newslatter" action="<?php echo base_url('email-subscribe'); ?>" method="post">
 					<input type="email" placeholder="E-mail address*" name="email"><br><br><br><br>
 					<input type="submit" class="site-btn" value="Subscribe">
 				</form>
+				</center>
 			</div>
 		</div>
 	</section>
