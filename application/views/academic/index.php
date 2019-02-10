@@ -85,81 +85,53 @@
 		<div class="other-service-opacity">
 			<p class="search-title">Other Services</p><br><br>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">After-School Caregiving</p>
-							<p class="search-caption2">Tough day at work? We can give you a few extra hours and take care of your child.</p>
-							<!--<a href="">Read More</a>-->
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Overnight Caregiving</p>
-							<p class="search-caption2">Leave your child for one night and he or she won’t have a desire to go back home.</p>
-							<!--<a href="">Read More</a>-->
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Mothers Helpers</p>
-							<p class="search-caption2">We can look after your child even for a couple of days and host him or her in a comfortable dorm.</p>
-							<!--<a href="">Read More</a>-->
-						</div>
-					</div>
-				</div>
+				<?php 
+					foreach ($otherservice as $o) {
+						echo '
+						
+							<div class="col-lg-4">
+								<div class="row">
+									<div class="col-lg-2">
+										<!-- <div class="icon"><i class="fa fa-apple"></i></div>-->
+										<div class="icon">
+											<img src="http://'.$_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $o->image)[1].'" alt="">
+										</div>
+									</div>
+									<div class="col-lg-10">
+										<p class="search-caption">'.$o->title.'</p>
+										<p class="search-caption2">'.$o->desc.'</p>
+										<!--<a href="">Read More</a>-->
+									</div>
+								</div>
+							</div>
+						';
+					}
+				?>
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Summer Childcare</p>
-							<p class="search-caption2">You are welcome to visit our summer camp that will guarantee your child the best education environment.</p>
-							<!--<a href="">Read More</a>-->
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-bell-o"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Special Olympics</p>
-							<p class="search-caption2">Every year we sum up the results with special competition to encourage our babies.</p>
-							<!--<a href="">Read More</a>-->
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row">
-						<div class="col-lg-2">
-							<div class="icon"><i class="fa fa-apple"></i></div>	
-						</div>
-						<div class="col-lg-10">
-							<p class="search-caption">Educational Events</p>
-							<p class="search-caption2">We have a lot of ways to make the education process for your child more entertaining.</p>
-							<!--<a href="">Read More</a>-->
-						</div>
-					</div>
-				</div>
+				<?php 
+					foreach ($otherservice2 as $o) {
+						echo '
+						
+							<div class="col-lg-4">
+								<div class="row">
+									<div class="col-lg-2">
+										<!-- <div class="icon"><i class="fa fa-apple"></i></div>-->
+										<div class="icon">
+											<img src="http://'.$_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $o->image)[1].'" alt="">
+										</div>
+									</div>
+									<div class="col-lg-10">
+										<p class="search-caption">'.$o->title.'</p>
+										<p class="search-caption2">'.$o->desc.'</p>
+										<!--<a href="">Read More</a>-->
+									</div>
+								</div>
+							</div>
+						';
+					}
+				?>
 			</div>
 		</div>
 	</section>
@@ -173,131 +145,221 @@
 				<div class="col-lg-3">
 					<div class="box-monday">Monday</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="box1-schedule">
-						<span class="schedule-class">Grammar Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Linda Guzman</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box2-schedule">
-						<span class="schedule-class">Literacy Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Marlyn Adams</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box3-schedule">
-						<span class="schedule-class">Art Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Janet Morris</span></span>
-					</div>
-				</div>
+				<?php 
+					$index = 1;
+					foreach ($schedule as $sh) {
+						if(date('l', strtotime($sh->tgl)) == "Monday"){
+							if($index==1){
+								echo '
+									<div class="col-lg-3">
+										<div class="box1-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else if($index==2){
+								echo '
+									<div class="col-lg-3">
+										<div class="box2-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else {
+								echo '
+									<div class="col-lg-3">
+										<div class="box3-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							}
+							$index++;
+						}
+					}
+				?>
 			</div>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="box-tuesday">Tuesday</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="box1-schedule">
-						<span class="schedule-class">Grammar Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Linda Guzman</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box2-schedule">
-						<span class="schedule-class">Literacy Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Marlyn Adams</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box3-schedule">
-						<span class="schedule-class">Art Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Janet Morris</span></span>
-					</div>
-				</div>
+				<?php 
+					$index = 1;
+					foreach ($schedule as $sh) {
+						if(date('l', strtotime($sh->tgl)) == "Tuesday"){
+							if($index==1){
+								echo '
+									<div class="col-lg-3">
+										<div class="box1-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else if($index==2){
+								echo '
+									<div class="col-lg-3">
+										<div class="box2-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else {
+								echo '
+									<div class="col-lg-3">
+										<div class="box3-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							}
+							$index++;
+						}
+					}
+				?>
 			</div>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="box-wednesday">Wednesday</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="box1-schedule">
-						<span class="schedule-class">Grammar Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Linda Guzman</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box2-schedule">
-						<span class="schedule-class">Literacy Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Marlyn Adams</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box3-schedule">
-						<span class="schedule-class">Art Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Janet Morris</span></span>
-					</div>
-				</div>
+				<?php 
+					$index = 1;
+					foreach ($schedule as $sh) {
+						if(date('l', strtotime($sh->tgl)) == "Wednesday"){
+							if($index==1){
+								echo '
+									<div class="col-lg-3">
+										<div class="box1-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else if($index==2){
+								echo '
+									<div class="col-lg-3">
+										<div class="box2-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else {
+								echo '
+									<div class="col-lg-3">
+										<div class="box3-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							}
+							$index++;
+						}
+					}
+				?>
 			</div>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="box-thursday">Thursday</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="box1-schedule">
-						<span class="schedule-class">Grammar Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Linda Guzman</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box2-schedule">
-						<span class="schedule-class">Literacy Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Marlyn Adams</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box3-schedule">
-						<span class="schedule-class">Art Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Janet Morris</span></span>
-					</div>
-				</div>
+				<?php 
+					$index = 1;
+					foreach ($schedule as $sh) {
+						if(date('l', strtotime($sh->tgl)) == "Thursday"){
+							if($index==1){
+								echo '
+									<div class="col-lg-3">
+										<div class="box1-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else if($index==2){
+								echo '
+									<div class="col-lg-3">
+										<div class="box2-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else {
+								echo '
+									<div class="col-lg-3">
+										<div class="box3-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							}
+							$index++;
+						}
+					}
+				?>
 			</div>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="box-friday">Friday</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="box1-schedule">
-						<span class="schedule-class">Grammar Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Linda Guzman</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box2-schedule">
-						<span class="schedule-class">Literacy Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Marlyn Adams</span></span>
-					</div>
-				</div>
-				<div class="col-lg-3">
-					<div class="box3-schedule">
-						<span class="schedule-class">Art Class</span><br>
-						<span class="schedule-date">09.00 AM - 09.45 AM</span><br>
-						<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">Janet Morris</span></span>
-					</div>
-				</div>
+				<?php 
+					$index = 1;
+					foreach ($schedule as $sh) {
+						if(date('l', strtotime($sh->tgl)) == "Friday"){
+							if($index==1){
+								echo '
+									<div class="col-lg-3">
+										<div class="box1-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else if($index==2){
+								echo '
+									<div class="col-lg-3">
+										<div class="box2-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							} else {
+								echo '
+									<div class="col-lg-3">
+										<div class="box3-schedule">
+											<span class="schedule-class">'.$sh->subject.'</span><br>
+											<span class="schedule-date">'.strtoupper(date('H:i A', strtotime($sh->jam_mulai))) . " - " . strtoupper(date('H:i A', strtotime($sh->jam_selesai))).'</span><br>
+											<span class="schedule-teacher">Teacher <span class="schedule-teacher-name">'.$sh->teacher.'</span></span>
+										</div>
+									</div>
+								';
+							}
+							$index++;
+						}
+					}
+				?>
 			</div>
 		</div>
 	</section>

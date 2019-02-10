@@ -216,6 +216,10 @@
     font-size: 40px;
     text-align: center
 }
+.search-section .icon img{
+    width: 40px;
+    height: 40px;
+}
 .search-title{
     margin-top: 80px;
     font-size: 50px;
