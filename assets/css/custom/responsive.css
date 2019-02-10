@@ -33,12 +33,15 @@
 }
 
 @media screen and (max-width: 519px){
+	.site-logo{
+		width: 400px;
+	}
 	.site-logo img{
 		margin-right: -190px;
 	}
-	.nav-switch {
+	/* .nav-switch {
 		margin-top: -38px;
-	}
+	} */
 	.hero-text{
 		padding-top: 100px;
 	}
@@ -62,5 +65,17 @@
 	}
 	.banner-section .site-btn{
 		margin-left: 75px;
+	}
+}
+
+@media screen and (max-width: 448px){
+	.banner-title{
+		font-size: 32px;
+	}
+	.banner-section .site-btn{
+		margin-left: 50px;
+	}
+	.footer-newslatter input{
+		width: 300px !important;
 	}
 }
