@@ -173,7 +173,7 @@
 				$buff = '';
 				foreach($extraData as $key => $values){
 
-					if($count == 0 || $count == 3)
+					if($count == 0 || $count%3 == 0)
 						$buff .= $extraHead;
 
 					$buff .= '<div class="col-lg-4">
@@ -188,7 +188,7 @@
 									</div>
 								</div>
 							</div>';
-					if($count == 2 || $count == 5)
+					if($count == 2 || ($count-2)%3 == 0)
 						$buff .= $extraFoot;
 					$count++;
 				}
