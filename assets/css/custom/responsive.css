@@ -32,6 +32,31 @@
 	}
 }
 
+@media screen and (max-width: 767px){
+	.site-logo{
+		width: 470px;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.hero-text{
+		padding-top: 100px;
+		margin-left: 220px
+	}
+	.site-logo{
+		width: 400px
+	}
+	.site-logo img{
+		margin-right: -140px
+	}
+}
+
+@media screen and (max-width: 521px){
+	.testimoni .testimoni-title{
+		font-size: 38px;
+	}
+}
+
 @media screen and (max-width: 519px){
 	.site-logo{
 		width: 400px;
@@ -50,6 +75,12 @@
 	}
 }
 
+@media screen and (max-width: 519px){
+	.hero-text{
+		margin-left: 220px;
+	}
+}
+
 @media screen and (max-width: 493px){
 	.site-logo img{
 		margin-right: -120px;
@@ -59,9 +90,25 @@
 	}
 	.footer-newslatter input{
 		margin-left: 65px;
+		width: 83% !important
 	}
 	.banner-section .site-btn{
 		margin-left: 75px;
+	}
+}
+
+@media screen and (max-width: 470px){
+	.site-logo{
+		width: 380px
+	}
+}
+
+@media screen and (max-width: 450px){
+	.site-logo{
+		width: 360px;
+	}
+	.hero-text {
+		margin-left: 180px;
 	}
 }
 
@@ -74,6 +121,12 @@
 	}
 	.footer-newslatter input{
 		width: 300px !important;
+	}
+}
+
+@media screen and (max-width: 440px){
+	.footer-newslatter input{
+		margin-left: 14%
 	}
 }
 
@@ -92,6 +145,12 @@
 	}
 	.grammar-opacity-caption{
 		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 421px){
+	.footer-newslatter input{
+		margin-left: 12%
 	}
 }
 
@@ -124,6 +183,12 @@
 	/* .nav-switch{
 		margin-right: 0;
 	} */
+}
+
+@media screen and (max-width: 391px){
+	.footer-newslatter input{
+		margin-left: 9%;
+	}
 }
 
 @media screen and (max-width: 380px){
