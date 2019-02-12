@@ -8,7 +8,7 @@ class SchoolImprovementModel extends CI_Model
 
     public function get(){
         $this->db->order_by('id', 'desc');
-        return $this->db->where('is_active', 'ACTIVE')->get('tm_school_improvement')->result_array();
+        return $this->db->get('tm_school_improvement')->result_array();
     }
 
     public function store($data){

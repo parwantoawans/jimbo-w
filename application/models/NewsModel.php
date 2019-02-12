@@ -6,9 +6,10 @@ class NewsModel extends CI_Model
         $this->load->database();
     }
 
-    public function get(){
+    public function get( $limit = 3, $offset = 0 ){
         $this->db->order_by('id', 'asc');
-        return $this->db->where('is_active', 'ACTIVE')->get('tm_news')->result();
+        $this->db->limit($limit, $offset);
+        return $this->db->get('tm_news')->result();
     }
 
     public function store($data){

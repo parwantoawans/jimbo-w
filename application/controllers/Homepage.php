@@ -2,11 +2,17 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Homepage extends CI_Controller
-{
+class Homepage extends CI_Controller{
+
+	public function __construct(){
+		parent::__construct();
+		$this->load->model('GalleryModel');
+		$this->load->model('NewsModel');
+	}
+
     public function index()
 	{
-		$result['articlesType'] = $this->ArticlesTypeModel->get();
+		$data['articlesType'] = $this->ArticlesTypeModel->get();
 		$experience = $this->ExperienceModel->get();
 		$data['passing_universities'] = $experience[0]['passing_universities'];
 		$data['people_working'] = $experience[0]['people_working'];
@@ -17,6 +23,9 @@ class Homepage extends CI_Controller
 		$data['testimoni'] = $this->TestimoniModel->get();
 		$data['classesprogram'] = $this->ClassesProgramModel->getFirstRow();
 		$data['classesprogram2'] = $this->ClassesProgramModel->getSecondRow();
+
+		$data['gallery'] = $this->GalleryModel->get();
+		$data['newsData'] = $this->NewsModel->get();
 
 		$this->load->view('homepage', $data);
 	}

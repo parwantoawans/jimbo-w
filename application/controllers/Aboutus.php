@@ -2,8 +2,15 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Aboutus extends CI_Controller
-{
+class Aboutus extends CI_Controller{
+
+	public function __construct(){
+		parent::__construct();
+		$this->load->model('GalleryModel');
+		$this->load->model('NewsModel');
+		$this->load->model('VideoModel');
+	}
+
     public function index()
 	{
 		// echo $_SERVER['SERVER_ADDR'] ."<br>";
@@ -36,9 +43,14 @@ class Aboutus extends CI_Controller
 
 		$data['news'] = $this->NewsModel->get();
 
-		$data['sImprovementDesc'] = str_replace(array('<p>', '</p>', '<br>'), array('', '', ''), $this->SchoolImprovementModel->get()[0]['desc']);
-		$data['sImprovementDesc2'] = str_replace(array('<p>', '</p>', '<br>'), array('', '', ''), $this->SchoolImprovementModel->get()[0]['desc2']);
-		$data['sImprovementImg'] = "http://localhost/jimboree-cms/" . explode("jimboree-cms/", $this->SchoolImprovementModel->get()[0]['image'])[1];
+		$data['gallery'] = $this->GalleryModel->get(0, 8);
+		$data['videos'] = $this->VideoModel->get(0, 2);
+
+		$schoolImprovement = $this->SchoolImprovementModel->get();
+
+		$data['sImprovementDesc'] = $schoolImprovement[0]['desc'];
+		$data['sImprovementDesc2'] = $schoolImprovement[0]['desc2'];
+		$data['sImprovementImg'] = $schoolImprovement[0]['image'];
 		
 		$this->load->view('about-us/index', $data);
 	}

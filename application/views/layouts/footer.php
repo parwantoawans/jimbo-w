@@ -151,9 +151,9 @@
 				if((typeof this.naturalWidth != "undefined" &&
 					this.naturalWidth == 0 ) 
 					|| this.readyState == 'uninitialized' ) {
-					$(this).attr('src', defaultPreloaderImage);
+					//$(this).attr('src', defaultPreloaderImage);
 				}
-				tmp.src = this.src;
+				//tmp.src = this.src;
 			});
 		};
 
@@ -176,7 +176,7 @@
 				var target = this;
 				img.addEventListener('error', function() {
 					console.log(url + " failed to load");
-					$(target).css("background-image", 'url("'+defaultPreloaderImage+'")');
+					//$(target).css("background-image", 'url("'+defaultPreloaderImage+'")');
 				})
 			}
 		});

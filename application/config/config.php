@@ -521,3 +521,10 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+/**
+ * asset config
+ */
+$config['cms_path'] = 'jimboree-cms/';
+$config['upload_asset_path'] = 'assets/uploads/files';
+$config['image_content_path'] = '../'.$config['cms_path'].$config['upload_asset_path'].'/';

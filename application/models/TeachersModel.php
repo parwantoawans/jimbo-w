@@ -8,7 +8,7 @@ class TeachersModel extends CI_Model
 
     public function get(){
         $this->db->order_by('peg_id', 'desc');
-        return $this->db->where('is_active', 'ACTIVE')->get('tm_teachers')->result();
+        return $this->db->get('tm_teachers')->result();
     }
 
     public function update($data){

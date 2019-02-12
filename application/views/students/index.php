@@ -27,135 +27,128 @@
 
 			<p class="students-links-title">Students Links</p>
 
-			<div class="row">
-				<div class="col-sm-12">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/KpllAjxOIUU"></iframe>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<video width="100%" height="100%" controls="controls" preload="metadata">
-  						<source src="assets/videos/1.mp4" type="video/mp4">
-					</video>
-				</div>
-				<div class="col-sm-4">
-					<img src="<?php echo base_url(); ?>assets/img/homepage/gallery/7.jpg" class="img-responsive">
-				</div>
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-				<div class="col-sm-4">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/KpllAjxOIUU"></iframe>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-				<div class="col-sm-4">
-					<video width="100%" height="100%" controls="controls" preload="metadata">
-  						<source src="assets/videos/2.mp4" type="video/mp4">
-					</video>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-8">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="//www.youtube.com/embed/KpllAjxOIUU"></iframe>
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-				<div class="col-sm-4">
-					<img src="//placehold.it/1170x658" class="img-responsive">
-				</div>
-				<div class="col-sm-4">
-					<img src="<?php echo base_url(); ?>assets/img/about-us/foto/1.jpg" class="img-responsive">
-				</div>
-			</div>
-			
+			<?php 
+
+				$finalBuff = "";
+				
+				$indexRow = 1;
+				$indexColsRow = 1;
+				$videoIndex = 0;
+				
+				foreach($gallery as $gallRow){
+
+					switch($indexColsRow){
+
+						case 1:
+							$finalBuff .= '<div class="row">';
+							if( $indexRow%2 == 0 ) // image
+								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
+							else if ( $indexRow%3 == 0 ){ // video
+								$finalBuff .= '<div class="col-sm-8">
+								<div class="embed-responsive embed-responsive-16by9">
+												<video width="100%" height="100%" controls="controls" preload="metadata">
+													<source src="'.IMAGE_CONTENT_PATH.$videos[$videoIndex]->video.'" type="video/mp4">
+												</video>
+										</div>
+									</div>';
+									$videoIndex++;
+							}else{ // image
+								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive">';
+							}
+							break;
+
+						case 2:
+							if( $indexRow%2 == 0 ) // image
+								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
+							else if ( $indexRow%3 == 0 )
+								$finalBuff .= '';
+							else{ // image
+								$finalBuff .= '<img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
+							}
+							break;
+
+						case 3:
+							if( $indexRow%2 == 0 ) // image
+								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
+							else if ( $indexRow%3 == 0 ) // image
+								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
+							else{ // video
+								$finalBuff .= '<div class="col-sm-8">
+										<div class="embed-responsive embed-responsive-16by9">
+											<video width="100%" height="100%" controls="controls" preload="metadata">
+												<source src="'.IMAGE_CONTENT_PATH.$videos[$videoIndex]->video.'" type="video/mp4">
+											</video>
+									</div>
+								</div>';
+								$videoIndex++;
+							}
+							$finalBuff .= '</div>';
+							break;
+					}
+					if( $indexColsRow == 3 ){
+						$indexRow++;
+						$indexColsRow = 0;
+					}
+					$indexColsRow++;
+				}
+				echo $finalBuff;
+			?>	
 		</div>
 	</section>
 	<!-- Students Links end -->
-
-
 	<!-- Food Menu -->
 	<section class="Food-menu">
 		<section class="food-menu-section">
 		<div class="container">
 		<p class="food-menu-title">Food Menu</p><br>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="Autumn-opacity">
-							<p class="Autumn-opacity-title"><br>Autumn Term Lunch Menu</p>
-							<p class="Autumn-opacity-caption">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/1.jpg"></div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="Summer-opacity">
-							<p class="Summer-opacity-title"><br>Summer Term Lunch Menu</p>
-							<p class="Summer-opacity-caption">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico..</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/2.jpg"></div>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="Healthy-opacity">
-							<p class="Healthy-opacity-title"><br>Healthy Packed Lunch</p>
-							<p class="Healthy-opacity-caption"> Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/3.jpg"></div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="Revised-opacity">
-							<p class="Revised-opacity-title"><br>Revised Lunch Menu</p>
-							<p class="Revised-opacity-caption">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico.</p>
-							<!--<a href="" class="btn btn-info">Learn more</a>-->
-						</div>
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/food/4.jpg"></div>
-					</div>
-				</div>
-			</div>
+			<?php 
+				$buffMenu = '';
+				for($a = 0; $a < 4; $a++){
+					if( $a == 0 || $a == 2 )
+						$buffMenu .= '<div class="row">';
+
+					$style = 'Autumn-opacity';
+					$titleStyle = 'Autumn-opacity-title';
+					$captionStyle = 'Autumn-opacity-caption';	
+					switch($a){
+						case 0:
+							$style = 'Autumn-opacity';
+							$titleStyle = $style.'-title';
+							$captionStyle = $style.'-caption';	
+							break;
+						case 1:
+							$style = 'Summer-opacity';
+							$titleStyle = $style.'-title';
+							$captionStyle = $style.'-caption';		
+							break;
+						case 2:
+							$style = 'Healthy-opacity';
+							$titleStyle = $style.'-title';
+							$captionStyle = $style.'-caption';		
+							break;
+						case 3:
+							$style = 'Revised-opacity';
+							$titleStyle = $style.'-title';
+							$captionStyle = $style.'-caption';		
+							break;
+					}
+
+					$buffMenu .= '<div class="col-lg-6">
+							<div class="categorie-item">
+								<div class="'.$style.'">
+									<p class="'.$titleStyle.'"><br>'.$menus[$a]->jenis_makanan.'</p>
+									<p class="'.$captionStyle.'">'.$menus[$a]->desc.'</p>
+									<!--<a href="" class="btn btn-info">Learn more</a>-->
+								</div>
+								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$menus[$a]->image.'"></div>
+							</div>
+						</div>';
+
+					if( $a == 1 || $a == 3 )
+						$buffMenu .= '</div>';
+				}
+				echo $buffMenu;
+			?>
 		</div>
 	</section>
 	<!-- Food menu end -->
@@ -179,12 +172,12 @@
 					$buff .= '<div class="col-lg-4">
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="icon"><img width="50px" height="50px" src="'.$values->icon.'"/></div>	
+										<div class="icon"><img width="50px" height="50px" src="'.IMAGE_CONTENT_PATH.$values->icon.'"/></div>	
 									</div>
 									<div class="col-lg-10">
 										<p class="search-caption">'.$values->jenis_extracuricullar.'</p>
 										<p class="search-caption2"> '.substr($values->description, 0,100).'...</p>
-										<a href="#'.$values->jenis_extracuricullar.'" data-toggle="modal" data-target="#extraModal" data-title="'.$values->jenis_extracuricullar.'" data-desc="'.$values->description.'"  data-icon="'.$values->icon.'">Read More</a>
+										<a href="#'.$values->jenis_extracuricullar.'" data-toggle="modal" data-target="#extraModal" data-title="'.$values->jenis_extracuricullar.'" data-desc="'.$values->description.'"  data-icon="'.IMAGE_CONTENT_PATH.$values->icon.'">Read More</a>
 									</div>
 								</div>
 							</div>';

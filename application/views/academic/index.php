@@ -42,7 +42,7 @@
 										<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
 										<p class="grammar-opacity-caption">'.$c->desc.'</p>
 									</div>
-									<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+									<div class="ci-thumb set-bg" data-setbg="' . IMAGE_CONTENT_PATH.$c->image . '"></div>
 								</div>
 							</div>
 						';
@@ -69,7 +69,7 @@
 										<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
 										<p class="grammar-opacity-caption">'.$c->desc.'</p>
 									</div>
-									<div class="ci-thumb set-bg" data-setbg="http://localhost/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+									<div class="ci-thumb set-bg" data-setbg="' . IMAGE_CONTENT_PATH.$c->image . '"></div>
 								</div>
 							</div>
 						';
@@ -94,7 +94,7 @@
 									<div class="col-lg-2">
 										<!-- <div class="icon"><i class="fa fa-apple"></i></div>-->
 										<div class="icon">
-											<img src="http://'.$_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $o->image)[1].'" alt="">
+											<img src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">
 										</div>
 									</div>
 									<div class="col-lg-10">
@@ -119,7 +119,7 @@
 									<div class="col-lg-2">
 										<!-- <div class="icon"><i class="fa fa-apple"></i></div>-->
 										<div class="icon">
-											<img src="http://'.$_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $o->image)[1].'" alt="">
+											<img src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">
 										</div>
 									</div>
 									<div class="col-lg-10">
@@ -370,63 +370,36 @@
 		<p class="calendar-title">Calendar</p><br><br>
 		<div class="row">
 			<div class="col-lg-3">
-				<p class="calendar-currentmonth">Desember</p>
+				<p class="calendar-currentmonth">February</p>
 				<div class="calendar-redline"></div>
 			</div>
+			<?php 
+				$index = 1;
+				$callBuff = "";
+				foreach ($calendar as $clRow) {
+					
+					if( $index == 1 || $index == 4 )
+						$callBuff .= '<div class="col-lg-3">';
+
+					$callBuff .= '<div class="row">
+									<div class="col-lg-2">
+										<p class="calendar-date">'.date('d', strtotime($clRow->when)).'</p>
+									</div>
+									<div class="col-lg-10">
+										<p class="calendar-event">'.$clRow->desc.'</p>
+									</div>
+								</div>';
+
+					if( $index == 3 || $index == 6 )
+						$callBuff .= '</div>';
+
+					$index++;
+
+				}
+				echo $callBuff;
+			?>
 			<div class="col-lg-3">
-				<div class="row">
-					<div class="col-lg-2">
-						<p class="calendar-date">01</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="calendar-event">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2">
-						<p class="calendar-date">05</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="calendar-event">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2">
-						<p class="calendar-date">13</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="calendar-event">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="row">
-					<div class="col-lg-2">
-						<p class="calendar-date">17</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="calendar-event">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2">
-						<p class="calendar-date">20</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="calendar-event">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-2">
-						<p class="calendar-date">22</p>
-					</div>
-					<div class="col-lg-10">
-						<p class="calendar-event">Lorem ipsum dolor sit amet, ex falli congue postea pri, id per rebum congue iudico, regione mentitum adipiscing ut pri. Luptatum corrumpit disputando sit et.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<a href="" class="calendar-nextmonthyear">January</a><br>
+				<a href="#" class="calendar-nextmonthyear">March</a><br>
 				<div class="calendar-yellowline"></div>
 				<a href="" class="calendar-nextmonthyear">2019</a>
 			</div>

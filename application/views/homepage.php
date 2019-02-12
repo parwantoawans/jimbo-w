@@ -28,16 +28,15 @@
 			</div>
 			<div class="row">
 				<?php 
-					$articlesType = $this->ArticlesTypeModel->get();
 					foreach ($articlesType as $a) {
 						echo
 						'<div class="col-lg-4">
 							<div class="categorie-item">
-								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'.explode("jimboree-cms/", $a->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$a->image.'"></div>
 								<div class="ci-text">
 									<h5>' . $a->articles_type .'</h5>
 									<p>' . $a->desc . '</p>
-									<!--<a href="' . base_url('master-data/articles/articles-by-type/') . $a->id .'">Learn more</a>-->
+									<!--<a href="' . base_url('master-data/articles/articles-by-type/') . $a->articles_type_id .'">Learn more</a>-->
 								</div>
 							</div>
 						</div>';
@@ -100,7 +99,7 @@
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
 									<p class="grammar-opacity-caption">'.$c->desc.'</p>
 								</div>
-								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$c->image.'"></div>
 							</div>
 						</div>
 					';
@@ -127,119 +126,56 @@
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
 									<p class="grammar-opacity-caption">'.$c->desc.'</p>
 								</div>
-								<div class="ci-thumb set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'.explode("jimboree-cms/", $c->image)[1].'"></div>
+								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$c->image.'"></div>
 							</div>
 						</div>
 					';
 				}
 			?>
 		</div>
-		<!-- <div class="row">
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<div class="grammar-opacity">
-						<p class="grammar-opacity-title">Grammar<br>Programs</p>
-						<p class="grammar-opacity-caption">We will turn your child into the real polyglot and grammar expert in different languages.</p>
-						<a href="" class="btn btn-info">Learn more</a>
-					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<div class="art-opacity">
-						<p class="art-opacity-title">Art<br>Programs</p>
-						<p class="art-opacity-caption">Creativity is a must-have element of any child’s upbringing. We offer miscellaneous courses.</p>
-						<a href="" class="btn btn-info">Learn more</a>
-					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
-				</div>
-			</div>
-		</div> -->
-		<!-- <br> -->
-		<!-- <div class="row">
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<div class="social-opacity">
-						<p class="social-opacity-title">Social<br>Programs</p>
-						<p class="social-opacity-caption">We have special programs for the children who have no access to primary education.</p>
-						<a href="" class="btn btn-info">Learn more</a>
-					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<div class="afterschool-opacity">
-						<p class="afterschool-opacity-title">After School<br>Programs</p>
-						<p class="afterschool-opacity-caption">Our students have active outdoors life thanks to the developed physical education program.</p>
-						<a href="" class="btn btn-info">Learn more</a>
-					</div>
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/section2/1.jpg"></div>
-				</div>
-			</div>
-		</div> -->
 	</section>
 	<!-- classes program end -->
-
+	
 	<!-- gallery section -->
 	<section class="gallery-section">
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/1.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/2.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/3.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/4.jpg"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/5.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/6.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/7.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-4">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/8.jpg"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/9.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/10.jpg"></div>
-				</div>
-			</div>
-		</div>
+		
+			<?php 
+				$count = 1;
+				$buffGallery = "";
+				foreach($gallery as $gallRow){
+					if($count < 9){
+
+						if( $count == 1 || $count == 5 )
+							$buffGallery .= '<div class="row">';
+
+						$buffGallery .= '<div class="col-lg-4">
+								<div class="categorie-item">
+									<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$gallRow->image.'"></div>
+								</div>
+							</div>';
+
+						if( $count == 4 || $count == 8 )
+							$buffGallery .= '</div>';
+
+					}else{
+
+						if($count == 9)
+							$buffGallery .= '<div class="row">';
+
+						$buffGallery .= '<div class="col-lg-6">
+								<div class="categorie-item">
+									<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$gallRow->image.'"></div>
+								</div>
+							</div>';
+
+						if($count == 10)
+							$buffGallery .= '</div>';
+					}
+
+					$count++;
+				}
+				echo $buffGallery;
+			?>
 	</section>
 	<!-- gallery section end -->
 
@@ -264,7 +200,7 @@
 										<p class="testimoni-caption">'.$t->testimoni.'</p>
 										<div class="row">
 											<div class="col-lg-2">
-												<div class="ca-pic set-bg" data-setbg="http://'.$_SERVER['HTTP_HOST'].'/jimboree-cms/'. explode("jimboree-cms/", $t->image)[1].'"></div>
+												<div class="ca-pic set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$t->image.'"></div>
 											</div>
 											<div class="col-lg">
 												<div class="testimoni-parents-name">'.$t->nama.'</div>
@@ -291,7 +227,7 @@
 					foreach ($teachers as $t) {
 						echo "
 							<div class='col-lg-3'>
-								<div class='ca-pic set-bg' data-setbg='http://".$_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $t->image)[1]."'>
+								<div class='ca-pic set-bg' data-setbg='".IMAGE_CONTENT_PATH.$t->image."'>
 								</div><br>
 								<p class='teacher-name'>".$t->nama_depan." ".$t->nama_tengah." ".$t->nama_belakang."<br><span class='teacher-job'>". $t->jabatan ."</span></p>
 								<div class='icon'>
@@ -313,7 +249,23 @@
 		<div class="container">
 			<p class="latest-news-title">Latest News</p><br><br>
 			<div class="row">
-				<div class="col-lg-4">
+			<?php 
+				$newsBuff = "";
+				foreach ($newsData as $n) {
+					$newsBuff .= '<div class="col-lg-4">
+						<div class="categorie-item">
+							<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$n->image.'"></div>
+							<div class="ci-text">
+								<span class="latest-news-date">December 9, 2018 </span>
+								<p class="latest-news-title-caption">'.$n->title.'</p>
+								<span class="latest-news-caption">'.$n->desc.'</span>
+							</div>
+						</div>
+					</div>';
+				}
+				echo $newsBuff;
+			?>
+				<!--<div class="col-lg-4">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/1.jpg"></div>
 						<div class="ci-text">
@@ -342,7 +294,7 @@
 							<span class="latest-news-caption">Are you sure your child do everything well? Read this article to find this out.</span>
 						</div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</section>

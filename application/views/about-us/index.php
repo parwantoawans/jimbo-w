@@ -21,7 +21,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="http://<?php echo $_SERVER['HTTP_HOST'] ."/jimboree-cms/".explode("jimboree-cms/", $image)[1]; ?>"></div>
+						<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$image; ?>"></div>
 					</div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg='http://<?php echo $_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $misi_image)[1]; ?>'></div>
+						<div class="ci-thumb set-bg" data-setbg='<?php echo IMAGE_CONTENT_PATH.$misi_image; ?>'></div>
 					</div>
 				</div>
 			</div>
@@ -92,7 +92,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg='http://<?php echo $_SERVER['HTTP_HOST']."/jimboree-cms/". explode("jimboree-cms/", $visi_image)[1]; ?>'></div>
+						<div class="ci-thumb set-bg" data-setbg='<?php echo IMAGE_CONTENT_PATH.$visi_image; ?>'></div>
 					</div>
 				</div>
 				<div class="col-lg-6">
@@ -114,7 +114,7 @@
 						echo "
 						<div class='col-lg-4'>
 							<div class='categorie-item'>
-								<div class='ci-thumb set-bg' data-setbg='http://".$_SERVER['HTTP_HOST']."/jimboree-cms/". explode('jimboree-cms/', $n->image)[1] ."'></div>
+								<div class='ci-thumb set-bg' data-setbg='" . IMAGE_CONTENT_PATH.$n->image ."'></div>
 								<div class='ci-text'>
 									<span class='newsandannouncement-date'>". date('F d, Y', strtotime($n->created_at)) ." </span>
 									<p class='newsandannouncement-title-caption'>". $n->title ."</p>
@@ -131,66 +131,59 @@
 	<!-- newsandannouncement end -->
 	<!-- foto section -->
 	<section class="foto-section">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/about-us/foto/1.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/about-us/foto/2.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/about-us/foto/3.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/about-us/foto/4.png"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/5.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/6.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/7.jpg"></div>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="categorie-item">
-					<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/gallery/8.jpg"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-6">
-				<div class="categorie-item">
-						<video width="100%" height="100%" controls="controls" preload="metadata">
-  							<source src="assets/videos/1.mp4" type="video/mp4">
-						</video>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="categorie-item">
-					<video width="100%" height="100%" controls="controls" preload="metadata">
-  						<source src="assets/videos/2.mp4" type="video/mp4">
-					</video>
-				</div>
-			</div>
-		</div>
+		<?php 
+				$count = 1;
+				$buffGallery = "";
+				foreach($gallery as $gallRow){
+					if($count < 9){
+
+						if( $count == 1 || $count == 5 )
+							$buffGallery .= '<div class="row">';
+
+						$buffGallery .= '<div class="col-lg-3">
+								<div class="categorie-item">
+									<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$gallRow->image.'"></div>
+								</div>
+							</div>';
+
+						if( $count == 4 || $count == 8 )
+							$buffGallery .= '</div>';
+
+					}else{
+
+						if($count == 9)
+							$buffGallery .= '<div class="row">';
+
+						$buffGallery .= '<div class="col-lg-6">
+								<div class="categorie-item">
+									<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$gallRow->image.'"></div>
+								</div>
+							</div>';
+
+						if($count == 10)
+							$buffGallery .= '</div>';
+					}
+
+					$count++;
+				}
+				echo $buffGallery;
+
+				$count = 1;
+				$buffVideo = '<div class="row">';
+				foreach($videos as $vidRow){
+					$buffVideo .= '<div class="col-lg-6">
+									<div class="categorie-item">
+											<video width="100%" height="100%" controls="controls" preload="metadata">
+												<source src="'.IMAGE_CONTENT_PATH.$vidRow->video.'" type="video/mp4">
+											</video>
+									</div>
+								</div>';
+					$count++;
+				}
+				$buffVideo .= '</div>';
+				echo $buffVideo;
+			?>
+		
 	</section>
 	<!-- foto section end -->
 
@@ -207,7 +200,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6">
-				<img src="<?php echo $sImprovementImg; ?>" alt="">
+				<img src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt="">
 			</div>
 		</div>
 	</section>
