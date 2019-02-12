@@ -380,7 +380,7 @@
     padding: 100px 100px 100px 150px;
 }
 .calendar-title{
-    font-size: 50px;
+    font-size: 5vw;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -400,7 +400,7 @@
     color: #4b4b4b;
 }
 .calendar-redline{
-    width: 244px;
+    width: 80%;
     height: 6px;
     background-color: #e76136;
 }

@@ -371,7 +371,7 @@
 		<div class="row">
 			<div class="col-lg-3">
 				<p class="calendar-currentmonth">February</p>
-				<div class="calendar-redline"></div>
+				<div class="calendar-redline w3-half"></div>
 			</div>
 			<?php 
 				$index = 1;
