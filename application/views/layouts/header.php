@@ -44,7 +44,7 @@
 								<a href="<?php echo base_url(); ?>" class="<?php echo ($this->uri->segment(1) == "") ? "active" : "" ; ?>">Home</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url(); ?>Aboutus"  class="<?php echo ($this->uri->segment(1) == "Aboutus") ? "active" : "" ; ?>">About us</a>
+								<a href="<?php echo base_url(); ?>about-us"  class="<?php echo ($this->uri->segment(1) == "about-us") ? "active" : "" ; ?>">About us</a>
 							</li>
 							<li>
 								<a href="<?php echo base_url(); ?>academic"  class="<?php echo ($this->uri->segment(1) == "academic") ? "active" : "" ; ?>">Academic</a>
@@ -56,7 +56,7 @@
 								<a href="<?php echo base_url(); ?>parents"  class="<?php echo ($this->uri->segment(1) == "parents") ? "active" : "" ; ?>">Parents</a>
 							</li>
 							<li>
-								<a href="<?php echo base_url(); ?>Contactus" class="<?php echo ($this->uri->segment(1) == "Contactus") ? "active" : "" ; ?>">Contact us & Staff only</a>
+								<a href="<?php echo base_url(); ?>contact-us" class="<?php echo ($this->uri->segment(1) == "contact-us") ? "active" : "" ; ?>">Contact us & Staff only</a>
 							</li>
 						</ul>
 					</nav>

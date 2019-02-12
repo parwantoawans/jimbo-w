@@ -53,12 +53,12 @@ $route['default_controller'] = 'homepage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['academic'] = 'academic';
-$route['about-us'] = 'aboutus';
-$route['contact-us'] = 'contactus';
+$route['academic'] = 'Academic';
+$route['about-us'] = 'Aboutus';
+$route['contact-us'] = 'Contactus';
 $route['contact-us/send-email']['post'] = 'contactus/sendEmail';
-$route['students'] = 'students';
-$route['parents'] = 'parents';
+$route['students'] = 'Students';
+$route['parents'] = 'Parents';
 
 $route['email-subscribe']['post'] = 'emailsubscribe';
 
