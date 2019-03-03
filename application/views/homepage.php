@@ -97,7 +97,7 @@
 							<div class="categorie-item">
 								<div class="'.$class.'">
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-									<p class="grammar-opacity-caption">'.$c->desc.'</p>
+									<p class="grammar-opacity-caption">' . $c->desc . '</p>
 								</div>
 								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$c->image.'"></div>
 							</div>
@@ -124,7 +124,7 @@
 							<div class="categorie-item">
 								<div class="'.$class.'">
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-									<p class="grammar-opacity-caption">'.$c->desc.'</p>
+									<p class="grammar-opacity-caption">' . $c->desc . '</p>
 								</div>
 								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$c->image.'"></div>
 							</div>
@@ -256,7 +256,7 @@
 						<div class="categorie-item">
 							<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$n->image.'"></div>
 							<div class="ci-text">
-								<span class="latest-news-date">December 9, 2018 </span>
+								<span class="latest-news-date">' . date('F d, Y', strtotime($n->created_at)).'</span>
 								<p class="latest-news-title-caption">'.$n->title.'</p>
 								<span class="latest-news-caption">'.$n->desc.'</span>
 							</div>

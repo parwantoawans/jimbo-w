@@ -44,7 +44,7 @@
 
 /* CLASSES PROGRAM */
 .classes-program-section{
-   padding: 100px 0;
+   padding: 32px 10px;
 }
 .classes-program-title{
     font-size: 50px;
@@ -68,18 +68,15 @@
     padding: 30px 30px;
 }
 .grammar-opacity-title{
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
     line-height: 40px;
 }
 .grammar-opacity-caption{
-    font-size: 20px;
-    font-weight: 300;
     color: #ffffff;
     text-align: left;
-    line-height: 26px;
 }
 .grammar-opacity .btn-info{
     background: transparent;

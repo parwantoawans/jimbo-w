@@ -58,8 +58,8 @@
     padding: 0;
 }
 .categories-section{
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .categories-section .section-title p{
     font-size: 50px;
@@ -139,7 +139,7 @@
 
 /* CLASSES PROGRAM */
 .classes-program-section{
-    padding: 100px 50px;
+    padding: 32px 0px;
 }
 .classes-program-title{
     font-size: 50px;
@@ -163,18 +163,15 @@
     padding: 30px 30px;
 }
 .grammar-opacity-title{
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
     line-height: 40px;
 }
 .grammar-opacity-caption{
-    font-size: 20px;
-    font-weight: 300;
     color: #ffffff;
     text-align: left;
-    line-height: 26px;
 }
 .grammar-opacity .btn-info{
     background: transparent;
@@ -355,6 +352,7 @@
     color: #4b4b4b;
     text-align: left;
     line-height: 25px;
+    margin-left:6px;
 }
 .testimoni-parents-subname{
     font-size: 12px;
@@ -362,6 +360,7 @@
     color: #a3a3a3;
     text-align: left;
     line-height: 22px;
+    margin-left:6px;
 }
 /* TESTIMONI END */
 

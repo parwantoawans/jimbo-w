@@ -6,8 +6,8 @@ class ArticlesTypeModel extends CI_Model
         $this->load->database();
     }
 
-    public function get(){
-        return $this->db->get('tm_articles_type')->result();
+    public function get($limit = 6, $offset = 0){
+        return $this->db->get('tm_articles_type', $limit, $offset)->result();
     }
 
     public function update($data){
