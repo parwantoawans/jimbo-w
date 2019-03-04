@@ -83,61 +83,49 @@
 	<!-- Other Service -->
 	
 	<section class="search-section">
-		
 			<div class="other-service-opacity">
-			<div class="container">
-				<p class="search-title">Other Services</p><br>
-				<div class="row">
-					<?php 
-						foreach ($otherservice as $o) {
-							echo '
+				
+					<p class="search-title">Other Services</p><br>
+					<div class="row">
+						<?php 
+							foreach ($otherservice as $o) {
+								echo '
 								<div class="col-lg-4">
-									<div class="row">
-										<div class="col-lg-2">
-											<!-- <div class="icon"><i class="fa fa-apple"></i></div>-->
-											<div class="icon">
-												<img src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">
-											</div>
-										</div>
-										<div class="col-lg-10">
-											<p class="search-caption">'.$o->title.'</p>
-											<p class="search-caption2">'.substr($o->desc, 0, 150).'...</p>
+									<div class="media">
+										<img class="mr-3" style="width:20%; margin-top:10px" src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">	
+										<div class="media-body">
+											<h5 class="mt-0 search-caption">'.$o->title.'</h5>
+											<p class="search-caption2">'.$o->desc.'</p>
 											<!--<a href="">Read More</a>-->
 										</div>
 									</div>
 								</div>
-							';
-						}
-					?>
-				</div>
-				<div class="row">
-					<?php 
-						foreach ($otherservice2 as $o) {
-							echo '
-								<div class="col-lg-4">
-									<div class="row">
-										<div class="col-lg-2">
-											<!-- <div class="icon"><i class="fa fa-apple"></i></div>-->
-											<div class="icon">
-												<img src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">
-											</div>
-										</div>
-										<div class="col-lg-10">
-											<p class="search-caption">'.$o->title.'</p>
-											<p class="search-caption2">'.substr($o->desc, 0, 150).'...</p>
+								';
+							}
+						?>
+					</div>
+					<div class="row">
+						<?php 
+							foreach ($otherservice2 as $o) {
+								echo '
+									<div class="col-lg-4">
+									<div class="media">
+										<img class="mr-3" style="width:20%; margin-top:10px" src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">	
+										<div class="media-body">
+											<h5 class="mt-0 search-caption">'.$o->title.'</h5>
+											<p class="search-caption2">'.$o->desc.'</p>
 											<!--<a href="">Read More</a>-->
 										</div>
 									</div>
 								</div>
-							';
-						}
-					?>
-				</div>
-			</div>
+								';
+							}
+						?>
+					</div>
+				
 			</div>
 		
 	</section>
-	
 	<!-- Other Service end -->
 
 	<!-- Bell Schedule -->

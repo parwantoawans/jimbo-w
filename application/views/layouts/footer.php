@@ -181,7 +181,7 @@
 			}
 		});
 		
-		$('.textarea').wysihtml5({useLineBreaks: true});
+		//$('.textarea').wysihtml5({useLineBreaks: true});
 		
 	</script>
 </html>
