@@ -62,7 +62,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6">
-				<img src="<?php echo base_url('assets/img/parents/2.jpg'); ?>" alt="" style="height: 45%"><br><br>
+				<img src="<?php echo base_url('assets/img/parents/2.jpg'); ?>" alt="" style="width: 100%"><br><br>
 				<div class="row">
 					<div class="col-lg-2">
 						<p class="parentstudent-date">06</p>
