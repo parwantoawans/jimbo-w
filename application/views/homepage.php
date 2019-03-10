@@ -106,7 +106,6 @@
 				}
 			?>
 		</div>
-		<br>
 		<div class="row">
 			<?php 
 				foreach ($classesprogram2 as $c) {

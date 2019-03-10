@@ -62,7 +62,7 @@
     background: #ffa133;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
     padding: 30px 30px;
@@ -77,6 +77,9 @@
 .grammar-opacity-caption{
     color: #ffffff;
     text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
 }
 .grammar-opacity .btn-info{
     background: transparent;
@@ -91,7 +94,7 @@
     background: #ff3967;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
     padding: 30px 30px;
@@ -124,7 +127,7 @@
     background: #00baff;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
     padding: 30px 30px;
@@ -157,7 +160,7 @@
     background: #4acc05;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
     padding: 30px 30px;
