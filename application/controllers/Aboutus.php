@@ -9,6 +9,7 @@ class Aboutus extends CI_Controller{
 		$this->load->model('GalleryModel');
 		$this->load->model('NewsModel');
 		$this->load->model('VideoModel');
+		$this->load->Helper('html');
 	}
 
     public function index()
@@ -53,6 +54,12 @@ class Aboutus extends CI_Controller{
 		$data['sImprovementImg'] = $schoolImprovement[0]['image'];
 		
 		$this->load->view('about-us/index', $data);
+	}
+
+	public function schoolimprove(){
+		$data['detail'] = $this->SchoolImprovementModel->get();
+		//$data['detail'][0]['desc'] = strip_tags_content($data['detail'][0]['desc'], '<p>');
+		$this->load->view('aboutusimprovement', $data);
 	}
 }
 ?>

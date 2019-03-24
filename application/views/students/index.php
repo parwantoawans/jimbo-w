@@ -138,7 +138,7 @@
 								<div class="'.$style.'">
 									<p class="'.$titleStyle.'"><br>'.$menus[$a]->jenis_makanan.'</p>
 									<p class="'.$captionStyle.'">'.$menus[$a]->description.'</p>
-									<!--<a href="" class="btn btn-info">Learn more</a>-->
+									<a href="" class="btn btn-info">Learn more</a>
 								</div>
 								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$menus[$a]->image.'"></div>
 							</div>

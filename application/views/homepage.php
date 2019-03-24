@@ -36,7 +36,7 @@
 								<div class="ci-text">
 									<h5>' . $a->articles_type .'</h5>
 									<p>' . $a->desc . '</p>
-									<!--<a href="' . base_url('master-data/articles/articles-by-type/') . $a->articles_type_id .'">Learn more</a>-->
+									<a href="' . base_url('homepage/article/') . $a->articles_type_id .'">Learn more</a>
 								</div>
 							</div>
 						</div>';
@@ -97,9 +97,13 @@
 							<div class="categorie-item">
 								<div class="'.$class.'">
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-									<p class="grammar-opacity-caption">' . $c->desc . '</p>
+									<p class="grammar-opacity-caption">' . substr($c->desc, 0, 160) . '...</p>
+									<a href="' . base_url('homepage/classes/') . $c->id .'">
+										<img src="assets/img/homepage/class-program/learnmore.png" class="learn-more">
+									</a>
 								</div>
 								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$c->image.'"></div>
+								
 							</div>
 						</div>
 					';
@@ -123,7 +127,10 @@
 							<div class="categorie-item">
 								<div class="'.$class.'">
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-									<p class="grammar-opacity-caption">' . $c->desc . '</p>
+									<p class="grammar-opacity-caption">' . substr($c->desc, 0, 160) . '...</p>
+									<a href="' . base_url('homepage/classes/') . $c->id .'">
+										<img src="assets/img/homepage/class-program/learnmore.png" class="learn-more">
+									</a>
 								</div>
 								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$c->image.'"></div>
 							</div>
@@ -253,7 +260,7 @@
 				foreach ($newsData as $n) {
 					$newsBuff .= '<div class="col-lg-4">
 						<div class="categorie-item">
-							<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$n->image.'"></div>
+						<a href="' . base_url('homepage/newses/') . $n->id .'"><div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$n->image.'"></div></a>
 							<div class="ci-text">
 								<span class="latest-news-date">' . date('F d, Y', strtotime($n->created_at)).'</span>
 								<p class="latest-news-title-caption">'.$n->title.'</p>
@@ -264,36 +271,7 @@
 				}
 				echo $newsBuff;
 			?>
-				<!--<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/1.jpg"></div>
-						<div class="ci-text">
-							<span class="latest-news-date">December 9, 2018 </span>
-							<p class="latest-news-title-caption">News Schedule</p>
-							<span class="latest-news-caption">Dear parents, please, consider that our timetable will be changed in several months.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/2.jpg"></div>
-						<div class="ci-text">
-							<span class="latest-news-date">December 9, 2018 </span>
-							<p class="latest-news-title-caption">Top Students This Month</p>
-							<span class="latest-news-caption">We would like to introduce the students who showed amazing progress for the last 30 days.</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/latest-news/3.jpg"></div>
-						<div class="ci-text">
-							<span class="latest-news-date">December 9, 2018 </span>
-							<p class="latest-news-title-caption">Gap Analysis</p>
-							<span class="latest-news-caption">Are you sure your child do everything well? Read this article to find this out.</span>
-						</div>
-					</div>
-				</div>-->
+				
 			</div>
 		</div>
 	</section>

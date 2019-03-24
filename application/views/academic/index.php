@@ -40,7 +40,10 @@
 								<div class="categorie-item">
 									<div class="'.$class.'">
 										<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-										<p class="grammar-opacity-caption">'.$c->desc.'</p>
+										<p class="grammar-opacity-caption">'.substr($c->desc, 0, 160).'...</p>
+										<a href="' . base_url('homepage/classes/') . $c->id .'">
+											<img src="assets/img/homepage/class-program/learnmore.png" class="learn-more">
+										</a>
 									</div>
 									<div class="ci-thumb set-bg" data-setbg="' . IMAGE_CONTENT_PATH.$c->image . '"></div>
 								</div>
@@ -66,7 +69,10 @@
 								<div class="categorie-item">
 									<div class="'.$class.'">
 										<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-										<p class="grammar-opacity-caption">'.$c->desc.'</p>
+										<p class="grammar-opacity-caption">'.substr($c->desc, 0, 160).'...</p>
+										<a href="' . base_url('homepage/classes/') . $c->id .'">
+											<img src="assets/img/homepage/class-program/learnmore.png" class="learn-more">
+										</a>
 									</div>
 									<div class="ci-thumb set-bg" data-setbg="' . IMAGE_CONTENT_PATH.$c->image . '"></div>
 								</div>
@@ -94,8 +100,8 @@
 										<img class="mr-3" style="width:20%; margin-top:10px" src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">	
 										<div class="media-body">
 											<h5 class="mt-0 search-caption">'.$o->title.'</h5>
-											<p class="search-caption2">'.$o->desc.'</p>
-											<!--<a href="">Read More</a>-->
+											<p class="search-caption2">'.substr($o->desc, 0, 160).'...</p>
+											<a href="'.base_url('academic/otherservice/').$o->id.'">Read More</a><br/><br/><br/>
 										</div>
 									</div>
 								</div>
@@ -112,8 +118,8 @@
 										<img class="mr-3" style="width:20%; margin-top:10px" src="'. IMAGE_CONTENT_PATH.$o->image.'" alt="">	
 										<div class="media-body">
 											<h5 class="mt-0 search-caption">'.$o->title.'</h5>
-											<p class="search-caption2">'.$o->desc.'</p>
-											<!--<a href="">Read More</a>-->
+											<p class="search-caption2">'.substr($o->desc, 0, 160).'...</p>
+											<a href="'.base_url('academic/otherservice/').$o->id.'">Read More</a><br/><br/><br/>
 										</div>
 									</div>
 								</div>

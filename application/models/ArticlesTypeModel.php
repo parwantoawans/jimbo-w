@@ -24,7 +24,7 @@ class ArticlesTypeModel extends CI_Model
     }
 
     public function getById($id){
-        return $this->db->where('id', $id)->get('tm_articles_type')->result_array();
+        return $this->db->where('articles_type_id', $id)->get('tm_articles_type')->result_array();
     }
 
     public function destroy($id){

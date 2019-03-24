@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/owl.carousel.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css"/>
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom/main.css">
-	<link rel="stylesheet" href="<?php echo ($this->uri->segment(1) == "" ? base_url() . "assets/css/custom/homepage.css" : ($this->uri->segment(1) == "about-us" ? base_url() . "assets/css/custom/aboutus.css" : ($this->uri->segment(1) == "academic" ? base_url() . "assets/css/custom/academic.css" : ($this->uri->segment(1) == "students" ? base_url() . "assets/css/custom/students.css" : ($this->uri->segment(1) == "parents" ? base_url() . "assets/css/custom/parents.css" : ($this->uri->segment(1) == "contact-us" ? base_url() . "assets/css/custom/contact-us.css" : '' )))))); ?>">
+	<link rel="stylesheet" href="<?php echo ($this->uri->segment(1) == "" ? base_url() . "assets/css/custom/homepage.css" : ($this->uri->segment(1) == "about-us" ? base_url() . "assets/css/custom/aboutus.css" : ($this->uri->segment(1) == "academic" ? base_url() . "assets/css/custom/academic.css" : ($this->uri->segment(1) == "students" ? base_url() . "assets/css/custom/students.css" : ($this->uri->segment(1) == "parents" ? base_url() . "assets/css/custom/parents.css" : ($this->uri->segment(1) == "contact-us" ? base_url() . "assets/css/custom/contact-us.css" : ($this->uri->segment(1) == "homepage" ? base_url() . "assets/css/custom/homepage.css" : '' ) )))))); ?>">
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom/responsive.css">
 </head>
 <body>

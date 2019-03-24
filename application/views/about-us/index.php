@@ -114,7 +114,9 @@
 						echo "
 						<div class='col-lg-4'>
 							<div class='categorie-item'>
-								<div class='ci-thumb set-bg' data-setbg='" . IMAGE_CONTENT_PATH.$n->image ."'></div>
+								<a href=\"" . base_url('homepage/newses/') . $n->id ."\">
+									<div class='ci-thumb set-bg' data-setbg='" . IMAGE_CONTENT_PATH.$n->image ."'></div>
+								</a>
 								<div class='ci-text'>
 									<span class='newsandannouncement-date'>". date('F d, Y', strtotime($n->created_at)) ." </span>
 									<p class='newsandannouncement-title-caption'>". $n->title ."</p>
@@ -200,7 +202,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6">
-				<img src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt="">
+				<a href="<?php echo base_url('Aboutus/schoolimprove');?>"><img src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt=""></a>
 			</div>
 		</div>
 	</section>

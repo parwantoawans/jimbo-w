@@ -371,6 +371,16 @@ ol {
 	color: #d82a4e;
 }
 
+.ci-text a {
+	font-size: 20px;
+	font-weight: 500;
+	color: #4b4b4b;
+	text-align: left;
+	line-height: 25px;
+	text-decoration: underline;
+	text-decoration-color: #f8de10;
+}
+
 .categorie-item:hover {
 	background: #d82a4e;
 }
@@ -1782,3 +1792,138 @@ body.loading {
 body.loading .bodymodal {
     display: block;
 }
+
+.newsdetailcontainer{
+	max-width: 1200px;
+	margin-left: auto;
+	  margin-right: auto;
+	  margin-bottom: 50px;
+	  align-content:center;
+}
+.detailcontainer{
+	max-width: 1000px;
+	margin-left: auto;
+	  margin-right: auto;
+	  margin-bottom: 50px
+}
+.detailimage{
+	width:100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	align-content:center;
+	max-width: 1024px;
+}
+
+.detailTitle{
+	font-size: 20px;
+	margin-top: 30px;
+	padding-left: 25px;
+	align-content:left;
+	font-family: HelveticaNeue;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #4b4b4b;
+}
+
+.detailDesc{
+	object-fit: contain;
+	font-family: HelveticaNeue;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: left;
+	color: #a3a3a3;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 25px;
+}
+
+.Other-Articles {
+	object-fit: contain;
+	font-family: HelveticaNeue;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: center;
+	color: #e66234;
+	margin-bottom: 34px;
+  }
+
+  .Other-Articles-Title {
+	object-fit: contain;
+	font-family: HelveticaNeue;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.28;
+	letter-spacing: normal;
+	text-align: left;
+	color: #4b4b4b;
+	margin-top: 20px;
+	margin-bottom: 5px;
+  }
+
+  .Other-Articles-Desc {
+	object-fit: contain;
+	font-family: HelveticaNeue;
+	font-size: 14px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: left;
+	color: #a3a3a3;
+  }
+
+  .learn-more {
+	width: 120px;
+	height: 67px;
+	bottom: 5px;
+	left:20px;
+	object-fit: contain;
+	position: absolute;
+  }
+
+  .Grammar-Programs {
+	width: 100%;
+	object-fit: contain;
+	font-family: HelveticaNeue;
+	font-size: 50px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: #515151;
+	margin-top: 108px;
+	margin-bottom: 57px;
+  }
+  .School {
+	width: 100%;
+	height: 59px;
+	object-fit: contain;
+	font-family: HelveticaNeue;
+	font-size: 40px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.2;
+	letter-spacing: normal;
+	text-align: center;
+	color: #515151;
+	margin-top: 50px;
+	margin-bottom: 40px;
+  }

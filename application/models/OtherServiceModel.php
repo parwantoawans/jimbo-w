@@ -15,6 +15,10 @@ class OtherServiceModel extends CI_Model
         $this->db->order_by('id', 'asc')->limit(3)->offset(3);
         return $this->db->get('tm_other_service')->result();
     }
+
+    public function getById($id){
+        return $this->db->where('id', $id)->get('tm_other_service')->result_array();
+    }
 }
 
 
