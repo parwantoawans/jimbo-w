@@ -142,13 +142,13 @@
     font-size: 20px;
     font-weight: 100;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     line-height: 40px;
 }
 .Autumn-opacity-caption{
     font-weight: 300;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     line-height: 26px;
 }
 .Autumn-opacity .btn-info{
@@ -330,7 +330,7 @@
 }
 
 .fieldtrip-title{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -340,7 +340,7 @@
     color: #363434;
 }
 .field-trip-title{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -381,7 +381,53 @@
 
 img, .embed-responsive {
     margin-bottom: 30px;
-    }
+}
+
+.Photo-of-Activity {
+    margin-top: 100px;
+    object-fit: contain;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: right;
+    color: #4b4b4b;
+  }
+
+  .field-trip-date-title {
+    margin-left: 10px;
+      margin-top: 50px;
+    object-fit: contain;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+  }
+
+  .field-trip-title {
+      margin-left: 10px;
+    object-fit: contain;
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #e66234;
+  }
+  
+  
+  
 
 
 /* field trip end */

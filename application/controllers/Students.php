@@ -10,6 +10,7 @@ class Students extends CI_Controller{
 		$this->load->model('GalleryModel');
 		$this->load->model('VideoModel');
 		$this->load->model('FoodMenuModel');
+		$this->load->model('FieldTripModel');
 	}
     public function index(){
 
@@ -18,7 +19,20 @@ class Students extends CI_Controller{
 		$data['menus']		= $this->FoodMenuModel->get();
 
 		$data['extraData'] = $this->ExtracuricullarModel->get();
+		$data['fieldTrip'] = $this->FieldTripModel->get(0, 3);
 		$this->load->view('students/index', $data);
+	}
+
+	public function food($id){
+		$data['detail']		= $this->FoodMenuModel->getById($id);
+		$data['otherMenus']		= $this->FoodMenuModel->get();
+		$this->load->view('students/detailfood', $data);
+	}
+
+	public function fieldtrip($id){
+		$data['detail']		= $this->FieldTripModel->getById($id);
+		$data['otherTrip']		= $this->FieldTripModel->get();
+		$this->load->view('students/fieldtrip', $data);
 	}
 }
 ?>

@@ -137,8 +137,10 @@
 							<div class="categorie-item">
 								<div class="'.$style.'">
 									<p class="'.$titleStyle.'"><br>'.$menus[$a]->jenis_makanan.'</p>
-									<p class="'.$captionStyle.'">'.$menus[$a]->description.'</p>
-									<a href="" class="btn btn-info">Learn more</a>
+									<p class="'.$captionStyle.'">'.substr($menus[$a]->description, 0, 120).'...</p>
+									<a href="' . base_url('students/food/') . $menus[$a]->fid .'">
+										<img src="assets/img/students/view_more.png" class="learn-more">
+										</a>
 								</div>
 								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$menus[$a]->image.'"></div>
 							</div>
@@ -228,34 +230,38 @@
 	<!-- Field Trip section -->
 	<section class="categories-section spad">
 		<div class="container">
-			<p class="fieldtrip-title"><center><p><h3>Field Trip</h3></center></p>
+			<p class="fieldtrip-title">Field Trip</p>
 			
-            		<div class="row">
+            <div class="row">
 				<!-- categorie -->
 				<div class="col-lg-7">
-				<div class="ci-text">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/1.png"></div>
-						
-						<p class="field-trip-date">Desember 9, 2018</p>
-						<span class="field-trip-title">Lorem Ipsum</span>
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at. Eu quo fastidii mediocritatem, eos erant bonorum nominati at, sed at summo perfecto. Alienum lobortis indoctum ad mel, justo tation evertitur ex nam, vix quodsi recteque posidonium an. Ut accusata reformidans est. Clita quaerendum pri ad, cetero torquatos qui ei. Nusquam detracto oportere eu eam. <br><br> pro movet nullam voluptua, duo at facete molestiae prodesset. An ius quidam suscipit definitionem. An sit ornatus facilisi. Stet viris mea ne, errem altera accusata his id.</p>
+					<div class="ci-text">
+						<div class="categorie-item">
+							<a href="<?php echo base_url('students/fieldtrip/') . $fieldTrip[0]->id; ?>">
+								<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$fieldTrip[0]->main_image; ?>"></div>
+							</a>
+							<p class="field-trip-date"><?php echo  date('F d, Y', strtotime($fieldTrip[0]->created_at)); ?></p>
+							<span class="field-trip-title"><?php echo $fieldTrip[0]->title; ?></span>
+							<p><?php echo $fieldTrip[0]->description; ?></p>
 						</div>
 					</div>
-                </div>
+            	</div>
                 <!-- categorie -->
 				<div class="col-lg-5">
 					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/2.jpg"></div>
-						
-							<p> Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-						
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo base_url(); ?>assets/img/trip/3.jpg"></div>
-							<p>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-						</div>
+						<a href="<?php echo base_url('students/fieldtrip/') . $fieldTrip[1]->id; ?>">
+							<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$fieldTrip[1]->main_image; ?>"></div>
+						</a>
+						<p><?php echo $fieldTrip[1]->description; ?></p>
+						<div class="categorie-item">
+						<a href="<?php echo base_url('students/fieldtrip/') . $fieldTrip[2]->id; ?>">
+							<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$fieldTrip[2]->main_image; ?>"></div>
+						</a>
+						<p><?php echo $fieldTrip[2]->description; ?></p>
 					</div>
 				</div>
+			</div>
+
 	</section>
 	<!-- Field Trip end -->
 	

@@ -29,7 +29,7 @@
 
                             $buff .= '<div class="Recent-News-Container">
                                         <a href="' . base_url('homepage/newses/') . $otherRow->id .'">
-                                            <img align:center;" src="../../'.IMAGE_CONTENT_PATH.$otherRow->image.'">
+                                            <img style="align:center;" src="../../'.IMAGE_CONTENT_PATH.$otherRow->image.'">
                                         </a><br/>
                                             <p class="Recent-News-More-Title">'.$otherRow->title.'</p>
                                     </div>';
