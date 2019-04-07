@@ -14,7 +14,7 @@ class Parents extends CI_Controller
 
 		$this->form_validation->set_rules('username', 'Username', 'required');
 		$this->form_validation->set_rules('fullname', 'Fullname', 'required');
-		$this->form_validation->set_rules('email', 'Email', 'required');
+		$this->form_validation->set_rules('email', 'Email', 'required|valid_email');
 		$this->form_validation->set_rules('phone', 'Pnone Number', 'required');
 		$this->form_validation->set_rules('password', 'Password', 'required');
 
@@ -36,7 +36,7 @@ class Parents extends CI_Controller
 				);
 				return;
 			}
-			if($this->ParentsModel->register($this->input->post('username'), $this->input->post('password'), 
+			if($this->ParentsModel->register($this->input->post('username'), $this->input->post('fullname'), 
 				$this->input->post('email'), $this->input->post('phone'), $this->input->post('password'))){
 				echo json_encode(
 					array(

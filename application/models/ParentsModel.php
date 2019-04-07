@@ -41,14 +41,14 @@ class ParentsModel extends CI_Model
         $data = array(
             'nama' => $fullname,
             'alamat' => '',
-            'id_agama' => '1'
+            'id_agama' => '7'
         );
 
         if( $this->store($data) == false ){
             return false;
         }
 
-        if(!$this->db->insert('tm_users', array('username' => $username, 'password' => md5($password), 'role_id' => '1')))
+        if(!$this->db->insert('tm_users', array('username' => $username, 'password' => md5($password), 'menu_role_id' => '3')))
             return false;
         return true;
     }
