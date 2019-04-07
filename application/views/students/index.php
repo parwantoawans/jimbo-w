@@ -103,51 +103,53 @@
 		<p class="food-menu-title">Food Menu</p><br>
 			<?php 
 				$buffMenu = '';
-				for($a = 0; $a < 4; $a++){
-					if( $a == 0 || $a == 2 )
-						$buffMenu .= '<div class="row">';
+				if(is_array($menus) && count($menus) > 0){
+					for($a = 0; $a < 4; $a++){
+						if( $a == 0 || $a == 2 )
+							$buffMenu .= '<div class="row">';
 
-					$style = 'Autumn-opacity';
-					$titleStyle = 'Autumn-opacity-title';
-					$captionStyle = 'Autumn-opacity-caption';	
-					switch($a){
-						case 0:
-							$style = 'Autumn-opacity';
-							$titleStyle = $style.'-title';
-							$captionStyle = $style.'-caption';	
-							break;
-						case 1:
-							$style = 'Summer-opacity';
-							$titleStyle = $style.'-title';
-							$captionStyle = $style.'-caption';		
-							break;
-						case 2:
-							$style = 'Healthy-opacity';
-							$titleStyle = $style.'-title';
-							$captionStyle = $style.'-caption';		
-							break;
-						case 3:
-							$style = 'Revised-opacity';
-							$titleStyle = $style.'-title';
-							$captionStyle = $style.'-caption';		
-							break;
-					}
+						$style = 'Autumn-opacity';
+						$titleStyle = 'Autumn-opacity-title';
+						$captionStyle = 'Autumn-opacity-caption';	
+						switch($a){
+							case 0:
+								$style = 'Autumn-opacity';
+								$titleStyle = $style.'-title';
+								$captionStyle = $style.'-caption';	
+								break;
+							case 1:
+								$style = 'Summer-opacity';
+								$titleStyle = $style.'-title';
+								$captionStyle = $style.'-caption';		
+								break;
+							case 2:
+								$style = 'Healthy-opacity';
+								$titleStyle = $style.'-title';
+								$captionStyle = $style.'-caption';		
+								break;
+							case 3:
+								$style = 'Revised-opacity';
+								$titleStyle = $style.'-title';
+								$captionStyle = $style.'-caption';		
+								break;
+						}
 
-					$buffMenu .= '<div class="col-lg-6">
-							<div class="categorie-item">
-								<div class="'.$style.'">
-									<p class="'.$titleStyle.'"><br>'.$menus[$a]->jenis_makanan.'</p>
-									<p class="'.$captionStyle.'">'.substr($menus[$a]->description, 0, 120).'...</p>
-									<a href="' . base_url('students/food/') . $menus[$a]->fid .'">
-										<img src="assets/img/students/view_more.png" class="learn-more">
-										</a>
+						$buffMenu .= '<div class="col-lg-6">
+								<div class="categorie-item">
+									<div class="'.$style.'">
+										<p class="'.$titleStyle.'"><br>'.$menus[$a]->jenis_makanan.'</p>
+										<p class="'.$captionStyle.'">'.substr($menus[$a]->description, 0, 120).'...</p>
+										<a href="' . base_url('students/food/') . $menus[$a]->fid .'">
+											<img src="assets/img/students/view_more.png" class="learn-more">
+											</a>
+									</div>
+									<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$menus[$a]->image.'"></div>
 								</div>
-								<div class="ci-thumb set-bg" data-setbg="'.IMAGE_CONTENT_PATH.$menus[$a]->image.'"></div>
-							</div>
-						</div>';
+							</div>';
 
-					if( $a == 1 || $a == 3 )
-						$buffMenu .= '</div>';
+						if( $a == 1 || $a == 3 )
+							$buffMenu .= '</div>';
+					}
 				}
 				echo $buffMenu;
 			?>
@@ -231,7 +233,7 @@
 	<section class="categories-section spad">
 		<div class="container">
 			<p class="fieldtrip-title">Field Trip</p>
-			
+			<?php if(is_array($fieldTrip) && count($fieldTrip)>0){?>
             <div class="row">
 				<!-- categorie -->
 				<div class="col-lg-7">
@@ -261,7 +263,8 @@
 					</div>
 				</div>
 			</div>
-
+			<?php } ?>
+		</div>
 	</section>
 	<!-- Field Trip end -->
 	

@@ -10,6 +10,7 @@
 	</section>
 	<!-- section2 -->
 	<section class="section2">
+		<?php if(isset($title) && isset($title2) && isset($title3) && isset($desc) && isset($desc2)){ ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -26,6 +27,7 @@
 				</div>
 			</div>
 		</div>
+		<?php } ?>
 	</section>
 	<!-- section2 end -->
 	
@@ -192,6 +194,7 @@
 	<!-- schoolimprovement -->
 	<section class="schoolimprovement">
 		<p class="schoolimprovement-title">School & Improvement</p><br>
+		<?php if(isset($sImprovementDesc) && isset($sImprovementDesc2) && isset($sImprovementImg)){ ?>
 		<div class="row">
 			<div class="col-lg-6">
 				<p class="schoolimprovement-caption">
@@ -205,6 +208,7 @@
 				<a href="<?php echo base_url('Aboutus/schoolimprove');?>"><img src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt=""></a>
 			</div>
 		</div>
+		<?php } ?>
 	</section>
 	<!-- schoolimprovement -->
 <?php $this->load->view('layouts/footer.php') ?>

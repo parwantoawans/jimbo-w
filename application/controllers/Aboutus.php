@@ -12,18 +12,17 @@ class Aboutus extends CI_Controller{
 		$this->load->Helper('html');
 	}
 
-    public function index()
-	{
-		// echo $_SERVER['SERVER_ADDR'] ."<br>";
-		// echo $this->input->ip_address() . "<br>";
-		// echo current_url();die();
+    public function index(){
+		
 		$aboutUs = $this->AboutUsModel->get();
-		$data['title'] = $aboutUs[0]['title'];
-		$data['title2'] = $aboutUs[0]['title2'];
-		$data['title3'] = $aboutUs[0]['title3'];
-		$data['desc'] = $aboutUs[0]['desc'];
-		$data['desc2'] = $aboutUs[0]['desc2'];
-		$data['image'] = $aboutUs[0]['image'];
+		if(is_array($aboutUs) && count($aboutUs) > 0){
+			$data['title'] = $aboutUs[0]['title'];
+			$data['title2'] = $aboutUs[0]['title2'];
+			$data['title3'] = $aboutUs[0]['title3'];
+			$data['desc'] = $aboutUs[0]['desc'];
+			$data['desc2'] = $aboutUs[0]['desc2'];
+			$data['image'] = $aboutUs[0]['image'];
+		}
 
 
 		$experience = $this->ExperienceModel->get();
@@ -48,10 +47,11 @@ class Aboutus extends CI_Controller{
 		$data['videos'] = $this->VideoModel->get(0, 2);
 
 		$schoolImprovement = $this->SchoolImprovementModel->get();
-
-		$data['sImprovementDesc'] = $schoolImprovement[0]['desc'];
-		$data['sImprovementDesc2'] = $schoolImprovement[0]['desc2'];
-		$data['sImprovementImg'] = $schoolImprovement[0]['image'];
+		if(is_array($schoolImprovement) && count($schoolImprovement) > 0){
+			$data['sImprovementDesc'] = $schoolImprovement[0]['desc'];
+			$data['sImprovementDesc2'] = $schoolImprovement[0]['desc2'];
+			$data['sImprovementImg'] = $schoolImprovement[0]['image'];
+		}
 		
 		$this->load->view('about-us/index', $data);
 	}
