@@ -93,82 +93,48 @@
 	<!-- parentstudent -->
 
 	<!-- testing-calendar -->
+	<?php 
+		//print_r($test_cal);
+		$buffTestCal = "";
+		if(is_array($test_cal) && count($test_cal)>0){
+			$split = ceil(count($test_cal)/2);
+			$intSplitCount = 1;
+			foreach($test_cal as $k => $v){
+
+				if($intSplitCount == 1 || ($split + 1) == $intSplitCount)// column header
+					$buffTestCal .= '<div class="col-lg-6">';
+
+				$buffTestCal .= '<div class="row">
+						<div class="col-lg-3">
+							<p class="testing-calendar-month">'.date('M d', strtotime($v->start_date)).'-'.date('d', strtotime($v->end_date)).'</p>
+						</div>
+						<div class="col-lg-9">
+							<p class="testing-calendar-caption">'.$v->description.'</p>
+						</div>
+					</div>';
+
+				if($intSplitCount == $split)
+					$buffTestCal .= '</div>';
+
+				$intSplitCount++;
+			}
+			$buffTestCal .= '</div>';
+		}
+	?>
 	<section class="testing-calendar">
 		<p class="testing-calendar-title">Testing Calendar</p>
 		<div class="testing-calendar-year">
-			<p class="testing-calendar-currentmonth">2018-19</p>
+			<p class="testing-calendar-currentmonth"><?php echo date('Y'); ?></p>
 			<div class="testing-calendar-redline"></div>
 		</div><br><br>
 		<div class="row">
-			<div class="col-lg-6">
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">May 6-10</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">May 6-17</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">June 2-4</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">July 16-20</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-6">
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">Aug 7-16</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">Sept 1-15</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">Sept 17-20</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-3">
-						<p class="testing-calendar-month">Oct 16-20</p>
-					</div>
-					<div class="col-lg-9">
-						<p class="testing-calendar-caption">Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea.</p>
-					</div>
-				</div>
-			</div>
-			<a class="btn btn-info">Download pdf</a><br><br>
+			<?php echo $buffTestCal; 
+				if($buffTestCal!=""){
+			?>
+			
+			<a href="<?php echo base_url('parents/testCalPdf') ?>" class="btn btn-info">Download pdf</a>
+				<?php } ?>
+			<br><br>
 		</div>
 	</section>
 	<!-- testing-calendar -->
