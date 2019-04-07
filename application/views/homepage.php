@@ -288,12 +288,35 @@
 				<!-- <a href="#" class="site-btn">Register Now</a> -->
 				<center>
 				<form class="footer-newslatter" action="<?php echo base_url('email-subscribe'); ?>" method="post">
-					<input type="email" placeholder="E-mail address*" name="email"><br><br><br><br>
-					<input type="submit" class="site-btn" value="Subscribe">
+					<input type="email" placeholder="E-mail address*" name="email" id="email"><br><br><br><br>
+					<input type="button" class="site-btn" value="Subscribe" onclick="javascript:sendSub();">
 				</form>
+				<div class="section-title" id="sub_text"></div>
 				</center>
 			</div>
 		</div>
+		<script>
+			function sendSub() {
+
+				var email = document.getElementById("email").value;
+
+				console.log("email sub:" + email);
+
+				var xhttp = new XMLHttpRequest();
+				xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						document.getElementById("email").innerHTML = '';
+						document.getElementById("sub_text").innerHTML = this.responseText;
+					}
+				};
+				//xhttp.open("GET", "ajax_info.txt", true);
+				//xhttp.send();
+				
+				xhttp.open("POST", "<?php echo base_url('homepage/subscribe') ?>", true);
+				xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				xhttp.send("email="+email);
+			}
+		</script>
 	</section>
 	<!-- banner section end -->
 <?php $this->load->view('layouts/footer.php') ?>

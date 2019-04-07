@@ -45,6 +45,14 @@ class NewsModel extends CI_Model
     public function destroy($id){
         return $this->db->delete('tm_news', array('id' => $id));
     }
+
+    public function subscribe($email){
+        return $this->db->insert('tm_subscribe', array('email'=>$email));
+    }
+
+    public function checkSub($email){
+        return $this->db->where('email', $email)->get('tm_subscribe')->result_array();
+    }
 }
 
 

@@ -8,6 +8,8 @@ class Homepage extends CI_Controller{
 		parent::__construct();
 		$this->load->model('GalleryModel');
 		$this->load->model('NewsModel');
+		$this->load->helper('url');
+		$this->load->helper('form');
 	}
 
     public function index(){
@@ -69,6 +71,23 @@ class Homepage extends CI_Controller{
 		}
 		$data["otherNews"] = $otherNews;
 		$this->load->view('homepagedetailnews', $data);
+	}
+
+	public function subscribe(){
+		$this->load->library('form_validation');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+		if ($this->form_validation->run() == FALSE){
+			echo validation_errors();
+        }else{
+			$email = $this->input->post('email');
+			$checkExists = $this->NewsModel->checkSub($email);
+			if(is_array($checkExists) && count($checkExists)>0){
+				echo "<p>E-mail already exists</p>";
+			}else{
+				$this->NewsModel->subscribe($email);
+				echo "<p>Success to subscribe</p>";
+			}
+		}
 	}
 }
 ?>
