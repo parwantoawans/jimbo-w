@@ -88,10 +88,6 @@
 						$class = "grammar-opacity";
 					} elseif ($count  == 1){
 						$class = "art-opacity";
-					} elseif ($c->program == "Social Programs"){
-						$class = "social-opacity";
-					} else {
-						$class = "afterschool-opacity";
 					}
 					echo '
 						<div class="col-lg-6">
@@ -116,11 +112,7 @@
 			<?php 
 				$count = 0;
 				foreach ($classesprogram2 as $c) {
-					if ($c->program == "Grammar Programs") {
-						$class = "grammar-opacity";
-					} elseif ($c->program == "Art Programs"){
-						$class = "art-opacity";
-					} elseif ($count  == 0){
+					if ($count  == 0){
 						$class = "social-opacity";
 					} else {
 						$class = "afterschool-opacity";
