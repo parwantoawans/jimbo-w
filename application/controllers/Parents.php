@@ -5,9 +5,12 @@ class Parents extends CI_Controller
 	public function __construct(){
 		parent::__construct();
 		$this->load->model("CalendarModel");
+		$this->load->model("NewsModel");
 	}
 	public function index(){
 		$data['test_cal'] = $this->getTestCalendar();
+		$data['newsData'] = $this->NewsModel->get(6);
+		$data['articlesType'] = $this->ArticlesTypeModel->get(3);
 		$this->load->view('parents/index', $data);
 	}
 	public function register(){

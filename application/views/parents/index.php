@@ -144,6 +144,22 @@
 		<p class="news-letter-title">News Letter</p><br><br>
 		<div class="row">
 			<div class="col-lg-8">
+				<?php 
+					foreach ($articlesType as $a) {
+						echo
+						'<div class="news">
+							<p class="news-letter-date">' . date('F d, Y', strtotime($a->created_at)).'</p>
+							<p class="news-letter-newstitle">' . $a->articles_type .'</p>
+							<img src="'.IMAGE_CONTENT_PATH.$a->image.'" alt="">
+							<p class="news-letter-caption">' . $a->desc . '</p>
+							<div>
+								<a href="' . base_url('homepage/article/') . $a->articles_type_id .'" class="news-letter-read-more">Read More</a>
+								<div class="news-letter-yellow-line"></div>
+							</div>
+						</div>';
+					}
+				?>
+				<!--
 				<div class="news">
 					<br>
 					<p class="news-letter-date">Desember 9, 2018</p>
@@ -177,6 +193,7 @@
 						<div class="news-letter-yellow-line"></div>
 					</div>
 				</div><br>
+				
 				<ul class="news-letter-page">
 					<li><a href="">1</a></li>
 					<li><a href="">2</a></li>
@@ -184,33 +201,22 @@
 					<li><img src="<?php echo base_url('assets/icon/Symbol 34 – 1.svg'); ?>" alt="" width="17.4" height="20.4"></li>
 					<li><img src="<?php echo base_url('assets/icon/Symbol 33 – 1.svg'); ?>" alt="" width="17.4" height="29.4"></li>
 				</ul>
+				-->
 			</div>
 			<div class="col-lg-4">
 				<p class="news-letter-recent-news">Recent News</p>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/parents/news-letter/3.jpg'); ?>" alt="">
-					<p class="news-letter-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-				</div><br>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/parents/news-letter/9.jpg'); ?>" alt="">
-					<p class="news-letter-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-				</div>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/parents/news-letter/5.jpg'); ?>" alt="">
-					<p class="news-letter-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-				</div><br>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/parents/news-letter/1.jpg'); ?>" alt="">
-					<p class="news-letter-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-				</div><br>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/parents/news-letter/6.jpg'); ?>" alt="">
-					<p class="news-letter-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-				</div><br>
-				<div class="recent-news">
-					<img src="<?php echo base_url('assets/img/parents/news-letter/8.jpg'); ?>" alt="">
-					<p class="news-letter-caption"><br>Lorem ipsum dolor sit amet, periculis expetendis usu no, choro commodo docendi ad sea. Et facilisis argumentum elaboraret sit, alia mucius putant quo cu, ex saperet labores ius. Cu nam putant virtute, duo malis labores omittam at.</p>
-				</div>
+				<?php 
+					$newsBuff = "";
+					if(is_array($newsData) && count($newsData) > 0){
+						foreach ($newsData as $n) {
+							$newsBuff .= '<div class="recent-news">
+							<a href="' . base_url('homepage/newses/') . $n->id .'"><img src="'.IMAGE_CONTENT_PATH.$n->image.'" alt="'.$n->title.'"></a>
+							<p class="news-letter-caption">'.$n->desc.'</p>
+						</div><br/>';
+						}
+					}
+					echo $newsBuff;
+				?>
 			</div>
 		</div>
 	</section>

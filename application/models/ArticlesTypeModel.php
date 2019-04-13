@@ -6,7 +6,8 @@ class ArticlesTypeModel extends CI_Model
         $this->load->database();
     }
 
-    public function get($limit = 6, $offset = 0){
+    public function get($limit = 6, $offset = 0, $order = 'articles_type_id desc' ){
+        $this->db->order_by($order);
         return $this->db->get('tm_articles_type', $limit, $offset)->result();
     }
 
