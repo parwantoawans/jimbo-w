@@ -82,10 +82,11 @@
 		<p class="classes-program-title">Classes Program</p><br>
 		<div class="row">
 			<?php 
+				$count = 0;
 				foreach ($classesprogram as $c) {
-					if ($c->program == "Grammar Programs") {
+					if ($count  == 0) {
 						$class = "grammar-opacity";
-					} elseif ($c->program == "Art Programs"){
+					} elseif ($count  == 1){
 						$class = "art-opacity";
 					} elseif ($c->program == "Social Programs"){
 						$class = "social-opacity";
@@ -107,17 +108,19 @@
 							</div>
 						</div>
 					';
+					$count++;
 				}
 			?>
 		</div>
 		<div class="row">
 			<?php 
+				$count = 0;
 				foreach ($classesprogram2 as $c) {
 					if ($c->program == "Grammar Programs") {
 						$class = "grammar-opacity";
 					} elseif ($c->program == "Art Programs"){
 						$class = "art-opacity";
-					} elseif ($c->program == "Social Programs"){
+					} elseif ($count  == 0){
 						$class = "social-opacity";
 					} else {
 						$class = "afterschool-opacity";
@@ -136,6 +139,7 @@
 							</div>
 						</div>
 					';
+					$count++;
 				}
 			?>
 		</div>
