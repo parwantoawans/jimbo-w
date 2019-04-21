@@ -10,7 +10,7 @@ class TestimoniModel extends CI_Model
         $this->db->select('testimoni, image, tm_parents.nama, tm_parents.role_parents');
         $this->db->from('tp_testimoni_parents');
         $this->db->join('tm_parents', 'tm_parents.id_parents = tp_testimoni_parents.id_parents');
-        $this->db->order_by('id', 'asc');
+        $this->db->order_by('id', 'desc');
         $this->db->limit($limit, $offset);
         return $this->db->get()->result();
     }

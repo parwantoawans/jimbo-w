@@ -5,8 +5,10 @@ class CalendarModel extends CI_Model{
     var $table = "tx_calendar";
     var $testTable = "tx_testing_calendar";
 
-    public function get($offset = 0, $limit = 10, $where = null){
+    public function get($offset = 0, $limit = 10, $where = null, $orderBy = 'cal_id ASC'){
         
+        $this->db->order_by($orderBy);
+
         $this->db->select('*')
             ->from($this->table);
         

@@ -18,8 +18,7 @@ class Academic extends CI_Controller{
         $data['otherservice2'] = $this->OtherServiceModel->getSecondRow();
 
         $data['schedule'] = $this->ScheduleModel->get();
-        $data['calendar'] = $this->CalendarModel->get(0, 6);
-        // print_r($data['schedule']);die();
+        $data['calendar'] = $this->CalendarModel->get(0, 6, array("DATE_FORMAT(tx_calendar.when, '%Y %m')="=> date('Y m')));
         
         $this->load->view('academic/index', $data);
     }

@@ -34,8 +34,13 @@
 				$indexRow = 1;
 				$indexColsRow = 1;
 				$videoIndex = 0;
-				
-				foreach($gallery as $gallRow){
+
+				//echo "<pre>";
+				//var_dump($gallery);
+
+				for($galIn = 0; $galIn < (count($gallery) - 1); $galIn++ ){
+
+					$gallRow = $gallery[$galIn];
 
 					switch($indexColsRow){
 
@@ -47,11 +52,12 @@
 								$finalBuff .= '<div class="col-sm-8">
 								<div class="embed-responsive embed-responsive-16by9">
 												<video width="100%" height="100%" controls="controls" preload="metadata">
-													<source src="'.IMAGE_CONTENT_PATH.$videos[$videoIndex]->video.'" type="video/mp4">
+													<source src="'.IMAGE_CONTENT_PATH.@$videos[$videoIndex]->video.'" type="video/mp4">
 												</video>
 										</div>
 									</div>';
 									$videoIndex++;
+									$galIn--;
 							}else{ // image
 								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive">';
 							}
@@ -61,7 +67,7 @@
 							if( $indexRow%2 == 0 ) // image
 								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
 							else if ( $indexRow%3 == 0 )
-								$finalBuff .= '';
+								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive">';
 							else{ // image
 								$finalBuff .= '<img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
 							}
@@ -71,16 +77,17 @@
 							if( $indexRow%2 == 0 ) // image
 								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
 							else if ( $indexRow%3 == 0 ) // image
-								$finalBuff .= '<div class="col-sm-4"><img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
+								$finalBuff .= '<img src="'.IMAGE_CONTENT_PATH.$gallRow->image.'" class="img-responsive"></div>';
 							else{ // video
 								$finalBuff .= '<div class="col-sm-8">
 										<div class="embed-responsive embed-responsive-16by9">
 											<video width="100%" height="100%" controls="controls" preload="metadata">
-												<source src="'.IMAGE_CONTENT_PATH.$videos[$videoIndex]->video.'" type="video/mp4">
+												<source src="'.IMAGE_CONTENT_PATH.@$videos[$videoIndex]->video.'" type="video/mp4">
 											</video>
 									</div>
 								</div>';
 								$videoIndex++;
+								$galIn--;
 							}
 							$finalBuff .= '</div>';
 							break;
@@ -104,7 +111,9 @@
 			<?php 
 				$buffMenu = '';
 				if(is_array($menus) && count($menus) > 0){
-					for($a = 0; $a < 4; $a++){
+					//echo "<pre>";
+					//var_dump($menus);
+					for($a = 0; $a < (count($menus) -1); $a++){
 						if( $a == 0 || $a == 2 )
 							$buffMenu .= '<div class="row">';
 

@@ -362,7 +362,7 @@
 		<p class="calendar-title">Calendar</p><br><br>
 		<div class="row">
 			<div class="col-lg-3">
-				<p class="calendar-currentmonth">February</p>
+				<p class="calendar-currentmonth"><?php echo date("F"); ?></p>
 				<div class="calendar-redline w3-half"></div>
 			</div>
 			<?php 
@@ -391,9 +391,9 @@
 				echo $callBuff;
 			?>
 			<div class="col-lg-3">
-				<a href="#" class="calendar-nextmonthyear">March</a><br>
+				<a href="#" class="calendar-nextmonthyear"><?php echo date("F", strtotime("+1 months")); ?></a><br>
 				<div class="calendar-yellowline"></div>
-				<a href="" class="calendar-nextmonthyear">2019</a>
+				<a href="" class="calendar-nextmonthyear"><?php echo date("Y"); ?></a>
 			</div>
 		</div>
 	</section>

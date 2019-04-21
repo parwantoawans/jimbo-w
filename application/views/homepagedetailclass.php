@@ -3,8 +3,8 @@
 	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/banner/1.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
-				<p style="font-size:5vw; padding-left:50px">Classes Program</p>
-				<p style="font-size:2vw">On this page, you can read about all our activity and more.</p>
+				<p style="font-size:50px; padding-left:50px">Classes Program</p>
+				<p style="font-size:20px">On this page, you can read about all our activity and more.</p>
 			</div>
 		</div>
 	</section>

@@ -94,7 +94,7 @@
 							<div class="categorie-item">
 								<div class="'.$class.'">
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-									<p class="grammar-opacity-caption">' . substr($c->desc, 0, 160) . '...</p>
+									<p class="grammar-opacity-caption">' . substr($c->desc, 0, 140) . '...</p>
 									<a href="' . base_url('homepage/classes/') . $c->id .'">
 										<img src="assets/img/homepage/class-program/learnmore.png" class="learn-more">
 									</a>
@@ -122,7 +122,7 @@
 							<div class="categorie-item">
 								<div class="'.$class.'">
 									<p class="grammar-opacity-title">'.explode(" ", $c->program)[0].'<br>'.explode(" ", $c->program)[1].'</p>
-									<p class="grammar-opacity-caption">' . substr($c->desc, 0, 160) . '...</p>
+									<p class="grammar-opacity-caption">' . substr($c->desc, 0, 140) . '...</p>
 									<a href="' . base_url('homepage/classes/') . $c->id .'">
 										<img src="assets/img/homepage/class-program/learnmore.png" class="learn-more">
 									</a>

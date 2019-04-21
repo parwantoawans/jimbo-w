@@ -10,7 +10,7 @@
 	</section>
 	<!-- section2 -->
 	<section class="section2">
-		<?php if(isset($title) && isset($title2) && isset($title3) && isset($desc) && isset($desc2)){ ?>
+		<?php if(isset($title) && isset($desc) && isset($desc2)){ ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
@@ -77,6 +77,7 @@
 					<p class="missionvission-subtitle"><?php echo $misi_subtitle; ?></p>
 
 					<p class="missionvission-caption"><?php echo $misi; ?></p>
+					<p class="missionvission-caption"><?php echo $misi_2; ?></p>
 				</div>
 				<div class="col-lg-6">
 					<div class="categorie-item">
@@ -84,7 +85,7 @@
 					</div>
 				</div>
 			</div>
-			<p class="missionvission-caption"><?php echo $misi_2; ?></p>
+			
 		</div>
 	</section>
 	<!-- missionvission end -->
@@ -205,7 +206,7 @@
 				</p>
 			</div>
 			<div class="col-lg-6">
-				<a href="<?php echo base_url('Aboutus/schoolimprove');?>"><img src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt=""></a>
+				<a href="<?php echo base_url('Aboutus/schoolimprove');?>"><img width="100%" style="max-width: 704px;" src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt=""></a>
 			</div>
 		</div>
 		<?php } ?>
