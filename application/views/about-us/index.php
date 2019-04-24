@@ -13,17 +13,13 @@
 		<?php if(isset($title) && isset($desc) && isset($desc2)){ ?>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-12">
+					
+					<img width="100%" style="max-width:600px;margin:10px;" align="right" src="<?php echo IMAGE_CONTENT_PATH.$image; ?>"/>
 					<p class="section2-title">
-						<?php echo $title; ?> <br><?php echo $title2; ?><br><?php echo $title3; ?>
+						<?php echo $title; ?>&nbsp;<?php echo $title2; ?>&nbsp;<?php echo $title3; ?>
 					</p>
-					<p class="section2-caption"><?php echo $desc; ?></p>
-					<p class="section2-caption"><?php echo $desc2; ?></p>
-				</div>
-				<div class="col-lg-6">
-					<div class="categorie-item">
-						<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$image; ?>"></div>
-					</div>
+					<p class="section2-caption"><?php echo $desc.'<br/><br/>'.$desc2; ?></p>
 				</div>
 			</div>
 		</div>
@@ -72,18 +68,18 @@
 	<section class="missionvission">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-12">
+					<img width="100%" style="max-width:400px;padding:15px;" align="right" src="<?php echo IMAGE_CONTENT_PATH.$misi_image; ?>"/>
 					<p class="missionvission-title">Our Mission</p>
 					<p class="missionvission-subtitle"><?php echo $misi_subtitle; ?></p>
-
-					<p class="missionvission-caption"><?php echo $misi; ?></p>
-					<p class="missionvission-caption"><?php echo $misi_2; ?></p>
+					<p class="missionvission-caption"><?php echo $misi.'<br/><br/>'.$misi_2; ?></p>
+					<!--<p class="missionvission-caption"><?php echo $misi_2; ?></p>-->
 				</div>
-				<div class="col-lg-6">
+				<!--<div class="col-lg-6">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg='<?php echo IMAGE_CONTENT_PATH.$misi_image; ?>'></div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 			
 		</div>
@@ -93,12 +89,13 @@
 	<section class="missionvission" style="padding-top: 0">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-6">
+				<!--<div class="col-lg-6">
 					<div class="categorie-item">
 						<div class="ci-thumb set-bg" data-setbg='<?php echo IMAGE_CONTENT_PATH.$visi_image; ?>'></div>
 					</div>
-				</div>
-				<div class="col-lg-6">
+				</div>-->
+				<div class="col-lg-12">
+					<img width="100%" style="max-width:400px;padding:15px;" align="left" src="<?php echo IMAGE_CONTENT_PATH.$visi_image; ?>"/>
 					<p class="missionvission-title">Our Vission</p>
 					<p class="missionvission-subtitle"><?php echo $visi_subtitle; ?></p>
 					<p class="missionvission-caption"><?php echo $visi; ?><br><br> <?php echo $visi_2; ?></p>
@@ -194,22 +191,21 @@
 
 	<!-- schoolimprovement -->
 	<section class="schoolimprovement">
-		<p class="schoolimprovement-title">School & Improvement</p><br>
-		<?php if(isset($sImprovementDesc) && isset($sImprovementDesc2) && isset($sImprovementImg)){ ?>
-		<div class="row">
-			<div class="col-lg-6">
-				<p class="schoolimprovement-caption">
-					<?php echo $sImprovementDesc; ?>
-				</p>
-				<p class="schoolimprovement-caption">
-					<?php echo $sImprovementDesc2; ?>
-				</p>
-			</div>
-			<div class="col-lg-6">
-				<a href="<?php echo base_url('Aboutus/schoolimprove');?>"><img width="100%" style="max-width: 704px;" src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt=""></a>
+		<div class="container">
+			<div class="row">
+				<p class="schoolimprovement-title">School & Improvement</p><br>
+				<?php if(isset($sImprovementDesc) && isset($sImprovementDesc2) && isset($sImprovementImg)){ ?>
+				
+					<div class="col-lg-12">
+						<a href="<?php echo base_url('Aboutus/schoolimprove');?>"><img width="100%" align="right" style="max-width: 504px;padding:2px;" src="<?php echo IMAGE_CONTENT_PATH.$sImprovementImg; ?>" alt=""></a>
+						<p class="schoolimprovement-caption">
+							<?php echo $sImprovementDesc.'<br/><br/>'.$sImprovementDesc2; ?>
+						</p>
+					</div>
+				
+				<?php } ?>
 			</div>
 		</div>
-		<?php } ?>
 	</section>
 	<!-- schoolimprovement -->
 <?php $this->load->view('layouts/footer.php') ?>
