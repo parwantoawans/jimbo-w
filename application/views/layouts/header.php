@@ -20,9 +20,9 @@
 	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/custom/responsive.css">
 </head>
 <body>
-	<!-- Page Preloder -->
+	<!-- Page Preloder 
 	<div id="preloder">
-		<div class="loader"></div>
+		<div class="loader"></div>-->
 	</div>
 	<!-- Header section -->
 	<header class="header-section">

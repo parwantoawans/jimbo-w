@@ -261,7 +261,7 @@ ol {
 	width: 100%;
 	top: 0;
 	left: 0;
-	padding-top: 60px;
+	padding-top: 30px;
 }
 
 .site-logo {
@@ -308,8 +308,9 @@ ol {
 
 .hero-text {
 	text-align: center;
-	padding-top: 340px;
+	padding-top: 200px;
 	margin-bottom: 105px;
+	margin-left:480px;
 }
 
 .hero-text h2 {
