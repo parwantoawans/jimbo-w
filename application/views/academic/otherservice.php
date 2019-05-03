@@ -30,7 +30,7 @@
 								echo '
 								<div class="col-lg-4">
 									<div class="media">
-										<img class="mr-3" style="width:20%; margin-top:10px" src="../../'. IMAGE_CONTENT_PATH.$o->image.'" alt="">	
+										<img class="mr-3" style="width:20%; margin-top:10px" src="../../'. IMAGE_CONTENT_PATH.$o->thumb.'" alt="">	
 										<div class="media-body">
 											<h5 class="mt-0 search-caption">'.$o->title.'</h5>
 											<p class="search-caption2">'.substr($o->desc, 0, 160).'...</p>
@@ -48,7 +48,7 @@
 								echo '
 									<div class="col-lg-4">
 									<div class="media">
-										<img class="mr-3" style="width:20%; margin-top:10px" src="../../'. IMAGE_CONTENT_PATH.$o->image.'" alt="">	
+										<img class="mr-3" style="width:20%; margin-top:10px" src="../../'. IMAGE_CONTENT_PATH.$o->thumb.'" alt="">	
 										<div class="media-body">
 											<h5 class="mt-0 search-caption">'.$o->title.'</h5>
 											<p class="search-caption2">'.substr($o->desc, 0, 160).'...</p>

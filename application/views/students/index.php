@@ -185,7 +185,7 @@
 					$buff .= '<div class="col-lg-4">
 								<div class="row">
 									<div class="col-lg-2">
-										<div class="icon"><img width="50px" height="50px" src="'.IMAGE_CONTENT_PATH.$values->icon.'"/></div>	
+										<div class="icon"><img width="50px" src="'.IMAGE_CONTENT_PATH.$values->thumb.'"/></div>	
 									</div>
 									<div class="col-lg-10">
 										<p class="search-caption">'.$values->jenis_extracuricullar.'</p>

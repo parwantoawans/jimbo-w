@@ -11,7 +11,7 @@
 	<!-- Hero section end -->
 	<section>
 		<div class="detailcontainer">
-			<p class="Grammar-Programs"><?php echo $detail[0]['program']; ?></p>
+			<p class="detailTitle"><?php echo $detail[0]['program']; ?></p>
 			<img src="../../<?php echo IMAGE_CONTENT_PATH.$detail[0]['image']; ?>" class="detailimage"/>
 			<p class="detailDesc"><?php echo $detail[0]['desc']; ?></p>
 		</div>	

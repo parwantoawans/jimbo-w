@@ -499,7 +499,7 @@
 
   .News-Detail-Date {
       margin-left: 19px;
-      margin-top: 50px;
+      margin-top: 20px;
     object-fit: contain;
     font-family: HelveticaNeue;
     font-size: 20px;
@@ -538,7 +538,7 @@
     letter-spacing: normal;
     text-align: right;
     color: #4b4b4b;
-    margin-top: 70px;
+    margin-top: 40px;
     padding: 10px;
   }
 
