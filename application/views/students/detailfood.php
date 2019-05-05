@@ -3,8 +3,8 @@
 	<section class="hero-section set-bg" data-setbg="<?php echo base_url(); ?>assets/img/homepage/banner/1.jpg">
 		<div class="container">
 			<div class="hero-text text-white">
-				<p style="font-size:5vw; padding-left:50px">Food Menu</p>
-				<p style="font-size:2vw">On this page, you can read about all our activity and more.</p>
+				<p class="Food-Menu">Food Menu</p>
+				<p class="Food-Menu-Subtitle">On this page, you can read about all our activity and more.</p>
 			</div>
 		</div>
 	</section>
@@ -12,9 +12,9 @@
 	<section>
 		<div class="detailcontainer">
 			<p class="Grammar-Programs"><?php echo $detail[0]['jenis_makanan']; ?></p>
-            <p class="detailDesc"><?php echo $detail[0]['jenis_minuman']; ?></p>
+            <p class="Detail-Food-Detail-Title"><?php echo $detail[0]['jenis_minuman']; ?></p>
 			<img src="../../<?php echo IMAGE_CONTENT_PATH.$detail[0]['image']; ?>" class="detailimage"/>
-            <p class="detailDesc"><?php echo $detail[0]['jenis_buah']; ?></p>
+            <p class="Detail-Food-Detail-Title"><?php echo $detail[0]['jenis_buah']; ?></p>
 			<p class="detailDesc"><?php echo $detail[0]['description']; ?></p>
 		</div>	
 	</section>
