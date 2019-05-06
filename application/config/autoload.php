@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array();
+$autoload['libraries'] = array('email', 'session', 'database');
 
 /*
 | -------------------------------------------------------------------
@@ -132,4 +132,33 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array();
+$model = array(
+	'SubjectsModel', 
+	'ClassModel', 
+	'StudentsModel', 
+	'AgamaModel', 
+	'TeachersModel',
+	'ParentsModel',
+	'ContactsModel',
+	'ExtracuricullarModel',
+	'RolesModel',
+	'TypeNilaiModel',
+	'EventsModel',
+	'EventsTypeModel',
+	'FoodMenuModel',
+	'UsersModel',
+	'SchoolModel',
+	'ArticlesTypeModel',
+	'ArticlesModel',
+	'AboutUsModel',
+	'ExperienceModel',
+	'NewsModel',
+	'SchoolImprovementModel',
+	'TestimoniModel',
+	'ClassesProgramModel',
+	'EmailSubscribeModel',
+	'OtherServiceModel',
+	'ScheduleModel'
+);
+		
+$autoload['model'] = $model;

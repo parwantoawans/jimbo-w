@@ -30,7 +30,7 @@ body{
 }
 .categorie-item{
     background: none;
-    margin: 0;
+    margin-bottom: 10px;
 }
 .categorie-item .ci-thumb{
     height: 251px;

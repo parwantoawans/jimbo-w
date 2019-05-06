@@ -1,7 +1,7 @@
 /* MENU */
 .header-section{
     background: #13322b;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 .main-menu{
     margin-left:290px;
@@ -43,7 +43,7 @@
 
 /* SECTION2 */
 .section2{
-    padding: 100px;
+    padding: 20px;
 }
 .section2-title{
     font-size: 30px;
@@ -76,7 +76,7 @@
     /* background-color: mix(#fa4a3b, #e52f65); */
     background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
     color: #ffffff;
-    padding: 100px;
+    padding: 15px;
 }
 .whyjimboree .container{
     padding: 0
@@ -133,7 +133,7 @@
 
 /* MISSIONVISSION */
 .missionvission{
-    padding: 100px;
+    padding: 15px;
 }
 .missionvission-title{
     font-size: 30px;
@@ -144,6 +144,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #4b4b4b;
+    padding: 15px;
 }
 .missionvission-subtitle{
     font-size: 20px;
@@ -164,13 +165,14 @@
     letter-spacing: normal;
     text-align: left;
     color: #a3a3a3;
+    padding: 15px;
 }
 /* MISSIONVISSION END */
 
 
 /* LATEST NEWS */
 .newsandannouncement-section{
-    padding: 100px 50px;
+    padding: 50px 0px;
     background: #f5f5f5;
 }
 .newsandannouncement-date{
@@ -187,7 +189,7 @@
     color: #a3a3a3;
 }
 .newsandannouncement-title{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 300;
     color: #515151;
     text-align: center;
@@ -233,10 +235,10 @@
 
 /* SCHOOLIMPROVEMENT */
 .schoolimprovement{
-    padding: 100px;
+    padding: 50px;
 }
 .schoolimprovement-title{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -244,6 +246,7 @@
     letter-spacing: normal;
     text-align: center;
     color: #4b4b4b;
+    width: 100%;
 }
 .schoolimprovement-caption{
     font-size: 15px;

@@ -1,7 +1,7 @@
 /* MENU */
 .header-section{
     background: #1d548f;
-    padding: 30px 0;
+    padding: 20px 0;
 }
 .main-menu{
     margin-left:290px;
@@ -22,8 +22,8 @@
 }
 .hero-text{
     text-align: center;
-    padding-top: 200px;
-    margin-left: 580px;
+    padding-top: 120px;
+    margin-left: 480px;
     /* margin-bottom: 105px; */
 }
 .banner-title{
@@ -45,10 +45,13 @@
 /* STUDENTS LINKS */
 
 .students-links{
-    padding: 100px;
+    padding-top: 35px;
+  padding-right: 5px;
+  padding-bottom: 35px;
+  padding-left: 5px;
 }
 .students-links-title{
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -112,10 +115,10 @@
     padding: 100px 100px 100px 150px;
 }
 .food-menu-section{
-    padding: 100px 0;
+    padding: 10px 0;
  }
  .food-menu-title{
-     font-size: 50px;
+     font-size: 35px;
      font-weight: 300;
      color: #4b4b4b;
      text-align: center;
@@ -130,23 +133,22 @@
     background: #ffa133;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
-    padding: 30px 30px;
+    padding: 0px 10px;
 }
 .Autumn-opacity-title{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 100;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     line-height: 40px;
 }
 .Autumn-opacity-caption{
-    font-size: 18px;
     font-weight: 300;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     line-height: 26px;
 }
 .Autumn-opacity .btn-info{
@@ -163,20 +165,19 @@
     background: #ff3967;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
-    padding: 30px 30px;
+    padding: 0px 10px;
 }
 .Summer-opacity-title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
     line-height: 40px;
 }
 .Summer-opacity-caption{
-    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
@@ -196,20 +197,19 @@
     background: #00baff;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
-    padding: 30px 30px;
+    padding: 0px 10px;
 }
 .Healthy-opacity-title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
     line-height: 40px;
 }
 .Healthy-opacity-caption{
-    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
@@ -229,20 +229,19 @@
     background: #4acc05;
     opacity: 0.8;
     width: 48%;
-    height: 100%;
+    height: 98%;
     right: 15px;
     position: absolute;
-    padding: 30px 30px;
+    padding: 0px 10px;
 }
 .Revised-opacity-title{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
     line-height: 40px;
 }
 .Revised-opacity-caption{
-    font-size: 20px;
     font-weight: 300;
     color: #ffffff;
     text-align: left;
@@ -265,19 +264,25 @@
 .search-section{
     /* background-color: mix(#fa4a3b, #e52f65); */
     color: #ffffff;
-    background-image: url("http://localhost/jimboree-web/assets/img/extra/1.jpg");
+    background-image: url("assets/img/extra/1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 705px;
+    min-height: 705px;
+    height: auto;
+    overflow:auto;
+    position: relative;
 }
 
 .Extra-Curricular-opacity{
     background-image: linear-gradient(to right, #e52f65 , #fa4a3b);
     opacity: 0.8;
     width: 100%;
-    height: 705px;
+    min-height: 705px;
     position: absolute;
-    padding: 0 100px;
+    padding: 0 20px;
+    height: auto;
+    overflow:auto;
+    position: relative;
 }
 .search-section .container{
     padding: 0;
@@ -325,7 +330,7 @@
 }
 
 .fieldtrip-title{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -335,7 +340,7 @@
     color: #363434;
 }
 .field-trip-title{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 300;
     font-style: normal;
     font-stretch: normal;
@@ -373,6 +378,56 @@
     text-align: center;
     color: #4b4b4b;
 }
+
+img, .embed-responsive {
+    margin-bottom: 30px;
+}
+
+.Photo-of-Activity {
+    margin-top: 100px;
+    object-fit: contain;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: right;
+    color: #4b4b4b;
+  }
+
+  .field-trip-date-title {
+    margin-left: 10px;
+      margin-top: 50px;
+    object-fit: contain;
+    font-family: HelveticaNeue;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #a3a3a3;
+  }
+
+  .field-trip-title {
+      margin-left: 10px;
+    object-fit: contain;
+    font-family: HelveticaNeue;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #e66234;
+  }
+  
+  
+  
 
 
 /* field trip end */

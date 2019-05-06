@@ -85,3 +85,7 @@ defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automat
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
 define('SITE_NAME', 'JimboRee');
+
+defined('CMS_PATH') OR define('CMS_PATH', 'jimboree-cms/');
+defined('UPLOAD_ASSET_PATH') OR define('UPLOAD_ASSET_PATH', 'assets/uploads/files');
+defined('IMAGE_CONTENT_PATH') OR define('IMAGE_CONTENT_PATH', '../'.CMS_PATH.UPLOAD_ASSET_PATH.'/');
