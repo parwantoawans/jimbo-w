@@ -8,7 +8,7 @@
 					<div class="col-lg-3">
 						<div class="widget-item" style="margin-top: -55px">
 							<p class="footer-title"><img src="<?php echo base_url('assets/img/logo.png'); ?>" alt=""></p>
-							<p class="footer-content"><?php echo $this->SchoolModel->get()[0]['motto']; ?></p>
+							<p class="footer-content"><?php echo @$this->SchoolModel->get()[0]['motto']; ?></p>
 						</div>
 					</div>
 					<div class="col-lg-3">
@@ -36,7 +36,7 @@
 										<div class="col-lg-10">
 											<!-- <p class="footer-content">Jalan Pemuda, Pemuda City Walk, Block B (Education), No. 11, 12, 15, Tampan, Payung Sekaki, Tampan, Payung Sekaki, Pekanbaru City, Riau 28292</p> -->
 											<p class="footer-content">
-												<?php echo $this->ContactsModel->get()[0]['alamat']; ?>
+												<?php echo @$this->ContactsModel->get()[0]['alamat']; ?>
 											</p>
 										</div>
 									</div>
@@ -48,7 +48,7 @@
 										</div>
 										<div class="col-lg-10">
 											<!-- <p class="footer-contet">0821-6976-4578</p> -->
-											<p class="footer-content"><?php echo $this->ContactsModel->get()[0]['telephone']; ?></p>
+											<p class="footer-content"><?php echo @$this->ContactsModel->get()[0]['telephone']; ?></p>
 										</div>
 									</div>
 								</li>
@@ -59,7 +59,7 @@
 										</div>
 										<div class="col-lg-10">
 											<!-- <p class="footer-content">jimboree_@gmail.com</p> -->
-											<p class="footer-content"><?php echo $this->ContactsModel->get()[0]['email']; ?></p>
+											<p class="footer-content"><?php echo @$this->ContactsModel->get()[0]['email']; ?></p>
 										</div>
 									</div>
 								</li>

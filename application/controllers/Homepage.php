@@ -15,10 +15,13 @@ class Homepage extends CI_Controller{
     public function index(){
 		$data['articlesType'] = $this->ArticlesTypeModel->get();
 		$experience = $this->ExperienceModel->get();
-		$data['passing_universities'] = $experience[0]['passing_universities'];
-		$data['people_working'] = $experience[0]['people_working'];
-		$data['student_enrolled'] = $experience[0]['student_enrolled'];
-		$data['happy_smiles'] = $experience[0]['happy_smiles'];
+		if(is_array($experience) && count($experience)>0){
+		    $data['passing_universities'] = $experience[0]['passing_universities'];
+		    $data['people_working'] = $experience[0]['people_working'];
+		    $data['student_enrolled'] = $experience[0]['student_enrolled'];
+		    $data['happy_smiles'] = $experience[0]['happy_smiles'];
+		}
+		
 		
 		$data['teachers'] = $this->TeachersModel->get();
 		$data['testimoni'] = $this->TestimoniModel->get();

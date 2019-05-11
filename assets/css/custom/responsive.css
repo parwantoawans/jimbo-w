@@ -22,13 +22,24 @@
 	}
 	.banner-title{
 		font-size: 33px;
-		line-height: 2.2;
+		line-height: 1;
+		margin-top: 50px;
+	}
+	.hero-text{
+		padding-top: 100px;
+	}
+	.hero-section {
+		height: 415px;
 	}
 }
 
 @media screen and (max-width: 768px){
 	.hero-text{
 		margin-left: 280px;
+	}
+	.banner-title{
+		font-size: 33px;
+		line-height: 1;
 	}
 }
 
@@ -68,10 +79,12 @@
 		padding-top: 50px;
 	}
 	.banner-title{
-		line-height: 1.5;
+		line-height: 1;
+		margin-top: 30px;
 	}
 	.hero-section .site-btn{
 		margin-bottom: 80px;
+		max-width: 150px;
 	}
 }
 
@@ -115,12 +128,19 @@
 @media screen and (max-width: 448px){
 	.banner-title{
 		font-size: 32px;
+		line-height: 1;
+		margin-top: 35px;
 	}
 	.banner-section .site-btn{
 		margin-left: 50px;
 	}
 	.footer-newslatter input{
 		width: 300px !important;
+	}
+	.nav-switch{
+		width: 33px;
+		height: 33px;
+		padding-top: 0px;
 	}
 }
 
@@ -138,7 +158,9 @@
 		margin-left: 189px;
 	}
 	.banner-title {
-		font-size: 28px;
+		font-size: 20px;
+		line-height: 1;
+		margin-top: 35px;
 	}
 	.grammar-opacity-title{
 		font-size: 22px;
@@ -163,7 +185,9 @@
 		margin-left: 160px;
 	}
 	.banner-title {
-		font-size: 28px;
+		font-size: 30px;
+		line-height: 1;
+		margin-top: 58px;
 	}
 	.nav-switch{
 		margin-right: 15px;

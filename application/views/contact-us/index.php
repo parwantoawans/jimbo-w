@@ -51,7 +51,7 @@
 						<p class="contactinfo-subtitle">&nbsp;&nbsp;Address</p>
 					</div>
 					<div class="col-lg-10">
-						<p class="contactinfo-caption2"><?php echo $this->ContactsModel->get()[0]['alamat']; ?></p>
+						<p class="contactinfo-caption2"><?php echo @$this->ContactsModel->get()[0]['alamat']; ?></p>
 					</div>
 					
 					<div class="row">
@@ -61,7 +61,7 @@
 						<p class="contactinfo-subtitle">&nbsp;&nbsp;Phone</p>
 					</div>
 					<div class="col-lg-10">
-						<p class="contactinfo-caption2"><?php echo $this->ContactsModel->get()[0]['telephone']; ?></p>
+						<p class="contactinfo-caption2"><?php echo @$this->ContactsModel->get()[0]['telephone']; ?></p>
 					</div>	
 					
 					<div class="row">
@@ -71,7 +71,7 @@
 						<p class="contactinfo-subtitle">&nbsp;&nbsp;Email</p>
 					</div>		
 					<div class="col-lg-10">	
-						<p class="contactinfo-caption2"><?php echo $this->ContactsModel->get()[0]['email']; ?></p>
+						<p class="contactinfo-caption2"><?php echo @$this->ContactsModel->get()[0]['email']; ?></p>
 					</div>
 
 					<div class="row">

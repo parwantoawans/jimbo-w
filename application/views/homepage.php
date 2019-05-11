@@ -54,22 +54,22 @@
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="icon"><i class="fa fa-bullseye"></i></div>
-					<p class="search-caption"><?php echo $passing_universities . "%"; ?></p>
+					<p class="search-caption"><?php echo isset($passing_universities) ? $passing_universities : "0" . "%"; ?></p>
 					<p class="search-caption2">Passing to Universities</p>
 				</div>
 				<div class="col-lg-3">
 					<div class="icon"><i class="fa fa-users"></i></div>
-					<p class="search-caption"><?php echo $people_working; ?></p>
+					<p class="search-caption"><?php echo isset($people_working) ? $people_working : "0"; ?></p>
 					<p class="search-caption2">People Working</p>
 				</div>
 				<div class="col-lg-3">
 					<div class="icon"><i class="fa fa-briefcase"></i></div>
-					<p class="search-caption"><?php echo $student_enrolled; ?></p>
+					<p class="search-caption"><?php echo isset($student_enrolled) ? $student_enrolled : "0"; ?></p>
 					<p class="search-caption2">Student Enrolled</p>
 				</div>
 				<div class="col-lg-3">
 					<div class="icon"><i class="fa fa-user"></i></div>
-					<p class="search-caption"><?php echo $happy_smiles; ?></p>
+					<p class="search-caption"><?php echo isset($happy_smiles) ? $happy_smiles : "0"; ?></p>
 					<p class="search-caption2">Happy Smiles</p>
 				</div>
 			</div>

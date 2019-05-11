@@ -242,10 +242,15 @@
 	<section class="categories-section spad">
 		<div class="container">
 			<p class="fieldtrip-title">Field Trip</p>
-			<?php if(is_array($fieldTrip) && count($fieldTrip)>0){?>
+			<?php if(is_array($fieldTrip) && count($fieldTrip)>0){
+			    $mainClassCol = 'col-lg-7';
+			    if( !isset($fieldTrip[1]->id) && !isset($fieldTrip[2]->id)) {
+			        $mainClassCol = 'col-lg-12';
+			    }
+			?>
             <div class="row">
 				<!-- categorie -->
-				<div class="col-lg-7">
+				<div class="<?php echo $mainClassCol; ?>">
 					<div class="ci-text">
 						<div class="categorie-item">
 							<a href="<?php echo base_url('students/fieldtrip/') . $fieldTrip[0]->id; ?>">
@@ -260,15 +265,19 @@
                 <!-- categorie -->
 				<div class="col-lg-5">
 					<div class="categorie-item">
+					    <?php if(isset($fieldTrip[1]->id)) { ?>
 						<a href="<?php echo base_url('students/fieldtrip/') . $fieldTrip[1]->id; ?>">
 							<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$fieldTrip[1]->main_image; ?>"></div>
 						</a>
 						<p><?php echo $fieldTrip[1]->description; ?></p>
-						<div class="categorie-item">
+						<?php } 
+						    if(isset($fieldTrip[2]->id)) {
+						?>
 						<a href="<?php echo base_url('students/fieldtrip/') . $fieldTrip[2]->id; ?>">
 							<div class="ci-thumb set-bg" data-setbg="<?php echo IMAGE_CONTENT_PATH.$fieldTrip[2]->main_image; ?>"></div>
 						</a>
 						<p><?php echo $fieldTrip[2]->description; ?></p>
+						<?php } ?>
 					</div>
 				</div>
 			</div>
